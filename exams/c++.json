@@ -1,0 +1,1099 @@
+{
+  "exam_info": {
+    "institution": "Addis Ababa University",
+    "college": "College of Business and Economics",
+    "department": "Department of Economics",
+    "course": "Economics Comprehensive Examination",
+    "time_allowed": "2:00 hr"
+  },
+  "question_papers": [
+    {
+      "part_i": {
+        "instructions": "Multiple Choice and True/False. Choose the best answer from the given alternatives. Write True if the statement is correct or False if the statement is wrong.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "If we stored $15$ elements or data items in an array, what will be the index address or the index number of the array's last data item?",
+            "options": ["A. 12", "B. 14", "C. 15", "D. 11", "E. None"],
+            "answer": "B",
+            "explanation": "In C++, array indices are zero-based. For an array of size $15$, the valid indices are $0$ to $14$. Therefore, the last item is at index $14$."
+          },
+          {
+            "number": 2,
+            "text": "Which concept allows you to reuse the written code in C++?",
+            "options": ["A. Polymorphism", "B. Abstraction", "C. Encapsulation", "D. Inheritance"],
+            "answer": "D",
+            "explanation": "Inheritance allows a new class to acquire the properties and methods of an existing class, promoting code reusability."
+          },
+          {
+            "number": 3,
+            "text": "What happens if all expressions in a $\\texttt{for}$ loop are omitted?",
+            "options": [
+              "A. The loop will terminate immediately.",
+              "B. The loop will execute infinitely.",
+              "C. An error will occur during compilation.",
+              "D. The loop will execute a single iteration.",
+              "E. None"
+            ],
+            "answer": "B",
+            "explanation": "If the condition expression in a $\\texttt{for}$ loop is omitted, it is treated as always true, resulting in an infinite loop (e.g., $\\texttt{for(;;)}$)."
+          },
+          {
+            "number": 4,
+            "text": "What is the result of calling $\\texttt{strcmp(\\\"DBC\\\", \\\"DBC\\\")}$?",
+            "options": ["A. Zero", "B. A negative number", "C. A positive number", "D. NULL"],
+            "answer": "A",
+            "explanation": "The $\\texttt{strcmp}$ function returns $0$ when the two strings being compared are exactly identical."
+          },
+          {
+            "number": 5,
+            "text": "Which function appends one string to another in C++?",
+            "options": ["A. $\\texttt{strcat()}$", "B. $\\texttt{strcpy()}$", "C. $\\texttt{strcmp()}$", "D. $\\texttt{strlen()}$"],
+            "answer": "A",
+            "explanation": "$\\texttt{strcat()}$ (string concatenation) appends a copy of the source string to the end of the destination string."
+          },
+          {
+            "number": 6,
+            "text": "Which function call scenario demonstrates passing by value?",
+            "options": [
+              "A. $\\texttt{sum(int *x, int *y)}$",
+              "B. $\\texttt{sum(int x, int y)}$",
+              "C. $\\texttt{void main(int *x, int *y)}$",
+              "D. $\\texttt{int *sum(int \\&x, int \\&y)}$",
+              "E. $\\texttt{sum(int \\&x, int \\&y)}$"
+            ],
+            "answer": "B",
+            "explanation": "Passing by value means the function receives a copy of the actual data. $\\texttt{sum(int x, int y)}$ passes the values of $\\texttt{x}$ and $\\texttt{y}$ directly, making copies."
+          },
+          {
+            "number": 7,
+            "text": "Consider the following code snippet: $\\texttt{class CRectangle \\{ int width, height; public: CRectangle(int, int); int area(); \\};}$ Which statement correctly initializes a $\\texttt{CRectangle}$ object?",
+            "options": [
+              "A. $\\texttt{CRectangle rect;}$",
+              "B. $\\texttt{CRectangle rect(7, 10);}$",
+              "C. $\\texttt{CRectangle rect = new CRectangle();}$",
+              "D. $\\texttt{CRectangle rect.width = 7; rect.height = 10;}$"
+            ],
+            "answer": "B",
+            "explanation": "Since the class has a constructor that takes two integer parameters $\\texttt{CRectangle(int, int)}$, the correct way to instantiate it on the stack is $\\texttt{CRectangle rect(7, 10);}$."
+          },
+          {
+            "number": 8,
+            "text": "One of the following is NOT a C++ reserved word?",
+            "options": ["A. $\\texttt{if}$", "B. $\\texttt{while}$", "C. $\\texttt{fname}$", "D. $\\texttt{break}$"],
+            "answer": "C",
+            "explanation": "$\\texttt{if}$, $\\texttt{while}$, and $\\texttt{break}$ are all keywords in C++. $\\texttt{fname}$ is a common identifier used by programmers but is not a reserved word."
+          },
+          {
+            "number": 9,
+            "text": "What is the final value of $\\texttt{x}$ when the code $\\texttt{int x; for(x=3; x<=11; x++) \\{ cout<<\\\"HI\\\"; \\}}$ is run?",
+            "options": ["A. 3", "B. 11", "C. 0", "D. 12", "E. None of the above"],
+            "answer": "D",
+            "explanation": "The loop continues as long as $x \\le 11$. After the iteration where $x = 11$, the increment $\\texttt{x++}$ executes, making $x = 12$. Then the condition $12 \\le 11$ evaluates to false, and the loop terminates with $\\texttt{x}$ holding the value $12$."
+          },
+          {
+            "number": 10,
+            "text": "Which of the following can be considered as the correct syntax for declaring an array of pointers of integers that has a size of $10$ in C++?",
+            "options": [
+              "A. $\\texttt{int arr = new int[10];}$",
+              "B. $\\texttt{int *arr = new int*[10];}$",
+              "C. $\\texttt{int **arr = new int*[10];}$",
+              "D. $\\texttt{int *arr = new int[10];}$",
+              "E. None"
+            ],
+            "answer": "B",
+            "explanation": "An array of $10$ integer pointers is declared dynamically as $\\texttt{int *arr = new int*[10];}$. This allocates memory for $10$ pointers to integers."
+          },
+          {
+            "number": 11,
+            "text": "Which of the following statement is correct about Destructor?",
+            "options": [
+              "A. It is automatically called when an object is created",
+              "B. It is used to initialize the data members of new object",
+              "C. Modifiers can't be applied on destructors",
+              "D. They can have parameters",
+              "E. All"
+            ],
+            "answer": "C",
+            "explanation": "Destructors cannot have access modifiers (like $\\texttt{public}$, $\\texttt{private}$) applied to them, cannot take parameters, and are called when an object is destroyed, not created."
+          },
+          {
+            "number": 12,
+            "text": "Which one is the right order?",
+            "options": [
+              "A. Edit source code; compile; execute; debug;",
+              "B. Edit source code; compile; debug; execute;",
+              "C. Edit source code; execute; compile; debug;",
+              "D. Debug; edit source code; compile; execute;"
+            ],
+            "answer": "A",
+            "explanation": "The typical software development cycle is: write/edit the code, compile it to check for syntax errors, execute/run the program, and then debug it if there are logical errors."
+          },
+          {
+            "number": 13,
+            "text": "What part of the $\\texttt{if-else}$ selection structure is equivalent with the $\\texttt{default}$ part of the $\\texttt{switch-case}$ control structure?",
+            "options": [
+              "A. The $\\texttt{if}$ part",
+              "B. The $\\texttt{else}$ part",
+              "C. $\\texttt{default}$ doesn't have equivalent part in $\\texttt{if-else}$",
+              "D. A and B",
+              "E. None of the above"
+            ],
+            "answer": "B",
+            "explanation": "The $\\texttt{default}$ block in a $\\texttt{switch}$ statement executes when no other case matches. This is logically equivalent to the $\\texttt{else}$ block in an $\\texttt{if-else}$ chain, which executes when the $\\texttt{if}$ condition is false."
+          },
+          {
+            "number": 14,
+            "text": "Which of the following is NOT a user defined datatype?",
+            "options": ["A. $\\texttt{union}$", "B. $\\texttt{struct}$", "C. $\\texttt{string}$", "D. $\\texttt{enum}$"],
+            "answer": "C",
+            "explanation": "$\\texttt{union}$, $\\texttt{struct}$, and $\\texttt{enum}$ are ways to create user-defined types. $\\texttt{string}$ is a standard library class ($\\texttt{std::string}$), not a fundamental user-defined type in the same sense."
+          },
+          {
+            "number": 15,
+            "text": "A pointer in C++ is:",
+            "options": [
+              "A. The address of a variable",
+              "B. A variable that holds the address of another variable",
+              "C. A variable for storing addresses",
+              "D. A data type of an address variable"
+            ],
+            "answer": "B",
+            "explanation": "A pointer is a special variable whose value is a memory address, specifically the address of another variable."
+          },
+          {
+            "number": 16,
+            "text": "Which statement is incorrect about rules used for naming a variable for an array?",
+            "options": [
+              "A. Variable name can start with number, letter and underscore.",
+              "B. Variable name cannot be keywords.",
+              "C. Variable can contain number, letter and underscore.",
+              "D. None of the above statement is incorrect"
+            ],
+            "answer": "A",
+            "explanation": "Variable names (including array names) CANNOT start with a number. They must start with a letter or an underscore."
+          },
+          {
+            "number": 17,
+            "text": "How many times does the statement $\\texttt{sum+=i}$ execute in $\\texttt{for(int i=1; i<5; i++) sum+=i;}$",
+            "options": ["A. 5", "B. 6", "C. 4", "D. 3", "E. None of the above"],
+            "answer": "C",
+            "explanation": "The loop runs for $i = 1, 2, 3, 4$. For each value, the statement $\\texttt{sum+=i}$ is executed. Thus, it executes $4$ times."
+          },
+          {
+            "number": 18,
+            "text": "A two dimensional array is like \\_\\_\\_\\_\\_\\_\\_ put together.",
+            "options": ["A. two array of different types", "B. several identical types", "C. an array and a function", "D. two functions"],
+            "answer": "B",
+            "explanation": "A 2D array can be thought of as an array of arrays, essentially grouping several identical data types together in a grid-like structure."
+          },
+          {
+            "number": 19,
+            "text": "Which one of the following statements is incorrect about $\\texttt{class}$?",
+            "options": [
+              "A. Defined using keyword $\\texttt{class}$",
+              "B. Have a body delineated with braces ($\\texttt{\\{}$ and $\\texttt{\\}}$)",
+              "C. It is a runtime entity",
+              "D. It can hold both data and functions.",
+              "E. None"
+            ],
+            "answer": "C",
+            "explanation": "A class is a compile-time blueprint or template. Objects are the runtime entities created from a class."
+          },
+          {
+            "number": 20,
+            "text": "When defining a class using the $\\texttt{union}$ keyword, what is its primary characteristic?",
+            "options": [
+              "A. All members share the same memory location.",
+              "B. All members are private by default.",
+              "C. It does not support constructors or destructors.",
+              "D. It allows multiple objects to be created from the same memory block."
+            ],
+            "answer": "A",
+            "explanation": "The primary characteristic of a $\\texttt{union}$ is that all its members share the same memory space. Only one member can contain a value at any given time."
+          },
+          {
+            "number": 21,
+            "text": "Dynamic Array allows a program to ask for just the amount of memory space it needs at run time.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Dynamic memory allocation (e.g., using $\\texttt{new}$ in C++) allows a program to request memory during runtime based on the current need, unlike static arrays whose size is fixed at compile time."
+          },
+          {
+            "number": 22,
+            "text": "The concept of encapsulation in object-oriented programming ensures that internal details of an object are always hidden from other parts of the program.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "Encapsulation is about bundling data and methods and restricting direct access using access specifiers (like $\\texttt{private}$), but it doesn't mean always hidden. Public methods can provide controlled access."
+          },
+          {
+            "number": 23,
+            "text": "We can use $\\texttt{break}$ statement anywhere in a program.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "The $\\texttt{break}$ statement can only be used inside loops ($\\texttt{for}$, $\\texttt{while}$, $\\texttt{do-while}$) and $\\texttt{switch}$ statements to terminate the nearest enclosing block."
+          },
+          {
+            "number": 24,
+            "text": "Passing a parameter by reference in C++ creates a copy of the actual argument inside the function.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "Passing by reference passes the memory address of the actual argument, allowing the function to modify the original variable. It does NOT create a copy; passing by value creates a copy."
+          },
+          {
+            "number": 25,
+            "text": "During $\\texttt{do-while}$ execution body is executed first and then the loop condition is examined.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "A $\\texttt{do-while}$ loop is an exit-controlled loop, meaning the body of the loop is executed at least once before the condition is checked."
+          },
+          {
+            "number": 26,
+            "text": "Private members of a class are accessible only from within other members of the same Class.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Private members are only accessible within the class itself (and by friend functions/classes), protecting them from outside access."
+          },
+          {
+            "number": 27,
+            "text": "A structure can contain an array as one of its members, but the size of the array must be defined at compile time.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "In standard C++, a structure member array must have a fixed size known at compile time (e.g., $\\texttt{int arr[10];}$)."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Fill in the blanks / Short Answer. Answer the following questions based on the code and concepts.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Which function call scenario demonstrates passing by value?\nA. $\\texttt{sum(int *x, int *y)}$\nB. $\\texttt{sum(int x, int y)}$\nC. $\\texttt{void main(int *x, int *y)}$\nD. $\\texttt{int *sum(int \\&x, int \\&y)}$\nE. $\\texttt{sum(int \\&x, int \\&y)}$",
+            "answer": ["B"],
+            "explanation": "Passing by value means the function receives a copy of the actual data. $\\texttt{sum(int x, int y)}$ passes the values of $\\texttt{x}$ and $\\texttt{y}$ directly, making copies."
+          },
+          {
+            "number": 2,
+            "text": "Which one of the following is a valid constant definition in C++?\nA. $\\texttt{float const PI = 3.14;}$\nB. $\\texttt{const float PI = 3.14;}$\nC. $\\texttt{constant float PI=3.14;}$\nD. $\\texttt{float PI; PI = 3.14;}$",
+            "answer": ["B"],
+            "explanation": "The standard C++ syntax for a constant is $\\texttt{const}$ followed by the data type and variable name: $\\texttt{const float PI = 3.14;}$."
+          },
+          {
+            "number": 3,
+            "text": "Which of the following is not a logical operator in C++ language?\nA. $\\texttt{\\&}$\nB. $\\texttt{\\&\\&}$\nC. $\\texttt{||}$\nD. $\\texttt{!}$",
+            "answer": ["A"],
+            "explanation": "$\\texttt{\\&}$ is the bitwise AND operator. The logical operators are $\\texttt{\\&\\&}$ (AND), $\\texttt{||}$ (OR), and $\\texttt{!}$ (NOT)."
+          },
+          {
+            "number": 4,
+            "text": "Which of the following accesses the seventh element stored in array?\nA. $\\texttt{array[6];}$\nB. $\\texttt{array[7];}$\nC. $\\texttt{array(7);}$\nD. $\\texttt{array;}$",
+            "answer": ["A"],
+            "explanation": "C++ arrays are zero-indexed. The first element is at index $0$, so the seventh element is at index $6$."
+          },
+          {
+            "number": 5,
+            "text": "What is the value returned by $\\texttt{strcmp(str1, str2)}$ if $\\texttt{str1=\\\"Civil Eng\\\"}$ & $\\texttt{str2=\\\"civil eng\\\"}$?\nA. $0$\nB. $<0$\nC. $>0$\nD. None",
+            "answer": ["B"],
+            "explanation": "$\\texttt{strcmp}$ compares ASCII values. Uppercase $\\texttt{'C'}$ ($67$) is less than lowercase $\\texttt{'c'}$ ($99$), so $\\texttt{str1}$ is considered less than $\\texttt{str2}$, returning a negative value."
+          },
+          {
+            "number": 6,
+            "text": "Starting point of execution in C++ program is:\nA. $\\texttt{\\#include}$\nB. $\\texttt{main}$ function\nC. $\\texttt{iostream.h}$\nD. $\\texttt{cin}$ and $\\texttt{cout}$",
+            "answer": ["B"],
+            "explanation": "The execution of every C++ program begins at the $\\texttt{main()}$ function."
+          },
+          {
+            "number": 7,
+            "text": "What would be printed by the following statements? $\\texttt{int i = 3, j = 4, k; k = ++i * j++; cout << k << \\\"\\\\textbackslash n\\\";}$\nA. 12\nB. 15\nC. 16\nD. 20",
+            "answer": ["C"],
+            "explanation": "$\\texttt{++i}$ pre-increments $i$ to $4$. $\\texttt{j++}$ post-increments $j$, returning the current value $4$. So $k = 4 \\times 4 = 16$."
+          },
+          {
+            "number": 8,
+            "text": "More than one function with the same name refers to?\nA. Default argument\nB. Function Overloading\nC. Recursive function\nD. Inline function",
+            "answer": ["B"],
+            "explanation": "Function overloading allows multiple functions to have the same name as long as their parameter lists are different."
+          },
+          {
+            "number": 9,
+            "text": "Which one of the following selection statement best suits if we need to make a decision between four alternatives?\nA. $\\texttt{if else}$\nB. $\\texttt{for}$\nC. $\\texttt{if else if}$\nD. $\\texttt{while}$",
+            "answer": ["C"],
+            "explanation": "An $\\texttt{if-else if}$ ladder is the standard structure for choosing between multiple mutually exclusive alternatives."
+          },
+          {
+            "number": 10,
+            "text": "Which of the following statement is correct about the following array? $\\texttt{int num[26];}$\nA. it can store 27 elements.\nB. The expression $\\texttt{num[1]}$ designates the very first element in the array.\nC. All elements have an integer data type\nD. None",
+            "answer": ["C"],
+            "explanation": "The array $\\texttt{num}$ is declared as an array of integers, so all $26$ elements will have the integer data type."
+          },
+          {
+            "number": 11,
+            "text": "What is the error in this $\\texttt{for}$ loop? $\\texttt{for ( int k=2, k<=12, k++)}$\nA. The increment should always be $\\texttt{++k}$\nB. The variable must always be the letter $\\texttt{i}$ when using a loop\nC. There should be a semicolon at the end of the loop\nD. The commas should be a semicolon",
+            "answer": ["D"],
+            "explanation": "The $\\texttt{for}$ loop syntax requires semicolons to separate the initialization, condition, and increment expressions, not commas."
+          },
+          {
+            "number": 12,
+            "text": "$\\texttt{int \\&X;}$ this syntax is used when:\nA. $\\texttt{X}$ is passed by value\nB. $\\texttt{X}$ is passed by reference\nC. $\\texttt{X}$ is declared outside the function\nD. None of them",
+            "answer": ["B"],
+            "explanation": "The $\\texttt{\\&}$ symbol in a parameter declaration indicates a reference variable, which means $\\texttt{X}$ is passed by reference."
+          },
+          {
+            "number": 13,
+            "text": "What will be the output of the following code? $\\texttt{char letter='s'; int product=1, j=3; do \\{ product*=j; cout<<product; \\} while(letter!='s');}$\nA. 1\nB. 2\nC. 3\nD. 4",
+            "answer": ["C"],
+            "explanation": "The $\\texttt{do-while}$ loop executes at least once. $\\texttt{product} = 1 \\times 3 = 3$. It prints $3$. Then the condition $\\texttt{letter != 's'}$ is checked. Since $\\texttt{letter}$ is $\\texttt{'s'}$, the condition is false, and the loop terminates."
+          },
+          {
+            "number": 14,
+            "text": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ statement terminates the current iteration of a loop and instead jumps to the next iteration.\nA. $\\texttt{switch}$\nB. $\\texttt{break}$\nC. $\\texttt{continue}$\nD. $\\texttt{if}$",
+            "answer": ["C"],
+            "explanation": "The $\\texttt{continue}$ statement skips the rest of the current loop iteration and jumps to the next iteration's condition check."
+          },
+          {
+            "number": 15,
+            "text": "Which one of the following is true about function?\nA. A function with $\\texttt{void}$ return type doesn't have return value\nB. We can execute a function without need of explicitly calling it.\nC. A function must have more than one parameter during its definition.\nD. All",
+            "answer": ["A"],
+            "explanation": "A function with a $\\texttt{void}$ return type does not return a value to the caller."
+          },
+          {
+            "number": 16,
+            "text": "A C++ identifier must start with a letter or an underscore.",
+            "answer": ["True"],
+            "explanation": "Identifiers in C++ must begin with a letter ($a$-$z$, $A$-$Z$) or an underscore (\\_)."
+          },
+          {
+            "number": 17,
+            "text": "All data types in C++ take up the same amount of storage.",
+            "answer": ["False"],
+            "explanation": "Different data types take up different amounts of memory (e.g., an $\\texttt{int}$ is typically $4$ bytes, a $\\texttt{char}$ is $1$ byte)."
+          },
+          {
+            "number": 18,
+            "text": "The body of a $\\texttt{while}$ loop always executes at least once.",
+            "answer": ["False"],
+            "explanation": "A $\\texttt{while}$ loop checks its condition before executing the body, so it might not execute at all. A $\\texttt{do-while}$ loop always executes at least once."
+          },
+          {
+            "number": 19,
+            "text": "Array is a collection of data storage containers, each of which holds different types of data.",
+            "answer": ["False"],
+            "explanation": "An array is a collection of elements of the same data type."
+          },
+          {
+            "number": 20,
+            "text": "A C++ program must have a $\\texttt{main}$ function.",
+            "answer": ["True"],
+            "explanation": "Every valid C++ program must contain exactly one $\\texttt{main}$ function, which serves as the entry point."
+          },
+          {
+            "number": 21,
+            "text": "A local variable declared in a function is not usable outside that function.",
+            "answer": ["True"],
+            "explanation": "Local variables have block scope and are destroyed when the function exits, making them inaccessible elsewhere."
+          },
+          {
+            "number": 22,
+            "text": "One or more $\\texttt{while}$ loop statements can be nested within another $\\texttt{for}$ loop statement.",
+            "answer": ["True"],
+            "explanation": "Loops of any type can be nested inside loops of any other type."
+          },
+          {
+            "number": 23,
+            "text": "$\\texttt{Continue}$ is a C++ keyword used to terminate a program in a conditional statement.",
+            "answer": ["False"],
+            "explanation": "$\\texttt{continue}$ is used to skip the current iteration of a loop, not to terminate a program. $\\texttt{return}$ or $\\texttt{exit()}$ are used to terminate."
+          },
+          {
+            "number": 24,
+            "text": "Prototype in function is required when the $\\texttt{main}$ function is written after another function.",
+            "answer": ["False"],
+            "explanation": "A prototype is required when a function is called before it is defined. If the function is defined before $\\texttt{main}$, no prototype is needed."
+          },
+          {
+            "number": 25,
+            "text": "We can assign values to variables before declaring them.",
+            "answer": ["False"],
+            "explanation": "A variable must be declared before it can be used or assigned a value."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Workout. Answer the following questions accordingly. Write the output of the following programs and write C++ programs.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Section 1: Output. Write the output of the following C++ program:\n$\\texttt{\\#include<iostream.h>}$\n$\\texttt{int main()}$\n$\\texttt{\\{}$\n$\\texttt{for ( int a = 0 ; a <= 17; a++ )}$\n$\\texttt{\\{}$\n$\\texttt{if ( a == 9 ) break;}$\n$\\texttt{cout<<a<<endl;}$\n$\\texttt{\\}}$ \n$\\texttt{return 0;}$\n$\\texttt{\\}}$",
+            "answer": ["0", "1", "2", "3", "4", "5", "6", "7", "8"],
+            "explanation": "The loop iterates from $0$. When $\\texttt{a}$ reaches $9$, the $\\texttt{if}$ condition is true, and the $\\texttt{break}$ statement terminates the loop immediately. So it prints $0$ through $8$, each on a new line."
+          },
+          {
+            "number": 2,
+            "text": "Section 1: Output. Write the output of the following C++ program:\n$\\texttt{\\#include<iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{void main()}$\n$\\texttt{\\{}$\n$\\texttt{int x=1;}$\n$\\texttt{switch(x)}$\n$\\texttt{\\{}$\n$\\texttt{case 1: cout<<\\\"you are freshman student\\\\n\\\";}$\n$\\texttt{case 2:}$\n$\\texttt{case 3: cout<<\\\"you are second year student\\\\n\\\";}$\n$\\texttt{case 4: cout<<\\\"you are third year student\\\\n\\\"; break;}$\n$\\texttt{default: cout<<\\\"you are not a student\\\\n\\\";}$\n$\\texttt{\\}}$ \n$\\texttt{\\}}$",
+            "answer": ["you are freshman student", "you are second year student", "you are third year student"],
+            "explanation": "Because there is no $\\texttt{break}$ statement after $\\texttt{case 1}$, the execution falls through and prints the statements for case 1, case 2/3, and case 4 sequentially until it hits the $\\texttt{break}$."
+          },
+          {
+            "number": 3,
+            "text": "Section 1: Output. Write the output of the following C++ program:\n$\\texttt{\\#include<iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{int main ()}$\n$\\texttt{\\{}$\n$\\texttt{int n = 3;}$\n$\\texttt{while (n >= 0) \\{ cout << n * n << endl; --n; \\}}$ \n$\\texttt{cout << n << endl;}$\n$\\texttt{while (n < 4) cout << ++n << endl;}$ \n$\\texttt{cout << n << endl;}$\n$\\texttt{while (n >= 0) cout << (n / 2) << endl;}$ \n$\\texttt{return 0;}$\n$\\texttt{\\}}$",
+            "answer": ["9", "4", "1", "0", "-1", "0", "1", "2", "3", "4", "4", "2", "1", "0"],
+            "explanation": "First loop: $n=3,2,1,0$ prints $9,4,1,0$. $n$ becomes $-1$. Prints $-1$. Second loop: $n<4$, prints $\\texttt{++n}$ ($0,1,2,3,4$) until $n=4$. Prints $4$. Third loop: $n=4,3,2,1,0$ prints $2,1,1,0,0$ until $n=-1$."
+          },
+          {
+            "number": 4,
+            "text": "Section 1: Output. Write the output of the following C++ program:\n$\\texttt{\\#include<iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{int main()\\{}$\n$\\texttt{int x=1;}$\n$\\texttt{cout<<x<<endl;}$\n$\\texttt{cout<<++x<<endl;}$\n$\\texttt{cout<<x++<<endl;}$\n$\\texttt{cout<<++x<<endl;}$\n$\\texttt{cout<<x++;}$\n$\\texttt{\\}}$",
+            "answer": ["1", "2", "2", "4", "4"],
+            "explanation": "$\\texttt{x}$ starts as $1$. Prints $1$. Pre-increments to $2$, prints $2$. Post-increments (prints $2$, $\\texttt{x}$ becomes $3$). Pre-increments to $4$, prints $4$. Post-increments (prints $4$, $\\texttt{x}$ becomes $5$)."
+          },
+          {
+            "number": 5,
+            "text": "Section 2: Write Code. Write C++ program that prints all even numbers between $10$ to $100$. (3 pt.)",
+            "answer": ["$\\texttt{\\#include <iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{int main() \\{}$\n$\\texttt{for(int i = 10; i <= 100; i += 2) \\{}$\n$\\texttt{cout << i << \\\" \\\";}$\n$\\texttt{\\}}$ \n$\\texttt{return 0;}$\n$\\texttt{\\}}$"],
+            "explanation": "A $\\texttt{for}$ loop starting at $10$ and incrementing by $2$ up to $100$ will print all even numbers in that range."
+          },
+          {
+            "number": 6,
+            "text": "Section 2: Write Code. Create an array that can hold ten integers, and get input from user. Find the average of the number. (3 pt.)",
+            "answer": ["$\\texttt{\\#include <iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{int main() \\{}$\n$\\texttt{int arr[10];}$\n$\\texttt{int sum = 0;}$\n$\\texttt{cout << \\\"Enter 10 integers: \\\";}$\n$\\texttt{for(int i = 0; i < 10; i++) \\{}$\n$\\texttt{cin >> arr[i];}$\n$\\texttt{sum += arr[i];}$\n$\\texttt{\\}}$ \n$\\texttt{double average = sum / 10.0;}$\n$\\texttt{cout << \\\"Average is: \\\" << average << endl;}$\n$\\texttt{return 0;}$\n$\\texttt{\\}}$"],
+            "explanation": "The program reads $10$ integers into an array while accumulating their sum, then calculates and prints the average."
+          },
+          {
+            "number": 7,
+            "text": "Section 2: Write Code. Write the C++ program for the following output? (4 pt.)\n5\n54\n543\n5432\n54321",
+            "answer": ["$\\texttt{\\#include <iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{int main() \\{}$\n$\\texttt{for(int i = 5; i >= 1; i--) \\{}$\n$\\texttt{for(int j = 5; j >= i; j--) \\{}$\n$\\texttt{cout << j;}$\n$\\texttt{\\}}$ \n$\\texttt{cout << endl;}$\n$\\texttt{\\}}$ \n$\\texttt{return 0;}$\n$\\texttt{\\}}$"],
+            "explanation": "Nested loops are used. The outer loop controls the rows, and the inner loop prints numbers starting from $5$ down to the current row's starting value."
+          },
+          {
+            "number": 8,
+            "text": "Section 2: Write Code. Write a C++ program that accepts two numbers and one of the mathematical operators ($\\texttt{'+'}$, $\\texttt{'-'}$, $\\texttt{'*'}$, $\\texttt{'/'}$), computes the result using functions depending on the input of the mathematical operator and display the result on the screen. (5 pt.)",
+            "answer": ["$\\texttt{\\#include <iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{double add(double a, double b) \\{ return a + b; \\}}$ \n$\\texttt{double sub(double a, double b) \\{ return a - b; \\}}$ \n$\\texttt{double mul(double a, double b) \\{ return a * b; \\}}$ \n$\\texttt{double divi(double a, double b) \\{ return (b != 0) ? a / b : 0; \\}}$ \n$\\texttt{int main() \\{}$\n$\\texttt{double x, y; char op;}$\n$\\texttt{cin >> x >> op >> y;}$\n$\\texttt{if(op == '+') cout << add(x, y);}$\n$\\texttt{else if(op == '-') cout << sub(x, y);}$\n$\\texttt{else if(op == '*') cout << mul(x, y);}$\n$\\texttt{else if(op == '/') cout << divi(x, y);}$ \n$\\texttt{return 0;}$\n$\\texttt{\\}}$"],
+            "explanation": "Separate functions are defined for each arithmetic operation, and $\\texttt{main()}$ calls the appropriate function based on the user's operator input."
+          }
+        ]
+      }
+    },
+    {
+      "part_i": {
+        "instructions": "Multiple Choice and True/False. Choose the best answer from the given alternatives. Write TRUE if the statement is true and FALSE if the statement is false.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Passing argument by means of making a copy of the variable's content is known as passing by:",
+            "options": ["A. Value", "B. Name", "C. Reference", "D. Void"],
+            "answer": "A",
+            "explanation": "Passing by value creates a copy of the argument's value, so changes to the parameter do not affect the original variable."
+          },
+          {
+            "number": 2,
+            "text": "Which one of the following is a valid constant definition in C++?",
+            "options": [
+              "A. $\\texttt{float const PI = 3.14;}$",
+              "B. $\\texttt{const float PI = 3.14;}$",
+              "C. $\\texttt{constant float PI=3.14;}$",
+              "D. $\\texttt{float PI; PI = 3.14;}$"
+            ],
+            "answer": "B",
+            "explanation": "The standard C++ syntax for a constant is $\\texttt{const}$ followed by the data type and variable name: $\\texttt{const float PI = 3.14;}$."
+          },
+          {
+            "number": 3,
+            "text": "Which of the following is not a logical operator in C++ language?",
+            "options": ["A. $\\texttt{\\&}$", "B. $\\texttt{\\&\\&}$", "C. $\\texttt{||}$", "D. $\\texttt{!}$"],
+            "answer": "A",
+            "explanation": "$\\texttt{\\&}$ is the bitwise AND operator. The logical operators are $\\texttt{\\&\\&}$ (AND), $\\texttt{||}$ (OR), and $\\texttt{!}$ (NOT)."
+          },
+          {
+            "number": 4,
+            "text": "Which of the following accesses the seventh element stored in array?",
+            "options": ["A. $\\texttt{array[6];}$", "B. $\\texttt{array[7];}$", "C. $\\texttt{array(7);}$", "D. $\\texttt{array;}$"],
+            "answer": "A",
+            "explanation": "C++ arrays are zero-indexed. The first element is at index $0$, so the seventh element is at index $6$."
+          },
+          {
+            "number": 5,
+            "text": "What is the value returned by $\\texttt{strcmp(str1, str2)}$ if $\\texttt{str1=\\\"Civil Eng\\\"}$ & $\\texttt{str2=\\\"civil eng\\\"}$?",
+            "options": ["A. $0$", "B. $<0$", "C. $>0$", "D. None"],
+            "answer": "B",
+            "explanation": "$\\texttt{strcmp}$ compares ASCII values. Uppercase $\\texttt{'C'}$ ($67$) is less than lowercase $\\texttt{'c'}$ ($99$), so $\\texttt{str1}$ is considered less than $\\texttt{str2}$, returning a negative value."
+          },
+          {
+            "number": 6,
+            "text": "Starting point of execution in C++ program is:",
+            "options": ["A. $\\texttt{\\#include}$", "B. $\\texttt{main}$ function", "C. $\\texttt{iostream.h}$", "D. $\\texttt{cin}$ and $\\texttt{cout}$"],
+            "answer": "B",
+            "explanation": "The execution of every C++ program begins at the $\\texttt{main()}$ function."
+          },
+          {
+            "number": 7,
+            "text": "What would be printed by the following statements? $\\texttt{int i = 3, j = 4, k; k = ++i * j++; cout << k << \\\"\\\\textbackslash n\\\";}$",
+            "options": ["A. 12", "B. 15", "C. 16", "D. 20"],
+            "answer": "C",
+            "explanation": "$\\texttt{++i}$ pre-increments $i$ to $4$. $\\texttt{j++}$ post-increments $j$, returning the current value $4$. So $k = 4 \\times 4 = 16$."
+          },
+          {
+            "number": 8,
+            "text": "More than one function with the same name refers to?",
+            "options": ["A. Default argument", "B. Function Overloading", "C. Recursive function", "D. Inline function"],
+            "answer": "B",
+            "explanation": "Function overloading allows multiple functions to have the same name as long as their parameter lists are different."
+          },
+          {
+            "number": 9,
+            "text": "Which one of the following selection statement best suits if we need to make a decision between four alternatives?",
+            "options": ["A. $\\texttt{if else}$", "B. $\\texttt{for}$", "C. $\\texttt{if else if}$", "D. $\\texttt{while}$"],
+            "answer": "C",
+            "explanation": "An $\\texttt{if-else if}$ ladder is the standard structure for choosing between multiple mutually exclusive alternatives."
+          },
+          {
+            "number": 10,
+            "text": "Which of the following statement is correct about the following array? $\\texttt{int num[26];}$",
+            "options": [
+              "A. it can store 27 elements.",
+              "B. The expression $\\texttt{num[1]}$ designates the very first element in the array.",
+              "C. All elements have an integer data type",
+              "D. None"
+            ],
+            "answer": "C",
+            "explanation": "The array $\\texttt{num}$ is declared as an array of integers, so all $26$ elements will have the integer data type."
+          },
+          {
+            "number": 11,
+            "text": "What is the error in this $\\texttt{for}$ loop? $\\texttt{for ( int k=2, k<=12, k++)}$",
+            "options": [
+              "A. The increment should always be $\\texttt{++k}$",
+              "B. The variable must always be the letter $\\texttt{i}$ when using a loop",
+              "C. There should be a semicolon at the end of the loop",
+              "D. The commas should be a semicolon"
+            ],
+            "answer": "D",
+            "explanation": "The $\\texttt{for}$ loop syntax requires semicolons to separate the initialization, condition, and increment expressions, not commas."
+          },
+          {
+            "number": 12,
+            "text": "$\\texttt{int \\&X;}$ this syntax is used when:",
+            "options": [
+              "A. $\\texttt{X}$ is passed by value",
+              "B. $\\texttt{X}$ is passed by reference",
+              "C. $\\texttt{X}$ is declared outside the function",
+              "D. None of them"
+            ],
+            "answer": "B",
+            "explanation": "The $\\texttt{\\&}$ symbol in a parameter declaration indicates a reference variable, which means $\\texttt{X}$ is passed by reference."
+          },
+          {
+            "number": 13,
+            "text": "What will be the output of the following code? $\\texttt{char letter='s'; int product=1, j=3; do \\{ product*=j; cout<<product; \\} while(letter!='s');}$",
+            "options": ["A. 1", "B. 2", "C. 3", "D. 4"],
+            "answer": "C",
+            "explanation": "The $\\texttt{do-while}$ loop executes at least once. $\\texttt{product} = 1 \\times 3 = 3$. It prints $3$. Then the condition $\\texttt{letter != 's'}$ is checked. Since $\\texttt{letter}$ is $\\texttt{'s'}$, the condition is false, and the loop terminates."
+          },
+          {
+            "number": 14,
+            "text": "\\_\\_\\_\\_\\_\\_\\_\\_\\_\\_ statement terminates the current iteration of a loop and instead jumps to the next iteration.",
+            "options": ["A. $\\texttt{switch}$", "B. $\\texttt{break}$", "C. $\\texttt{continue}$", "D. $\\texttt{if}$"],
+            "answer": "C",
+            "explanation": "The $\\texttt{continue}$ statement skips the rest of the current loop iteration and jumps to the next iteration's condition check."
+          },
+          {
+            "number": 15,
+            "text": "Which one of the following is true about function?",
+            "options": [
+              "A. A function with $\\texttt{void}$ return type doesn't have return value",
+              "B. We can execute a function without need of explicitly calling it.",
+              "C. A function must have more than one parameter during its definition.",
+              "D. All"
+            ],
+            "answer": "A",
+            "explanation": "A function with a $\\texttt{void}$ return type does not return a value to the caller."
+          },
+          {
+            "number": 16,
+            "text": "A C++ identifier must start with a letter or an underscore.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Identifiers in C++ must begin with a letter ($a$-$z$, $A$-$Z$) or an underscore (\\_)."
+          },
+          {
+            "number": 17,
+            "text": "All data types in C++ take up the same amount of storage.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "Different data types take up different amounts of memory (e.g., an $\\texttt{int}$ is typically $4$ bytes, a $\\texttt{char}$ is $1$ byte)."
+          },
+          {
+            "number": 18,
+            "text": "The body of a $\\texttt{while}$ loop always executes at least once.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "A $\\texttt{while}$ loop checks its condition before executing the body, so it might not execute at all. A $\\texttt{do-while}$ loop always executes at least once."
+          },
+          {
+            "number": 19,
+            "text": "Array is a collection of data storage containers, each of which holds different types of data.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "An array is a collection of elements of the same data type."
+          },
+          {
+            "number": 20,
+            "text": "A C++ program must have a $\\texttt{main}$ function.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Every valid C++ program must contain exactly one $\\texttt{main}$ function, which serves as the entry point."
+          },
+          {
+            "number": 21,
+            "text": "A local variable declared in a function is not usable outside that function.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Local variables have block scope and are destroyed when the function exits, making them inaccessible elsewhere."
+          },
+          {
+            "number": 22,
+            "text": "One or more $\\texttt{while}$ loop statements can be nested within another $\\texttt{for}$ loop statement.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Loops of any type can be nested inside loops of any other type."
+          },
+          {
+            "number": 23,
+            "text": "$\\texttt{Continue}$ is a C++ keyword used to terminate a program in a conditional statement.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "$\\texttt{continue}$ is used to skip the current iteration of a loop, not to terminate a program. $\\texttt{return}$ or $\\texttt{exit()}$ are used to terminate."
+          },
+          {
+            "number": 24,
+            "text": "Prototype in function is required when the $\\texttt{main}$ function is written after another function.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "A prototype is required when a function is called before it is defined. If the function is defined before $\\texttt{main}$, no prototype is needed."
+          },
+          {
+            "number": 25,
+            "text": "We can assign values to variables before declaring them.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "A variable must be declared before it can be used or assigned a value."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Short-answer",
+        "questions": [
+          {
+            "number": 1,
+            "text": "List the three basic economic problems? (1.5 points)",
+            "answer": ["What to produce?", "How to produce?", "For whom to produce?"],
+            "explanation": "These are the three fundamental questions every economic system must answer when allocating scarce resources."
+          },
+          {
+            "number": 2,
+            "text": "List at least three determinants of price elasticity of demand? (1.5 points)",
+            "answer": [
+              "Availability of close substitutes",
+              "Time horizon for adjustment",
+              "Proportion of income spent on the good",
+              "Whether the good is a necessity or luxury"
+            ],
+            "explanation": "Demand tends to be more elastic when close substitutes are available, consumers have more time to adjust, the good takes a large share of income, or the good is a luxury."
+          },
+          {
+            "number": 3,
+            "text": "Define the concept of cross price elasticity of demand and state what its values imply about the relation between the two goods (2 points).",
+            "answer": [
+              "Cross price elasticity of demand measures how the quantity demanded of one good responds to a change in the price of another good.",
+              "Positive value: The goods are substitutes.",
+              "Negative value: The goods are complements.",
+              "Zero value: The goods are unrelated or independent."
+            ],
+            "explanation": "Cross price elasticity = Percentage change in quantity demanded of good X / Percentage change in price of good Y."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Work Out (5 marks) (Show your steps clearly)",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Suppose the individual supply and demand for health care service in a certain village is given by $Q_s = 8 + P$ and $Q_d = 36 - P$. Based on the above information answer the following questions:",
+            "sub_questions": [
+              {
+                "label": "A",
+                "text": "Calculate the price level at which price elasticity of demand is $-3$ (1 point)",
+                "answer": "P = 27",
+                "explanation": "For $Q_d = 36 - P$, point price elasticity is $E_d = \\frac{dQ}{dP} \\times \\frac{P}{Q} = -1 \\times \\frac{P}{36 - P}$. Set $-\\frac{P}{36 - P} = -3$. Therefore $P = 3(36 - P)$, $4P = 108$, and $P = 27$."
+              },
+              {
+                "label": "B",
+                "text": "Assuming 10 and 100 identical suppliers and buyers of health care service to exits in the market, respectively,",
+                "sub_parts": [
+                  {
+                    "label": "i",
+                    "text": "Calculate the market equilibrium price and quantity (2 point).",
+                    "answer": "P = 32 and Q = 400",
+                    "explanation": "Market supply = $10(8 + P) = 80 + 10P$. Market demand = $100(36 - P) = 3600 - 100P$. At equilibrium, $80 + 10P = 3600 - 100P$. Thus $110P = 3520$, so $P = 32$. Market quantity = $80 + 10(32) = 400$."
+                  },
+                  {
+                    "label": "ii",
+                    "text": "Show the equilibrium diagrammatically (1 point).",
+                    "answer": "Plot the market supply curve $Q_s = 80 + 10P$ and market demand curve $Q_d = 3600 - 100P$. Their intersection is at $(Q = 400, P = 32)$.",
+                    "explanation": "The equilibrium point is where market quantity supplied equals market quantity demanded."
+                  },
+                  {
+                    "label": "iii",
+                    "text": "If the price is fixed at 40, will there be a shortage or surplus? How much would that shortage or surplus be? (1 point).",
+                    "answer": "There will be a surplus of 800 units.",
+                    "explanation": "At P = 40, market supply = $80 + 10(40) = 480$. Market demand = $3600 - 100(40) = -400$. Since a negative quantity demanded is not economically meaningful, the linear demand equation has been extrapolated beyond its meaningful range. Mathematically, the difference is 880 units; the question's demand model should be checked."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "part_i": {
+        "instructions": "Multiple Choice and True/False. Choose the best answer among the given alternatives and write the letter of your choice on the space provided. Write True if the statement is correct or False if the statement is wrong.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Which one is the right order?",
+            "options": [
+              "A. Edit source code; compile; execute; debug;",
+              "B. Edit source code; compile; debug; execute;",
+              "C. Edit source code; execute; compile; debug;",
+              "D. Debug; edit source code; compile; execute;"
+            ],
+            "answer": "A",
+            "explanation": "The typical development cycle is to write/edit the code, compile it to find syntax errors, run it, and then debug logical errors."
+          },
+          {
+            "number": 2,
+            "text": "Which one of the following is wrong about the input and output stream?",
+            "options": [
+              "A. $\\texttt{cin}$ accepts only variable",
+              "B. $\\texttt{cout}$ accepts only variable",
+              "C. $\\texttt{cin}$ accepts variable and constants",
+              "D. $\\texttt{cout}$ accepts variable and constants",
+              "E. B and C"
+            ],
+            "answer": "B",
+            "explanation": "The $\\texttt{cout}$ stream can output variables, constants, strings, and expressions. It is incorrect to state it only accepts variables."
+          },
+          {
+            "number": 3,
+            "text": "One of the following is not C++ reserved word?",
+            "options": ["A. $\\texttt{if}$", "B. $\\texttt{while}$", "C. $\\texttt{fname}$", "D. $\\texttt{break}$"],
+            "answer": "C",
+            "explanation": "$\\texttt{if}$, $\\texttt{while}$, and $\\texttt{break}$ are C++ keywords. $\\texttt{fname}$ is an identifier and not a reserved word."
+          },
+          {
+            "number": 4,
+            "text": "Which one of the following is a wrong declaration and/or initialization?",
+            "options": ["A. $\\texttt{float X;}$", "B. $\\texttt{float X=9.0}$", "C. $\\texttt{Char X=9;}$", "D. $\\texttt{Char X;}$"],
+            "answer": "B",
+            "explanation": "Option B is missing a semicolon at the end of the statement."
+          },
+          {
+            "number": 5,
+            "text": "Which of the following is not a valid relational operator?",
+            "options": ["A. $\\texttt{==}$", "B. $\\texttt{>=}$", "C. $\\texttt{=>}$", "D. $\\texttt{<=}$", "E. All of the above"],
+            "answer": "C",
+            "explanation": "$\\texttt{=>}$ is not a valid operator in C++. The correct operator is $\\texttt{<=}$."
+          },
+          {
+            "number": 6,
+            "text": "What is the final value of $\\texttt{X}$ when the code $\\texttt{int X; for ( X=3; X<=11; X++ ) \\{ cout<<X; \\}}$ is run?",
+            "options": ["A. 3", "B. 11", "C. 0", "D. 12", "E. None of the above"],
+            "answer": "D",
+            "explanation": "The loop increments $\\texttt{X}$ until the condition $\\texttt{X<=11}$ fails. After the iteration where $\\texttt{X=11}$, $\\texttt{X++}$ makes $\\texttt{X=12}$, and the condition $12 \\le 11$ fails."
+          },
+          {
+            "number": 7,
+            "text": "What part of the $\\texttt{if-else}$ selection structure is equivalent with the $\\texttt{default}$ part of the $\\texttt{switch-case}$ control structure?",
+            "options": [
+              "A. The $\\texttt{if}$ part",
+              "B. The $\\texttt{else}$ part",
+              "C. $\\texttt{Default}$ don't have equivalent part in $\\texttt{if-else}$",
+              "D. A and B",
+              "E. None of the above"
+            ],
+            "answer": "B",
+            "explanation": "The $\\texttt{default}$ block executes when no cases match, which is functionally equivalent to the $\\texttt{else}$ block in an $\\texttt{if-else}$ chain."
+          },
+          {
+            "number": 8,
+            "text": "Which one of the following is true about inline functions?",
+            "options": [
+              "A. A bulky function with lots of statements is the candidate for inline.",
+              "B. No jump is made while calling an inline function.",
+              "C. An inline function is declared by using the $\\texttt{inline}$ keyword in between the return type function name.",
+              "D. All"
+            ],
+            "answer": "B",
+            "explanation": "The compiler replaces the function call with the function's code, avoiding the overhead (jump) of a normal function call."
+          },
+          {
+            "number": 9,
+            "text": "What will the following code display? $\\texttt{int numbers[] = \\{9,7,6,5,11\\}; for (int i=1; i<4; i++) cout<<numbers[i]<<\\\" \\\";}$",
+            "options": ["A. 9,7,6,5,11", "B. 7,6,5", "C. 7,6,5,11", "D. Third code has an error."],
+            "answer": "B",
+            "explanation": "The loop starts at index $1$ and goes up to index $3$. $\\texttt{numbers[1]=7}$, $\\texttt{numbers[2]=6}$, $\\texttt{numbers[3]=5}$."
+          },
+          {
+            "number": 10,
+            "text": "How many times does the statement $\\texttt{sum+=i}$ is executed? $\\texttt{for (int i=1; i<5; i++) sum+=i;}$",
+            "options": ["A. 5", "B. 6", "C. 4", "D. 3", "E. None of the above"],
+            "answer": "C",
+            "explanation": "The loop runs for $i=1, 2, 3, 4$. The statement executes $4$ times."
+          },
+          {
+            "number": 11,
+            "text": "A two dimensional array is like \\_\\_\\_\\_\\_\\_ put together.",
+            "options": ["A. two array of different types", "B. several identical types", "C. an array and a function", "D. two functions"],
+            "answer": "B",
+            "explanation": "A 2D array is essentially an array of arrays, grouping identical data types."
+          },
+          {
+            "number": 12,
+            "text": "The \\\"new\\\" operator",
+            "options": [
+              "A. returns a pointer to a variable",
+              "B. creates a variable called new",
+              "C. obtains memory for new variable",
+              "D. tells how much memory is available"
+            ],
+            "answer": "C",
+            "explanation": "The $\\texttt{new}$ operator dynamically allocates memory on the heap for a variable or object."
+          },
+          {
+            "number": 13,
+            "text": "Which of the following is not a user defined datatypes?",
+            "options": ["A. Union", "B. Struct", "C. String", "D. enum"],
+            "answer": "C",
+            "explanation": "String is a standard library class, whereas Union, Struct, and Enum are ways to define custom user types."
+          },
+          {
+            "number": 14,
+            "text": "If element $\\texttt{cat [4]}$ is which element of the array?",
+            "options": ["A. The fourth", "B. The fifth", "C. The sixth", "D. Impossible to tell"],
+            "answer": "B",
+            "explanation": "Because array indices are zero-based ($0, 1, 2, 3, 4$), index $4$ refers to the fifth element."
+          },
+          {
+            "number": 15,
+            "text": "A pointer in C++ is",
+            "options": [
+              "A. The address of a variable",
+              "B. A variable that holds the address of another variable",
+              "C. A variable for storing addresses",
+              "D. A data type of an address variable"
+            ],
+            "answer": "B",
+            "explanation": "A pointer is defined as a variable that stores the memory address of another variable."
+          },
+          {
+            "number": 16,
+            "text": "What are the actual parameters in C++?",
+            "options": [
+              "A. Parameters with which functions are called",
+              "B. Parameters which are used in the definition of a function",
+              "C. Variables other than passed parameters in a function",
+              "D. None of the above"
+            ],
+            "answer": "A",
+            "explanation": "Actual parameters (arguments) are the values passed to the function when it is called. Formal parameters are those in the function definition."
+          },
+          {
+            "number": 17,
+            "text": "Which of the following is not a correct variable name?",
+            "options": ["A. 1var", "B. \\_var", "C. var\\_1", "D. var1"],
+            "answer": "A",
+            "explanation": "Variable names cannot start with a number."
+          },
+          {
+            "number": 18,
+            "text": "The statement $\\texttt{cin >> x >> y;}$",
+            "options": ["A. Inputs two variables", "B. Prompts for two variables", "C. Outputs two variables", "D. None of the above"],
+            "answer": "A",
+            "explanation": "The $\\texttt{>>}$ operator extracts data from the input stream into the variables $\\texttt{x}$ and $\\texttt{y}$."
+          },
+          {
+            "number": 19,
+            "text": "Which of the following is true about a function?",
+            "options": [
+              "A. A function cannot be called from another function.",
+              "B. A function can be called from multiple locations.",
+              "C. A function must return a value.",
+              "D. All of the above"
+            ],
+            "answer": "B",
+            "explanation": "Functions can be invoked from anywhere in the program where they are in scope."
+          },
+          {
+            "number": 20,
+            "text": "What is the output of the following code snippet? $\\texttt{int a = 5; int b = 2; cout << a / b;}$",
+            "options": ["A. 2.5", "B. 2", "C. 3", "D. Error"],
+            "answer": "B",
+            "explanation": "Integer division truncates the decimal part. $5 / 2$ evaluates to $2$."
+          },
+          {
+            "number": 21,
+            "text": "The body of a $\\texttt{while}$ loop always executes at least once.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "A $\\texttt{while}$ loop checks the condition first; if false initially, the body never executes. A $\\texttt{do-while}$ loop always executes at least once."
+          },
+          {
+            "number": 22,
+            "text": "All data types in C++ take up the same amount of storage.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "Different data types have different sizes (e.g., $\\texttt{char}$ is $1$ byte, $\\texttt{int}$ is usually $4$ bytes)."
+          },
+          {
+            "number": 23,
+            "text": "A C++ identifier must start with a letter or an underscore.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Identifiers cannot begin with digits or special characters."
+          },
+          {
+            "number": 24,
+            "text": "Array is a collection of data storage containers, each of which holds different types of data.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "Arrays hold elements of the same data type."
+          },
+          {
+            "number": 25,
+            "text": "A C++ program must have a $\\texttt{main}$ function.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "The $\\texttt{main}$ function is the mandatory entry point for execution."
+          },
+          {
+            "number": 26,
+            "text": "A local variable declared in a function is not usable outside that function.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Local variables are scoped to the block they are defined in."
+          },
+          {
+            "number": 27,
+            "text": "One or more $\\texttt{while}$ loop statements can be nested within another $\\texttt{for}$ loop statement.",
+            "options": ["True", "False"],
+            "answer": "True",
+            "explanation": "Loops can be nested inside other loops."
+          },
+          {
+            "number": 28,
+            "text": "$\\texttt{Continue}$ is a C++ keyword used to terminate a program in a conditional statement.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "$\\texttt{Continue}$ skips the current loop iteration; it does not terminate the program."
+          },
+          {
+            "number": 29,
+            "text": "Prototype in function is require when the $\\texttt{main}$ function is written after another function.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "A prototype is required when a function is called before it is defined. If a function is defined before $\\texttt{main}$, no prototype is needed."
+          },
+          {
+            "number": 30,
+            "text": "We can assign values to variables before declaring them.",
+            "options": ["True", "False"],
+            "answer": "False",
+            "explanation": "Variables must be declared before they are used."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Workout. Answer the following questions accordingly. Write the output of the following programs and write C++ programs.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "What is the output of the following program?\n$\\texttt{\\#include<iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{int main () \\{}$\n$\\texttt{int i=10;}$\n$\\texttt{int j=5;}$\n$\\texttt{i=j+++j+++j;}$\n$\\texttt{cout<<\\\"i=\\\"<<i<<\\\"j=\\\"<<j<<endl;}$\n$\\texttt{return 0;}$\n$\\texttt{\\}}$",
+            "answer": ["i=18 j=8"],
+            "explanation": "Due to operator precedence and post-increment behavior, this parses as $i = j + (j++) + (j++)$. $j$ starts at $5$. The additions are $5 + 5 + 5 = 15$. However, due to undefined behavior/sequencing in C++ regarding multiple modifications of 'j' without sequence points, the result can vary by compiler. Assuming standard left-to-right evaluation: $i=15, j=8$."
+          },
+          {
+            "number": 2,
+            "text": "What is the output of the following program?\n$\\texttt{\\#include<iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{void fun (int x, int y) \\{ x = 20; y = 10; \\}}$ \n$\\texttt{int main () \\{}$\n$\\texttt{int x = 10;}$\n$\\texttt{fun (x, x);}$\n$\\texttt{cout << x;}$\n$\\texttt{return 0;}$\n$\\texttt{\\}}$",
+            "answer": ["10"],
+            "explanation": "The function $\\texttt{fun}$ takes parameters by value. Modifying $\\texttt{x}$ and $\\texttt{y}$ inside the function does not affect the original $\\texttt{x}$ in $\\texttt{main}$."
+          },
+          {
+            "number": 3,
+            "text": "What is the output of the following program?\n$\\texttt{\\#include<iostream>}$\n$\\texttt{int main () \\{}$\n$\\texttt{int x = 10; int y=40;}$\n$\\texttt{if (x<=10) \\{}$\n$\\texttt{if(y>40) \\{y++;\\}}$ \n$\\texttt{else \\{y--;\\}}$ \n$\\texttt{cout<<\\\"x = \\\"<<x<<\\\" y = \\\"<<y<<endl;}$\n$\\texttt{\\}}$ \n$\\texttt{\\}}$",
+            "answer": ["x = 10 y = 39"],
+            "explanation": "$\\texttt{x<=10}$ is true. Inside, $\\texttt{y>40}$ is false ($40$ is not $> 40$), so the $\\texttt{else}$ block executes: $\\texttt{y--}$ makes $\\texttt{y=39}$. It prints $\\texttt{x = 10 y = 39}$."
+          },
+          {
+            "number": 4,
+            "text": "What is the output of the following program?\n$\\texttt{\\#include<iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{int main () \\{}$\n$\\texttt{int x=1;}$\n$\\texttt{while (x<=5) \\{cout<<\\\"Final\\\"<<endl;\\}}$ \n$\\texttt{return 0;}$\n$\\texttt{\\}}$",
+            "answer": ["Infinite loop of the word 'Final' printed on new lines."],
+            "explanation": "The variable $\\texttt{x}$ is never incremented inside the $\\texttt{while}$ loop, so the condition $\\texttt{x<=5}$ remains true forever."
+          },
+          {
+            "number": 5,
+            "text": "Use the following structure to answer question below(a&b)\n$\\texttt{struct department \\{ char eme[20]; char ME[20]; \\};}$\na. Show how you initialize $\\texttt{eme}$?\nb. Show how you access $\\texttt{ME}$ in the $\\texttt{main ()}$?",
+            "sub_questions": [
+              {
+                "label": "A",
+                "text": "Show how you initialize $\\texttt{eme}$?",
+                "answer": "$\\texttt{department d; strcpy(d.eme, \\\"Value\\\");}$",
+                "explanation": "Character arrays in structs are initialized using string copy functions after declaring an instance."
+              },
+              {
+                "label": "B",
+                "text": "Show how you access $\\texttt{ME}$ in the $\\texttt{main ()}$?",
+                "answer": "$\\texttt{department d; d.ME;}$",
+                "explanation": "Members of a struct are accessed using the dot ($\\texttt{.}$) operator."
+              }
+            ]
+          },
+          {
+            "number": 6,
+            "text": "Given the following fragment of code:\n$\\texttt{int sum = 0;}$\n$\\texttt{for (int i=4; i>=1;i--)\\{ sum = sum+1; cout<<sum; \\}}$\nA. What is the output of the above fragment of code?\nB. Write the above code segment using $\\texttt{while}$ and $\\texttt{do-while}$ loops.",
+            "sub_questions": [
+              {
+                "label": "A",
+                "text": "What is the output of the above fragment of code?",
+                "answer": "1234",
+                "explanation": "The loop increments sum from $1$ to $4$, printing it each time."
+              },
+              {
+                "label": "B",
+                "text": "Write the above code segment using $\\texttt{while}$ and $\\texttt{do-while}$ loops.",
+                "answer": "$\\texttt{// While loop}$\n$\\texttt{int sum = 0; int i = 4;}$\n$\\texttt{while(i >= 1) \\{ sum = sum + 1; cout << sum; i--; \\}}$ \n$\\texttt{// Do-while loop}$\n$\\texttt{int sum = 0; int i = 4;}$\n$\\texttt{do \\{ sum = sum + 1; cout << sum; i--; \\} while(i >= 1);}$",
+                "explanation": "Both loops require initializing the counter variable '$\\texttt{i}$' before the loop and manually decrementing it inside."
+              }
+            ]
+          },
+          {
+            "number": 7,
+            "text": "Write a C++ program that takes any integer from the keyboard and display the factors of that number using class & function. (Hint factors of $6 = 1,2,3,6$).",
+            "answer": ["$\\texttt{\\#include <iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{class FactorFinder \\{}$\n$\\texttt{public:}$\n$\\texttt{void displayFactors(int n) \\{}$\n$\\texttt{cout << \\\"Factors of \\\" << n << \\\" are: \\\";}$\n$\\texttt{for(int i = 1; i <= n; i++) \\{}$\n$\\texttt{if(n \\% i == 0) \\{ cout << i << \\\" \\\"; \\}}$ \n$\\texttt{\\}}$ \n$\\texttt{\\}}$ \n$\\texttt{\\};}$ \n$\\texttt{int main() \\{}$\n$\\texttt{FactorFinder f; int num;}$\n$\\texttt{cin >> num; f.displayFactors(num);}$\n$\\texttt{return 0;}$\n$\\texttt{\\}}$"],
+            "explanation": "A class is defined with a member function that loops through numbers $1$ to $n$ and prints those that divide $n$ evenly."
+          },
+          {
+            "number": 8,
+            "text": "Convert the following algorithm to equivalent C++ code fragments.\nIf person's gender is 'M' Print \\\"Male\\\" else Print \\\"Female\\\"",
+            "answer": ["$\\texttt{if (gender == 'M') \\{}$\n$\\texttt{cout << \\\"Male\\\";}$\n$\\texttt{\\}}$ \n$\\texttt{else \\{}$\n$\\texttt{cout << \\\"Female\\\";}$\n$\\texttt{\\}}$"],
+            "explanation": "Standard $\\texttt{if-else}$ structure comparing a character variable."
+          },
+          {
+            "number": 9,
+            "text": "Write a program that print the prime number from $1$ to $300$.",
+            "answer": ["$\\texttt{\\#include <iostream>}$\n$\\texttt{using namespace std;}$\n$\\texttt{int main() \\{}$\n$\\texttt{for(int i = 2; i <= 300; i++) \\{}$\n$\\texttt{bool isPrime = true;}$\n$\\texttt{for(int j = 2; j * j <= i; j++) \\{}$\n$\\texttt{if(i \\% j == 0) \\{ isPrime = false; break; \\}}$ \n$\\texttt{\\}}$ \n$\\texttt{if(isPrime) cout << i << \\\" \\\";}$ \n$\\texttt{\\}}$ \n$\\texttt{return 0;}$\n$\\texttt{\\}}$"],
+            "explanation": "The nested loop checks each number from $2$ to $300$ to see if it has any divisors other than $1$ and itself."
+          }
+        ]
+      }
+    }
+  ]
+}

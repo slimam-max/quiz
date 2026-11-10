@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.disclaimer{
+   position:fixed;
+   top:0;
+   left: 40%;
+
+}
+.disclaimer_content{
+        background-color:#c0c8f0;
+    width: 400px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #c0c8f0;
+}
+.disclaimer_content p {
+    font-size: 22px;
+    line-height: 2;
+
+}
+.disclaimer_content button{
+    padding: 14px;
+    border:none;
+    font-size: 17px;
+    margin-left:120px;
+    cursor: pointer;
+}
+.conoff{
+    display: none;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 70px;
+}
+header{
+    background-color: #bdc8d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.container header h1{
+    text-shadow: 0 7px 12px black;
+    padding: 10px;
+}
+.container header nav{
+    position: absolute;
+    right:20%;
+}
+.container header nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 0 4px 10px black;
+    margin-right: 20px;
+}

@@ -1,0 +1,68 @@
+{
+  "exam_paper": {
+    "header": {
+      "institution": "ADDIS ABABA SCIENCE AND TECHNOLOGY UNIVERSITY (AASTU)",
+      "department": "COLLEGE OF NATURAL AND SOCIAL SCIENCES (MATHEMATICS DEPARTMENT)",
+      "course": "APPLIED MATHEMATICS II FOR PRE ENGINEERING STUDENTS",
+      "date": "May 12/2021",
+      "maximum_marks": "15%",
+      "duration": "60 Minutes",
+      "instructor_use_only": {
+        "Part-I(6%)": "",
+        "Part-II(9%)": "",
+        "Total-15(%)": ""
+      },
+      "student_info": {
+        "Name": "_______________________",
+        "IDNo": "_______________________"
+      }
+    },
+    "questions": [
+      {
+        "part": "Part-I Short Answer (6%)",
+        "instructions": "For each of the following problems, write the most simplified answers. (1 Point for each blank)",
+        "items": [
+          {
+            "number": 1,
+            "text": "Let $f(x, y) = \\frac{x}{y}$. Then a) $\\frac{\\partial}{\\partial x}(x, y) = \\text{\\underline{\\hspace{2cm}}}$   b) $\\frac{\\partial}{\\partial y}(x, y) = \\text{\\underline{\\hspace{2cm}}}$"
+          },
+          {
+            "number": 2,
+            "text": "The directional derivative of $f(x, y) = x^2 + y^2$ at the point $(2, 1)$ in the direction of the unit vector $\\left(\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}\\right)$ is $\\text{\\underline{\\hspace{2cm}}}$."
+          },
+          {
+            "number": 3,
+            "text": "$\\int_{1}^{2} \\int_{0}^{1} xy \\, dy \\, dx = \\text{\\underline{\\hspace{2cm}}}$"
+          },
+          {
+            "number": 4,
+            "text": "The area of the region bounded by the curves $y = x^2$ and $x = y^2$ is $\\text{\\underline{\\hspace{2cm}}}$."
+          },
+          {
+            "number": 5,
+            "text": "The cylindrical coordinate of the point $(1, 1, 1)$ is $\\text{\\underline{\\hspace{2cm}}}$."
+          }
+        ]
+      },
+      {
+        "part": "Part-II Work Out (9%)",
+        "instructions": "Show all the necessary steps in the space provided for each of the following questions. (3 pts each)",
+        "items": [
+          {
+            "number": 1,
+            "text": "Evaluate the following limit\n$$\\lim_{(x,y) \\to (0,0)} \\frac{x^2 y^2}{x^3 + y^3}$$"
+          },
+          {
+            "number": 2,
+            "text": "Find and classify all the critical points of the function\n$$f(x,y) = x^2 + y^2 + xy + x + y + 1$$"
+          },
+          {
+            "number": 3,
+            "text": "Evaluate $\\int_{0}^{\\pi} \\int_{y}^{\\pi} \\sin(x^2) \\, dx \\, dy$. (Hint: change the order of integration)"
+          }
+        ]
+      }
+    ],
+    "footer": "By: Mulugeta D."
+  }
+}

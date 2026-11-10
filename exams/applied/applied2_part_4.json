@@ -1,0 +1,110 @@
+{
+  "exam_paper_1": {
+    "header": {
+      "institution": "Addis Ababa Science and Technology University",
+      "department": "College of Natural and Applied Science",
+      "course": "Applied Mathematics II Test-1",
+      "weight": "15%",
+      "time_allowed": "50 minutes",
+      "student_info": {
+        "Name": "_______________________",
+        "IDNo": "_______________________",
+        "Section": "_______________________"
+      }
+    },
+    "part_1": {
+      "title": "Part-I fill the blank space with the simplest answer (each 1.5pt)",
+      "questions": [
+        {
+          "number": 1,
+          "text": "Find the limit of the function $\\lim_{(x,y) \\to (0,0)} \\frac{x^2 - y^6}{xy^3}$"
+        },
+        {
+          "number": 2,
+          "text": "Find the directional derivative for the function $f(x,y,z) = x^2y^3 - 4xz$ in the direction of $V = (-1, 2, 0)$"
+        },
+        {
+          "number": 3,
+          "text": "What is the partial derivative of the function $\\ln z = (x^3 + 2)\\ln y$"
+        },
+        {
+          "number": 4,
+          "text": "Find the equation of tangent plane to the surface $f(x,y,z) = 2x^2 - 3xy + 8y^2 + 2x - 4y + 4$ at point $(2,-1)$"
+        },
+        {
+          "number": 5,
+          "text": "Evaluate the integral $\\iint (3x^2 + y^2) dA$ where $D = \\{(x,y) / -2 \\le y \\le 3, y^2 - 3 \\le x \\le y + 3\\}$"
+        },
+        {
+          "number": 6,
+          "text": "Find the volume of solid region that lies under the parabola $z = 1 - x^2 - y^2$ and above the unit region on the $xy$ plane."
+        }
+      ]
+    },
+    "part_2": {
+      "title": "Part-II. Workout (Try to write the necessary steps clearly) (each 3 pt)",
+      "questions": [
+        {
+          "number": 7,
+          "text": "By using second derivative test find the local extrema of the function $g(x,y) = \\frac{1}{3}x^3 + y^2 + 2xy - 6x - 3y + 4$"
+        },
+        {
+          "number": 8,
+          "text": "Find the maximum and minimum of $f(x,y) = 5x - 3y$ subject to the constraint $x^2 + y^2 = 136$"
+        }
+      ]
+    }
+  },
+  "exam_paper_2": {
+    "header": {
+      "institution_amharic": "አዲስ አበባ ሳይንስና ቴክኖሎጂ ዩኒቨርሲቲ",
+      "institution_english": "Addis Ababa Science and Technology University",
+      "department": "College of Natural and Social Sciences\nDepartment of Mathematics",
+      "course": "Applied Mathematics IIB Test I",
+      "maximum_marks": "15%",
+      "time_allowed": "60'",
+      "student_info": {
+        "Id_No": "_______________________",
+        "Section": "_______________________"
+      }
+    },
+    "part_1": {
+      "title": "Write the most simplified answer of the following (8%)",
+      "questions": [
+        {
+          "number": 1,
+          "text": "The domain of $f(x,y) = \\sqrt{\\ln(x^2 - xy + 5)}$ is"
+        },
+        {
+          "number": 2,
+          "text": "The value of m for which $f(x,y) = \\begin{cases} \\frac{2^x \\sin(2y) - 2\\sin y \\cos y}{xy}, & xy \\neq 0 \\\\ 2m^2, & xy = 0 \\end{cases}$ is continuous at $(0,0)$ is"
+        },
+        {
+          "number": 3,
+          "text": "Let $f(x,y) = xe^y$. Then\na) The rate of change of $f$ at $P(2, 0)$ in the direction of the vector from P to $Q(\\frac{1}{2}, 2)$ is\nb) In what direction does $f$ has the maximum rate of change?\nc) This maximum rate of change of $f$ is\nd) In what direction does $f$ has the minimum rate of change?\ne) This minimum rate of change of $f$ is"
+        },
+        {
+          "number": 4,
+          "text": "$\\int_{0}^{2} \\int_{0}^{3} \\sin \\pi x^3 dx dy =$"
+        }
+      ]
+    },
+    "part_2": {
+      "title": "II workout the following clearly and neatly with all the necessary steps.(7%)",
+      "questions": [
+        {
+          "number": 1,
+          "text": "Use the method of Lagrange's multiplier to find the extreme values of $f(x,y) = xy$ subject to the constraint function $g(x,y) = 4x^2 + y^2 = 8$."
+        },
+        {
+          "number": 2,
+          "text": "Find the area of the region that lies in the xy-plane bounded by $y = x^2$ and $y = 8 - x^2$."
+        },
+        {
+          "number": 3,
+          "text": "Evaluate $\\iiint_D (x^2 + y^2) dV$ where D is the solid region that lies between the spheres $x^2 + y^2 + z^2 = 1$ and $x^2 + y^2 + z^2 = 9$."
+        }
+      ]
+    }
+  }
+}

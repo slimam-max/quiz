@@ -1,0 +1,44 @@
+{
+  "exam_paper": {
+    "header": {
+      "institution": "COLLEGE OF NATURAL AND SOCIAL SCIENCES",
+      "department": "DEPARTMENT OF MATHEMATICS",
+      "course": "APPLIED MATHEMATICS IIB (Math2007)",
+      "assignment": "ASSIGNMENT – II (10%)",
+      "submission_deadline": "April 25/2022"
+    },
+    "instructions": "Show all the necessary steps to answer the following questions.",
+    "questions": [
+      {
+        "question_number": 1,
+        "text": "Given a series $\\sum_{n=3}^{\\infty} \\frac{3}{n^2-3n+2}$:",
+        "parts": [
+          {
+            "label": "a)",
+            "text": "does it satisfy the criteria for an integral test? Justify your answer."
+          },
+          {
+            "label": "b)",
+            "text": "if your answer in (a) is yes, use integral test to determine its convergence."
+          }
+        ]
+      },
+      {
+        "question_number": 2,
+        "text": "Use the generalized ratio test to show that the radius of convergence of the power series $\\sum_{n=0}^{\\infty} a_n(x-c)^n$ is given by $R = \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right|$ where $a_n$ is the coefficient of the power series."
+      },
+      {
+        "question_number": 3,
+        "text": "If $f(x)$ is a non zero function and differentiable infinitely many times, then show by induction that the $n^{th}$ derivative of the power series representation of $f(x)$ is equal with its corresponding taylor series representation."
+      },
+      {
+        "question_number": 4,
+        "text": "Use application of power series and $\\int_{0}^{\\infty} t^n e^{-t} dt = n!$ for a positive integer $n$ to find the formula of $\\int_{0}^{\\infty} e^{-t} \\sin(tx) dt$ for $|x| < 1$."
+      },
+      {
+        "question_number": 5,
+        "text": "Find the fourier cosine expansion of $f(x) = \\begin{cases} x(\\pi - x) & \\text{for } 0 < x < \\pi \\\\ -x(\\pi + x) & \\text{for } -\\pi < x < 0 \\end{cases}$ with period $p = \\frac{\\pi}{2}$ and prove that $\\sum_{n=1}^{\\infty} \\frac{1}{n^2} = \\frac{\\pi^2}{6}$."
+      }
+    ]
+  }
+}

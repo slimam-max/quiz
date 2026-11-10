@@ -1,0 +1,398 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F5F8FC;
+    color: #1E293B;
+}
+
+header {
+    background-color: #8BBBE8;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr auto;
+}
+
+.container header {
+    background-color: #8bbbe8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 5px 14px #cae0f5;
+}
+
+header h1 {
+    padding: 14px;
+    text-shadow: 0 3px 3px black;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    margin-right: 350px;
+}
+
+header nav a {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#fa-bars {
+    position: absolute;
+    right: 30px;
+    top: 29px;
+    font-size: 19px;
+    margin-right: 50px;
+    display: none;
+}
+
+main {
+    background-color: #F5F8FC;
+    min-height: 100vh;
+}
+
+main p {
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-right: 20px;
+}
+
+.hero {
+    margin-top: 20px;
+}
+
+.hero h2 {
+    margin-left: 15px;
+    text-shadow: 0 2px 2px black;
+}
+
+.hero p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.hero h3 {
+    margin-top: 7px;
+    margin-left: 15px;
+}
+
+
+
+.exam_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: 310px;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cards {
+    background-color: #FFFFFF;
+    border: 2px solid #cae0f5;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.cards .cards_in {
+    border: 2px solid #cae0f5;
+    border-radius: 13px;
+    width: 280px;
+    margin: 7px;
+    height: 290px;
+    background-color: #d5e5f3;
+    padding-bottom: 0;
+}
+
+.subject-icon {
+    color: #2878C7;
+    font-size: 35px;
+}
+
+.cards .cards_in p {
+    margin-left: 2px;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.cards .cards_in .header {
+    margin-left: 70px;
+    font-size: 19px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.cards .cards_in button {
+    margin-bottom: 0;
+    margin-left: 80px;
+    padding: 16px;
+    margin-top: 13px;
+    border: none;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.card-btn,
+.hero-btn {
+    display: inline-block;
+    background-color: #2878C7;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* FEATURES */
+
+.feature {
+    margin-top: 20px;
+}
+
+.feature h3 {
+    margin-left: 15px;
+    font-weight: bolder;
+}
+
+.feature p {
+    font-size: 22px;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+
+
+.motivation {
+    background: linear-gradient(135deg, #E8F2FC, #D5E9FA);
+    text-align: center;
+    padding: 55px 25px;
+    margin: 60px 0 0;
+    border-radius: 15px;
+}
+
+.motivation h2 {
+    color: #17324D;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.motivation p {
+    color: #52677D;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+
+.motivation h3 {
+    color: #2878C7;
+    font-size: 22px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+}
+#fa-bars{
+    cursor:pointer;
+}
+
+
+footer {
+    background-color: #17324D;
+    color: #FFFFFF;
+    margin-top: 60px;
+    padding: 45px 20px 20px;
+}
+
+.footer {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 30px;
+    color: #8BBBE8;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #D5E1EC;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: #8BBBE8;
+}
+
+.footer p:last-child {
+    color: #8BBBE8;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* TABLET */
+
+@media (max-width: 1032px) {
+
+    header nav {
+        margin-right: 100px;
+    }
+
+    .exam_cards {
+        grid-template-columns: repeat(3, 290px);
+    }
+
+    .cards .cards_in {
+        height: 290px;
+    }
+}
+
+/* SMALL TABLET */
+
+@media (max-width: 900px) {
+
+    .exam_cards {
+        grid-template-columns: repeat(2, 290px);
+        grid-auto-rows: 330px;
+    }
+
+    .cards .cards_in {
+        height: 310px;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+   header nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #EAF3FC;
+    padding: 10px 20px;
+    gap: 0;
+
+    border-top: 1px solid #D0E3F5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+}
+    header nav.active{
+        display:flex;
+    }
+
+header nav a {
+    color: #183653;
+    text-decoration: none;
+    padding: 14px 10px;
+    border-bottom: 1px solid #D5E8FA;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #D5E8FA;
+}
+
+    #fa-bars {
+        position: absolute;
+        display: flex;
+        right: 10px;
+        margin-right: 30px;
+    }
+
+    header h1 {
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+
+    .exam_cards {
+        grid-template-columns: minmax(0, 290px);
+        grid-auto-rows: 350px;
+    }
+
+    .cards .cards_in {
+        height: 330px;
+    }
+
+    .motivation {
+        padding: 35px 18px;
+        margin-top: 35px;
+    }
+
+    .motivation h2 {
+        font-size: 23px;
+    }
+
+    .motivation p {
+        font-size: 14px;
+    }
+
+    .motivation h3 {
+        font-size: 19px;
+    }
+
+    footer {
+        padding: 35px 15px 20px;
+    }
+
+    .footer h3 {
+        font-size: 25px;
+    }
+
+    .footer a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+}
+
+/* VERY SMALL MOBILE */
+
+@media (max-width: 320px) {
+
+    .exam_cards {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 0 10px;
+    }
+
+    .cards .cards_in {
+        width: auto;
+    }
+
+}
