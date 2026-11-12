@@ -1,0 +1,24 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "description": "quiz website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slimam-max/quiz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/slimam-max/quiz/issues"
+  },
+  "homepage": "https://github.com/slimam-max/quiz#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

@@ -1,0 +1,1464 @@
+{
+  "exam_info": {
+    "subject": "History of Ethiopia and the Horn"
+  },
+  "question_papers": [
+    {
+      "part_i": {
+        "instructions": "Write \"True\" if the statement is correct and \"False\" if it is wrong (1 pt each)",
+        "type": "true_false",
+        "questions": [
+          {
+            "number": 1,
+            "text": "States were mainly formed through territorial expansion campaigns and wars of conquest.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "States in the region emerged through complex socio-economic developments, internal stratification, agricultural surplus, and trade rather than solely through territorial expansion and wars of conquest."
+          },
+          {
+            "number": 2,
+            "text": "The Confession faith of Emperor Geladewos was an account about Ethiopia's conversion to Catholicism.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Emperor Gelawdewos's Confession of Faith was written to defend the Monophysite theology of the Ethiopian Orthodox Church against Catholicism."
+          },
+          {
+            "number": 3,
+            "text": "The founder of the Makhzumite Sultanate, in the late 9th century A.D, is Makhzumi Khalid ibn al-Walid, who claimed decent from Meca.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "The Makhzumite Sultanate of Shewa was established around 896 A.D. by Makhzumi Khalid ibn al-Walid."
+          },
+          {
+            "number": 4,
+            "text": "The year 1270 marked the rise of Yekuno-Amlak to the throne and the restoration of \"Solomonic\" rule in Ethiopia.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Yekuno-Amlak overthrew the last Zagwe king in 1270, establishing what is traditionally termed the 'Solomonic' dynasty."
+          },
+          {
+            "number": 5,
+            "text": "Islam was introduced into the central and southwestern regions of Ethiopia Primarily through the activities of Muslim traders and religious emissaries.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Islam spread peacefully into the interior regions largely through trade networks and Islamic preachers."
+          },
+          {
+            "number": 6,
+            "text": "According to Oromo Gadaa system, political power was peacefully transferred from one Gadaa class to another every eight year.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "The Gadaa system is characterized by a democratic, periodic transfer of power every eight years."
+          },
+          {
+            "number": 7,
+            "text": "The most authentic pieces of evidence on Ethio-Europe links were the maps of Egyptus Novelo (c. 1454) and Fra Mauro's Mappomondo (1460).",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "These cartographic works serve as crucial historical evidence of early modern contacts between Ethiopia and Europe."
+          },
+          {
+            "number": 8,
+            "text": "Ras Michael Sihul was one of the glorious rulers of Gondarine period who introduced land tenure and taxation reform.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Ras Michael Sehul was a powerful kingmaker during the Zemene Mesafint rather than a traditional Gondarine reformer king, though he dominated the court."
+          },
+          {
+            "number": 9,
+            "text": "The birth of the militant state of Adal was the immediate result of the internal division within the Walasma ruling house of Ifat.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Internal divisions and shifts in power within the Walasma dynasty led to the relocation and formation of the Adal sultanate."
+          },
+          {
+            "number": 10,
+            "text": "In 1557, several Jesuit missionaries along with their bishop, Andreas de Oviedo, came to Ethiopia to fight The army of Imam Ahmed Ibn Ibrahim Al Ghazi.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Jesuit missionaries arrived in 1557 to propagate Catholicism, not to fight Imam Ahmed, whose forces had already been defeated years earlier in 1543."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Match those items listed under \"column B\" with their corresponding items \"column A\"",
+        "type": "matching",
+        "column_a": [
+          {
+            "number": 11,
+            "text": "Kefa",
+            "answer": "E",
+            "explanation": "Kefa was a medieval Omotic kingdom with the royal title 'Tato'."
+          },
+          {
+            "number": 12,
+            "text": "Gult right",
+            "answer": "M",
+            "explanation": "Gult right refers to the right to collect tribute from Rist owners."
+          },
+          {
+            "number": 13,
+            "text": "Mukarib",
+            "answer": "J",
+            "explanation": "Mukarib is a politico-religious title used by Damat and South Arabian rulers."
+          },
+          {
+            "number": 14,
+            "text": "Bahre-Negash",
+            "answer": "H",
+            "explanation": "Bahre-Negash was the title given to governors of the northern maritime provinces."
+          },
+          {
+            "number": 15,
+            "text": "Gadaa institution",
+            "answer": "D",
+            "explanation": "The Gadaa institution is an integrated system encompassing politics, law, and social relations."
+          },
+          {
+            "number": 16,
+            "text": "Yem",
+            "answer": "K",
+            "explanation": "Yem was an Omotic kingdom ruled by an Amno and assisted by council figures."
+          },
+          {
+            "number": 17,
+            "text": "Rist",
+            "answer": "A",
+            "explanation": "Rist is a permanent birthright land tenure system held by lineage members."
+          },
+          {
+            "number": 18,
+            "text": "Qallu institution",
+            "answer": "L",
+            "explanation": "The Qallu institution provided cohesive spiritual leadership for the Oromo people."
+          },
+          {
+            "number": 19,
+            "text": "Council of elders & clan chiefs",
+            "answer": "B",
+            "explanation": "Council of elders traditionally governed pastoralist groups like the Somali and Afar."
+          },
+          {
+            "number": 20,
+            "text": "Riste-Gult",
+            "answer": "G",
+            "explanation": "Riste-Gult is a hereditary right where state-granted tribute rights became hereditary over lineages."
+          }
+        ],
+        "column_b": {
+          "A": "A permanent tenure of land by members of lineages.",
+          "B": "The traditional governance system of lowland pastoralists such as the Somali and the Afar.",
+          "C": "A senior religious father entrusted with the task of power transfer and legitimizing the formation of Gadaa government.",
+          "D": "An integrated system that encompassed politics and social relations.",
+          "E": "A medieval Omotic kingdom with a royal title called Tato.",
+          "F": "A prominent Aksumite king who had political and spiritual authority over the present-day Yemen.",
+          "G": "A traditional practice related to land use and ownership transferred from state official to lineages through hereditary Gult right.",
+          "H": "A royal title used by successive governors over northern provinces of Tigrai and Red Sea area.",
+          "I": "A recognized ancient royal title shared by Zagwe kingdom and Aksumite state.",
+          "J": "A politico-religious title used by Damat and Southern Arabian rulers.",
+          "K": "The medieval Omotic kingdom ruled by Amno and assisted by prominent figures such as Erasho, Gagna, Wosi, ETC.",
+          "L": "A cohesive spiritual leadership that maintained the cultural and religious practices of the Oromo people",
+          "M": "A right held by Bale-Gult to collect tribute from Rist owners."
+        }
+      },
+      "part_iii": {
+        "instructions": "Choose the best answer from the given alternatives and write the letter of the answer on the space provided (1 point each)",
+        "type": "multiple_choice",
+        "questions": [
+          {
+            "number": 21,
+            "text": "What was the impact of the story of the \"prester John of the Indies\" on Ethiopia's foreign relations of the 15th century?",
+            "options": [
+              "A. It attracted the Portuguese to establish closer relations with Ethiopia.",
+              "B. It attracted the Turks to establish closer relation with Ethiopia.",
+              "C. It increased Turkish hated and animosity towards Ethiopia.",
+              "D. It shaped the religious policy of the Portuguese towards Ethiopia."
+            ],
+            "answer": "A",
+            "explanation": "The legend of Prester John motivated Europeans, particularly the Portuguese, to seek out and establish diplomatic alliances with Ethiopia."
+          },
+          {
+            "number": 22,
+            "text": "Which one of the following is not an achievement of Aksumite state?",
+            "options": [
+              "A. Building of ships",
+              "B. Construction of pyramids",
+              "C. Creation of naval forces",
+              "D. formation of complex state structure"
+            ],
+            "answer": "B",
+            "explanation": "Pyramids are characteristic of ancient Egypt, not the Aksumite civilization, which is known for stelae, coinage, and terrace farming."
+          },
+          {
+            "number": 23,
+            "text": "The Zagwe period was renowned in Ethiopia and the Horn for its",
+            "options": [
+              "A. Paintings and the translation of some religious works from Arabic into Ge'ez.",
+              "B. Construction of Medieval rock hewn Churches and stele.",
+              "C. surviving indigenous script and calendar as well as EOC hymns.",
+              "D. Overseas expansion in Southern Arabian Peninsula."
+            ],
+            "answer": "A",
+            "explanation": "The Zagwe period is particularly famous for rock-hewn churches and literary/translation works, though stelae are primarily Aksumite."
+          },
+          {
+            "number": 24,
+            "text": "Which one of the following personalities played a key role in the revival of Christianity in Shewa and medieval Damot in the thirteenth century A.D.",
+            "options": [
+              "A. Abune Tekle-Haymanot",
+              "B. Eyesus-Moa",
+              "C. Aqabe-Se'at Sereqe-Birhan",
+              "D. Abba Estifanos"
+            ],
+            "answer": "A",
+            "explanation": "Abune Tekle-Haymanot played a central role in evangelization and the revival of Christianity in Shewa and Damot."
+          },
+          {
+            "number": 25,
+            "text": "Which of the following actions taken by Muslim sultanates forced Emperor Amde-Tsion (1314-1344) to wage war on them?",
+            "options": [
+              "A. Stopping Christian merchants and confiscating their goods",
+              "B. Conducting wider and rapid territorial expansion",
+              "C. Allowing the free movement of the agent of the king",
+              "D. Allegiance to the frequent desires of the Ethiopian Christian Highland Kingdom"
+            ],
+            "answer": "A",
+            "explanation": "The immediate trigger for Amde-Tsion's campaigns was the detention of his royal agent and interference with Christian merchants."
+          },
+          {
+            "number": 26,
+            "text": "Which one of the following was not the symbol of the absence of permanent capital of the Christian Highland Kingdom of Ethiopia during early medieval period?",
+            "options": [
+              "A. Menagesha",
+              "B. Lake Haiq",
+              "C. District of Menz",
+              "D. Addis Ababa"
+            ],
+            "answer": "D",
+            "explanation": "Addis Ababa was founded in the late 19th century by Emperor Menilek II, long after the early medieval mobile capital period."
+          },
+          {
+            "number": 27,
+            "text": "The reforms of Emperor Fasiledes (r. 1632-67) included ALL EXCEPT",
+            "options": [
+              "A. The restoration of the position of Orthodox church as a state religion",
+              "B. The termination of diplomatic relations with Christian Europe.",
+              "C. The renewal and the establishment of diplomatic relations with The Islamic World.",
+              "D. The reform of land tenure system and taxation improvement"
+            ],
+            "answer": "D",
+            "explanation": "Fasiledes is famous for restoring the Orthodox Church, expelling Jesuits, and opening relations with Islamic neighbors, but broad land tenure reforms were not his primary focus."
+          },
+          {
+            "number": 28,
+            "text": "Which of the following ancient state was formed first in the region of Ethiopia & Horn of Africa?",
+            "options": [
+              "A. Aksumite",
+              "B. Punt",
+              "C. Damat",
+              "D. Yeha"
+            ],
+            "answer": "B",
+            "explanation": "The Land of Punt is the earliest recorded state/polity in the region, appearing in ancient Egyptian records dating back to the 3rd millennium BCE."
+          },
+          {
+            "number": 29,
+            "text": "Why did the Christian highland kingdom in medieval Ethiopia depend on mobile rather than permanent capitals? Because:",
+            "options": [
+              "A. The tradition of building towns had disappeared with Aksumite",
+              "B. The warrior kings of the time disliked the luxury life associated with permanent towns.",
+              "C. The mobile capitals were more suitable for effective control of the empire.",
+              "D. There was scarcity of building materials which used for building permanent capital."
+            ],
+            "answer": "C",
+            "explanation": "Temporary royal camps (katama) allowed monarchs to efficiently collect tribute, administer justice, and maintain military control across vast territories."
+          },
+          {
+            "number": 30,
+            "text": "In the Gadda system, land tenure and interaction among different clans was regulated by",
+            "options": [
+              "A. The qabiyye",
+              "B. Atete",
+              "C. Sirna Chaffe",
+              "D. Mogassa"
+            ],
+            "answer": "A",
+            "explanation": "Qabiyye refers to the customary land-holding system established through initial occupation under the Gadaa system."
+          },
+          {
+            "number": 31,
+            "text": "Why did the Jesuits failed in their mission to convert the Christian Highland Kingdom of Ethiopia in to a Catholic state? Because",
+            "options": [
+              "A. They disagreed with susenyos over the abolition of the Ark of covenant.",
+              "B. They failed to secure the support of the nobility for their cause",
+              "C. Their attempt led to widespread opposition from masses.",
+              "D. They failed to bring in the military support they had promised to Susenyos"
+            ],
+            "answer": "C",
+            "explanation": "Imposing Catholicism caused intense widespread popular revolts and civil war, forcing Susenyos to abdicate."
+          },
+          {
+            "number": 32,
+            "text": "What is the central point in the theocratic theory of state formation?",
+            "options": [
+              "A. States emerged with the emergence of private property.",
+              "B. States were formed along river valleys.",
+              "C. States were created and ruled by priests.",
+              "D. States emerged first in the middle east."
+            ],
+            "answer": "C",
+            "explanation": "The theocratic theory posits that political authority originated from religious leadership or divine ordination."
+          },
+          {
+            "number": 33,
+            "text": "The Aksumite and Zagwe rulers shared common elements in all respects EXCEPT",
+            "options": [
+              "A. Religion and religious life.",
+              "B. Political system.",
+              "C. cultural and social life.",
+              "D. Linguistic identity."
+            ],
+            "answer": "D",
+            "explanation": "The Zagwe rulers belonged to the Agaw linguistic group, whereas Aksumite rulers spoke Semitic Ge'ez-related languages."
+          },
+          {
+            "number": 34,
+            "text": "Which one of the following best describes the Zemene-Mesafint? It was a time when?",
+            "options": [
+              "A. power was dominated by the Yejju lords.",
+              "B. when peasants enjoyed relief from heavy taxation.",
+              "C. the state and orthodox Church were vigorously united.",
+              "D. the kings exercised real power in the country."
+            ],
+            "answer": "A",
+            "explanation": "During the Zemene Mesafint, regional lords held actual power, prominently led by the Yejju dynasty (Warashech)."
+          },
+          {
+            "number": 35,
+            "text": "Which of the following is correct about the Kingdom of Enarya?",
+            "options": [
+              "A. The major export of the kingdom was gold.",
+              "B. The rulers were immigrants that came from northern Ethiopia.",
+              "C. Its power declined following the consolidation of the Kaffan kingdom.",
+              "D. Its origin can be traced to the early years of the Aksumite kingdom."
+            ],
+            "answer": "A",
+            "explanation": "Enarya was an important northern Gibe kingdom known for exporting gold, ivory, and slaves."
+          },
+          {
+            "number": 36,
+            "text": "Identify the factor that led to the \"restoration\" of the Solomonic Dynasty\" under Yekuno Amlak?",
+            "options": [
+              "A. The growing decline in the legitimacy of the Zagwe rulers with the spread of the ideas of the Kibre Negest.",
+              "B. The inability of the Zagwe rulers to protect the kingdom from attack by lowland pastoralists.",
+              "C. Decline in agricultural productivity and state revenue from recurrent drought and locust invasions.",
+              "D. The success of a military coalition formed by the opponents of the Zagwe rulers."
+            ],
+            "answer": "A",
+            "explanation": "Political opposition capitalized on theological and ideological arguments regarding royal legitimacy, bolstered by narratives like the Kibre Negest."
+          },
+          {
+            "number": 37,
+            "text": "What strategy did the medieval \"Solomonic\" rulers use in addressing the problem of succession?",
+            "options": [
+              "A. Setting an age limit for possible claimants to the throne.",
+              "B. Strengthening the office of the Queen Mother.",
+              "C. Building a royal prison at Amba Gishen.",
+              "D. Establishing the principle of primogeniture."
+            ],
+            "answer": "C",
+            "explanation": "Royal princes were isolated at Amba Gishen to prevent civil wars over royal succession."
+          },
+          {
+            "number": 38,
+            "text": "What was the root cause of the conflict between the Christian kingdom and the Muslim sultanates in the medieval period?",
+            "options": [
+              "A. The need to control the salt producing regions of afar.",
+              "B. The desire to control the lucrative Zeila trade route.",
+              "C. The determination by both parties to spread their religion.",
+              "D. The desire of the ruling classes to collect war booty."
+            ],
+            "answer": "B",
+            "explanation": "Competition for commercial dominance and control over lucrative long-distance trade routes connecting to Zeila drove the conflict."
+          },
+          {
+            "number": 39,
+            "text": "Which of the following is the prerequisite for state formation?",
+            "options": [
+              "A. The development of iron tools",
+              "B. The development of Agriculture",
+              "C. A government with coercive powers",
+              "D. Skilled manpower such as craftsmen and soldiers"
+            ],
+            "answer": "B",
+            "explanation": "Agricultural surplus production is the foundational socio-economic prerequisite that allows social stratification and state formation."
+          },
+          {
+            "number": 40,
+            "text": "The battle that led to imam Ahmed Ibn Ibrhim Al Ghazi's death was",
+            "options": [
+              "A. The battle of Yeguba in 1445",
+              "B. The battle of Shimbura Qure in 1529",
+              "C. The battle of Wofla in 1542",
+              "D. The battle of Weyna-Dega in 1543"
+            ],
+            "answer": "D",
+            "explanation": "Imam Ahmed was killed at the Battle of Wayna Dega in February 1543."
+          },
+          {
+            "number": 41,
+            "text": "What was the major cause of the rivalry between Portugal and Ottoman Turkey in Ethiopia and the Horn of Africa during the 16th century?",
+            "options": [
+              "A. Religious difference",
+              "B. Control over trade and trade routes",
+              "C. Ethnic difference",
+              "D. Search for land to settle their people"
+            ],
+            "answer": "B",
+            "explanation": "Both imperial powers vied for geopolitical and commercial hegemony over Red Sea trade routes."
+          },
+          {
+            "number": 42,
+            "text": "Which of the following individuals personifies the great influence that women had in Ethiopian politics during the Gondarine period?",
+            "options": [
+              "A. Queen Eleni",
+              "B. Queen mother Seble-Wengel",
+              "C. Etege Mintwab",
+              "D. Bati Dil Wanbara"
+            ],
+            "answer": "C",
+            "explanation": "Etege Mentewab exercised immense political authority as queen and regent during the Gondarine period."
+          },
+          {
+            "number": 43,
+            "text": "Which of the following medieval states of the southern Ethiopia share a tradition that mentions a person called Motolami as their ruler?",
+            "options": [
+              "A. Bizamo and Damot",
+              "B. Enarya and Wolayita",
+              "C. Wolayita and Damot",
+              "D. Bizamo and Wolayita"
+            ],
+            "answer": "C",
+            "explanation": "King Motolami is famously associated with the medieval kingdom of Damot in traditions involving Saint Tekle-Haymanot."
+          },
+          {
+            "number": 44,
+            "text": "Which one of the following is true about the emirate of Harar?",
+            "options": [
+              "A. It was confined to the gates of the city of Harar.",
+              "B. It never regained its independence it lost to Egypt.",
+              "C. It maintained strong diplomatic relations with the European Christian states.",
+              "D. It had extended its authority over the surrounding Oromo and Somali areas."
+            ],
+            "answer": "D",
+            "explanation": "The Emirate of Harar exerted influence and collected tribute from surrounding Oromo and Somali populations."
+          },
+          {
+            "number": 45,
+            "text": "How did Islam spread into many parts of the Horn of Africa during the medieval period?",
+            "options": [
+              "A. Through war and forceful means",
+              "B. Through trade and trade routes peacefully",
+              "C. Through Jihad and official declaration",
+              "D. Through the efforts of followers of prophet Mohammed."
+            ],
+            "answer": "B",
+            "explanation": "Peaceful trade interactions and the movement of Muslim merchants were the primary vectors for the spread of Islam."
+          }
+        ]
+      },
+      "part_iv": {
+        "instructions": "Write down the right short answer for the following questions.",
+        "type": "short_answer",
+        "questions": [
+          {
+            "number": 46,
+            "text": "Who rose to prominence as a result of political marriage with emperor Zara-yaqob of Ethiopian Christian Highland kingdom? ______.",
+            "answer": "Princess Eleni (Queen Eleni)",
+            "explanation": "Queen Eleni of Hadiya rose to immense political prominence after marrying Emperor Zara Yaqob."
+          },
+          {
+            "number": 47,
+            "text": "The major outlet to the sea during the medieval Ethiopian region and the Horn was ______.",
+            "answer": "Zeila",
+            "explanation": "Zeila served as the primary commercial seaport connecting the interior sultanates and trade routes to the Gulf of Aden/Indian Ocean."
+          },
+          {
+            "number": 48,
+            "text": "The southern Ethiopian people who lived in walled villages until 19th century A.D were ______.",
+            "answer": "The Konso",
+            "explanation": "The Konso people are renowned for their terraced agriculture and traditional fortified walled settlements (Mora)."
+          },
+          {
+            "number": 49,
+            "text": "Name the two prominent religious movements within Ethiopian orthodox Christianity during early medieval period? ______ and ______.",
+            "answer": "The Ewostatewos Movement and the Estifanosites Movement",
+            "explanation": "These two monastic movements emerged in opposition to state policies or theological positions regarding the Sabbath and absolute autonomy."
+          },
+          {
+            "number": 50,
+            "text": "Name the moral code of Sidama people by which they differentiate wrong and right behaviors? ______.",
+            "answer": "Waaqeffanna / Séera (or Looloo / Heera)",
+            "explanation": "The moral and ethical code governing Sidama society and social conduct is known through their customary laws and cultural legal framework."
+          }
+        ]
+      }
+    },
+    {
+      "part_i": {
+        "instructions": "For the following questions, write True if the statement is correct and False if the statement in incorrect.",
+        "type": "true_false",
+        "points": 10,
+        "questions": [
+          {
+            "number": 1,
+            "text": "The claim for legitimacy of the restored \"Solomonic\" dynasty based on legendary blood descent from King Solomon of Israel.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "The restored dynasty legitimized its rule through the Kibre Negest legend, claiming descent from King Solomon and Queen of Sheba."
+          },
+          {
+            "number": 2,
+            "text": "Religion was the fundamental cause for the conflict of the Solomonic rulers with Muslim sultanates between the 13th to the 16th centuries.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "The primary drivers were economic competition and control over trade routes rather than purely religious crusades."
+          },
+          {
+            "number": 3,
+            "text": "Trade was a major factor both for the rise of Muslim Sultanates and their cooperation with Christian rulers.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Commercial networks enabled both the rise of the sultanates and intermittent peaceful economic interactions with the Christian kingdom."
+          },
+          {
+            "number": 4,
+            "text": "The external relations of medieval Ethiopian Christian kingdom with Europe were strongly influenced by the legend of \"Prester John\".",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "European powers sought out Ethiopia believing it was the kingdom of the mythical Christian monarch Prester John."
+          },
+          {
+            "number": 5,
+            "text": "The battle of Shimbra Kure was fought between the armies of Made Tsiyon and Ahmad Gragn in 1329.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "The Battle of Shimbra Kure was fought in 1529 between Lebne Dengel and Imam Ahmed Gragn, not Amde Tsiyon."
+          },
+          {
+            "number": 6,
+            "text": "Punt was the earliest recorded state in northern Ethiopia.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Punt is widely documented in Egyptian sources as the earliest trading partner and polity in the region."
+          },
+          {
+            "number": 7,
+            "text": "Emperor Susenyos was converted Catholicism to secure arms to defeat Ahmad Gragn.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Susenyos converted to Catholicism to gain Portuguese military assistance against internal rebellions, long after Ahmad Gragn's death."
+          },
+          {
+            "number": 8,
+            "text": "The Oromo population movement of the 16th and 17th centuries resulted in exchanges of culture and languages between the Oromo their neighbours.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "The movement led to extensive demographic interactions, adoptions (like Mogassa), and cultural assimilation."
+          },
+          {
+            "number": 9,
+            "text": "The teaching of Ewostatewos was the strict observance of Sabbath on Saturday.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Ewostatewos advocated for observing Saturday as the Sabbath in addition to Sunday."
+          },
+          {
+            "number": 10,
+            "text": "The Oromo integrated non-Oromos through Gudiffacha and Mogaassa.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Gudiffacha (adoption) and Mogaassa (integration of groups) were key mechanisms of Oromo social integration."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Match the items listed under column \"A\" by selecting appropriate answer from the alternatives listed under column \"B\" and fill in the separate answer sheet.",
+        "type": "matching",
+        "points": 10,
+        "column_a": [
+          {
+            "number": 1,
+            "text": "Elleni",
+            "answer": "F",
+            "explanation": "Queen Eleni acted as a regent and played a major political role in medieval Christian kingdom politics."
+          },
+          {
+            "number": 2,
+            "text": "Libne Dingil",
+            "answer": "I",
+            "explanation": "Emperor Lebne Dengel was defeated by Ahmed Gragn at Shimbra Kure in 1529."
+          },
+          {
+            "number": 3,
+            "text": "Bati Del Wanbera",
+            "answer": "H",
+            "explanation": "Bati Del Wanbera was the wife of Imam Ahmed who encouraged him to avenge her father Mahfuz's death."
+          },
+          {
+            "number": 4,
+            "text": "Ze Dingil",
+            "answer": "C",
+            "explanation": "Emperor Za Dengel was the first Christian monarch who agreed to secretly convert to Catholicism."
+          },
+          {
+            "number": 5,
+            "text": "Seble-Wongel",
+            "answer": "G",
+            "explanation": "Empress Seble Wongel advised Gelawdewos before the decisive Battle of Wayna Dega."
+          },
+          {
+            "number": 6,
+            "text": "Gelawdewos",
+            "answer": "J",
+            "explanation": "Emperor Gelawdewos was killed in 1559 by the forces of the Adal Sultanate led by Nur ibn al-Waazir Mujahid."
+          },
+          {
+            "number": 7,
+            "text": "Susenyos",
+            "answer": "A",
+            "explanation": "Susenyos officially announced Catholicism as the state religion of Ethiopia in 1622."
+          },
+          {
+            "number": 8,
+            "text": "Mintewab",
+            "answer": "B",
+            "explanation": "Empress Mentewab was a dominant political figure in Gondar from 1728 to 1768."
+          },
+          {
+            "number": 9,
+            "text": "Wahit Amito",
+            "answer": "D",
+            "explanation": "Wubit (Wahit) Amito was the wife of Iyasu II, representing the rising influence of Wollo Oromo in the Gondarine court."
+          },
+          {
+            "number": 10,
+            "text": "Iyoas",
+            "answer": "E",
+            "explanation": "The assassination of Emperor Iyoas by Ras Mikael Sehul marked the onset of the Zemene Mesafint."
+          }
+        ],
+        "column_b": {
+          "A": "Officially announced Catholicism was a state religion in Ethiopia.",
+          "B": "A dominant woman in Gonderine court politics from 1728 to 1768.",
+          "C": "The first Christian monarch who agreed to secretly convert into Catholicism.",
+          "D": "The wife of Iyasu II and she represent the growing power of Wollo Oromo in Gonderine court.",
+          "E": "His death marked the onset of the period of Zemene Mesafint.",
+          "F": "A mother and regent of Libne Dingil played major role in the medieval politics of Christian kingdom.",
+          "G": "A Queen mother, who advised Gelawdewos to prepare and march to Woyna-Dega.",
+          "H": "Wife of Imam Ahmed and encouraged her husband to avenge the death of her father.",
+          "I": "Defeated by Ahmed Gragn at Shimbera Kure in 1529.",
+          "J": "In 1559 killed by sultanate of Adal led by Nur Ibn al-Waazir Mujahid."
+        }
+      },
+      "part_iii": {
+        "instructions": "Choose the best answer from the given alternatives and fill in the separate answer sheet provided below",
+        "type": "multiple_choice",
+        "points": 22,
+        "questions": [
+          {
+            "number": 1,
+            "text": "The main cause for the decline of Aksumite kingdom was ______.",
+            "options": [
+              "A. Rebellion of Beja and Agaw peoples",
+              "B. Rebellion of South Arabia",
+              "C. Losses of control over the Red Sea trade",
+              "D. Strong opposition from the church which considered the as illegitimate rulers"
+            ],
+            "answer": "C",
+            "explanation": "Economic isolation and loss of control over Red Sea trade routes due to the rise of Islam severely undermined Aksum."
+          },
+          {
+            "number": 2,
+            "text": "Which one is FALSE about Da'amat?",
+            "options": [
+              "A. Its rulers used a title called Mukarib",
+              "B. It was the immediate precursor of the Aksumite empire",
+              "C. Inscriptions of its ruler written in Ge'ez language indicated its strong relation with Egypt",
+              "D. They have strong relation with South Arabia"
+            ],
+            "answer": "C",
+            "explanation": "Damat inscriptions were typically written in Epigraphic South Arabian (Sabaean), not Ge'ez."
+          },
+          {
+            "number": 3,
+            "text": "The founder of the Zagwe kingdom was ______.",
+            "options": [
+              "A. Lalibela",
+              "B. Yitbarek",
+              "C. Mera Teklehaimanot",
+              "D. Dil Naod"
+            ],
+            "answer": "C",
+            "explanation": "Mera Teklehaimanot founded the Zagwe dynasty after overthrowing the last Aksumite rulers."
+          },
+          {
+            "number": 4,
+            "text": "A kingdom in Gibe region which real power rested with the council (Mikretcho)",
+            "options": [
+              "A. Damot",
+              "B. Gafat",
+              "C. Wolayta",
+              "D. Enarya"
+            ],
+            "answer": "D",
+            "explanation": "In Enarya, political power and administration were notably balanced through a council known as the Mikretcho."
+          },
+          {
+            "number": 5,
+            "text": "The earliest Muslim Sultanates in Ethiopia was ______.",
+            "options": [
+              "A. Fatagar",
+              "B. Shewa",
+              "C. Bali",
+              "D. Adal"
+            ],
+            "answer": "B",
+            "explanation": "The Makhzumite Sultanate of Shewa was the earliest recorded Islamic state in the region."
+          },
+          {
+            "number": 6,
+            "text": "The main gateway of Islam in to Ethiopia and the Horn was ______.",
+            "options": [
+              "A. Dahlak Island in the Red Sea",
+              "B. Zaila in the Gulf of Aden",
+              "C. Mogadishu in the Indian Ocean",
+              "D. Massawa in the Red Sea area"
+            ],
+            "answer": "B",
+            "explanation": "Zeila served as the primary port and gateway through which Islam penetrated into the interior of the Horn."
+          },
+          {
+            "number": 7,
+            "text": "Aksumite and Zagwe rulers were similar in that both of them had ______.",
+            "options": [
+              "A. Conquered overseas territories",
+              "B. Used roving political center",
+              "C. Importing bishops from Egypt",
+              "D. Trading through the port of Adulis"
+            ],
+            "answer": "C",
+            "explanation": "Both kingdoms maintained the tradition of receiving their Abuna (bishop) from the Coptic Church of Egypt."
+          },
+          {
+            "number": 8,
+            "text": "Which religious movement emphasized on poverty, absolute self-subsistence, equality and independence from secular authorities?",
+            "options": [
+              "A. The Evangelization Movement",
+              "B. The Estifanosites Movement",
+              "C. The Catholicism Movement",
+              "D. The Ewostatewos Movement"
+            ],
+            "answer": "B",
+            "explanation": "The Estifanosites monastic movement strongly advocated for strict poverty, egalitarianism, and independence from secular rulers."
+          },
+          {
+            "number": 9,
+            "text": "The main base for the relationship between Christian Kingdom and Sultan of Egypt was ______.",
+            "options": [
+              "A. Commerce",
+              "B. Religion",
+              "C. Military",
+              "D. Construction"
+            ],
+            "answer": "B",
+            "explanation": "The relationship was heavily anchored on the religious dependency of appointing the Ethiopian bishop (Abuna) through the Coptic Patriarchate in Cairo."
+          },
+          {
+            "number": 10,
+            "text": "The document that played a major role in the restoration of 'Solomonic dynasty' was ______.",
+            "options": [
+              "A. Fetha Negest",
+              "B. Gedle Yesus Mo'a",
+              "C. Kebre Negest",
+              "D. Prester John"
+            ],
+            "answer": "C",
+            "explanation": "The Kebre Negest (Glory of Kings) provided the ideological and genealogical justification for restoring Solomonic rule."
+          },
+          {
+            "number": 11,
+            "text": "The event that strengthened the relation between the Christian Kingdom and Christian Europe in the 15th century was:",
+            "options": [
+              "A. The arrival of the Ottoman Turkey in Ethiopia.",
+              "B. The revival of relations between the Christian Kingdom and Sultans of Egypt.",
+              "C. The rivalry between the Christian Kingdom and Muslim Sultanates.",
+              "D. The religious reforms of Emperor Zara-Yaqob"
+            ],
+            "answer": "C",
+            "explanation": "Faced with pressure from neighboring Muslim sultanates, the Christian kingdom actively sought European alliances."
+          },
+          {
+            "number": 12,
+            "text": "The medieval royal prison was established at:",
+            "options": [
+              "A. Menagesha",
+              "B. Zeqwala",
+              "C. Entotto",
+              "D. Amba Gishen"
+            ],
+            "answer": "D",
+            "explanation": "Amba Gishen served as the secure mountain prison where royal princes were kept."
+          },
+          {
+            "number": 13,
+            "text": "The two medieval market centres in Massawa were:",
+            "options": [
+              "A. Mandalay and Wasel",
+              "B. Dabrawa and Asmara",
+              "C. Wez-Gebeya and Dakkar",
+              "D. Gandabalo and Suq-Wayzaro"
+            ],
+            "answer": "D",
+            "explanation": "Gandabalo and Suq-Wayzaro were prominent inland-coastal trading centers linked to northern trade routes."
+          },
+          {
+            "number": 14,
+            "text": "Among the following one is not correct about the Ethio-European relations in the 15th C?",
+            "options": [
+              "A. Admiration and request of Ethiopian monarchs for European technical assistance.",
+              "B. Europeans demand for a Christian allies against the Muslims.",
+              "C. Exchange of delegations and missions between Ethiopia and Europe.",
+              "D. European colonial interest in Ethiopia."
+            ],
+            "answer": "D",
+            "explanation": "Fifteenth-century European interest was primarily diplomatic, religious, and commercial (finding Prester John/Allies), rather than 19th-century style colonialism."
+          },
+          {
+            "number": 15,
+            "text": "In the medieval Ethiopia the renowned philosophical work belongs to:",
+            "options": [
+              "A. Abba Giyorgis Ze-Gasicha",
+              "B. Abuna Teklehaymanot",
+              "C. St. Yared",
+              "D. Zara Ya'iqob"
+            ],
+            "answer": "D",
+            "explanation": "Zara Yacob (and his pupil Walda Heywat) authored renowned Ethiopian philosophical treatises in the 17th century."
+          },
+          {
+            "number": 16,
+            "text": "The Period of Zemene Mesafint in Ethiopian history is marked by all the following except:",
+            "options": [
+              "A. the decline of the power of kings",
+              "B. the rise of powerful regional lords",
+              "C. the complete abolition of the central government",
+              "D. the domination of the Yeju lords over the lords in Northern Ethiopia"
+            ],
+            "answer": "C",
+            "explanation": "The central government and monarchy technically still existed in Gondar as a figurehead institution, rather than being completely abolished."
+          },
+          {
+            "number": 17,
+            "text": "Why did emperor Susenyos abdicate his throne in favor of his son, Fasiladas in 1632?",
+            "options": [
+              "A. The existing controversies and rebellions against his religious policy",
+              "B. The conflict between Susenyos and the Jesuits",
+              "C. His attempt to continue power transfer along the \"Solomonic\" lines",
+              "D. His attempt to exercise democracy in Ethiopia"
+            ],
+            "answer": "A",
+            "explanation": "Widespread rebellions and civil unrest resulting from his enforcement of Catholicism forced Susenyos to step down."
+          },
+          {
+            "number": 18,
+            "text": "Which one of the following is not true about the consequences of the war of Ahmad Gragn?",
+            "options": [
+              "A. The Christian kingdom emerged stronger than ever before",
+              "B. An easy infiltration and success of the Oromos in their population movement.",
+              "C. The weakening of the Muslim sultanate of Adal",
+              "D. cultural interaction among the peoples of Ethiopia"
+            ],
+            "answer": "A",
+            "explanation": "The Christian kingdom was severely weakened, exhausted, and depopulated after the destructive wars, rather than emerging stronger immediately."
+          },
+          {
+            "number": 19,
+            "text": "The Gada system in the Oromo society is characterized by all the following features except:",
+            "options": [
+              "A. periodic succession",
+              "B. Elective leadership",
+              "C. Leadership for life",
+              "D. power sharing"
+            ],
+            "answer": "C",
+            "explanation": "Gadaa explicitly rejects lifelong autocratic leadership in favor of term-limited rotation."
+          },
+          {
+            "number": 20,
+            "text": "Which one of the following Gada grades consists of leaders of the Gada government?",
+            "options": [
+              "A. Folle",
+              "B. Luba",
+              "C. Qondala",
+              "D. Raba"
+            ],
+            "answer": "B",
+            "explanation": "The Luba grade holds ruling and governing authority in the Gadaa system."
+          },
+          {
+            "number": 21,
+            "text": "The Jesuit mission which arrived in Ethiopia in 1557 led by Andre de Ovideo aimed at:",
+            "options": [
+              "A. Signing bilateral trade agreement with the Christian kingdom",
+              "B. Taking side with the Christians in the war against the Muslims",
+              "C. Expand Catholicism contrary to Monophysite theology of Ethiopian Orthodox Church",
+              "D. Competing with the Ottomans in the Red Sea trade"
+            ],
+            "answer": "C",
+            "explanation": "The primary goal of the Jesuit mission was proselytization and bringing the Ethiopian church under papal authority."
+          },
+          {
+            "number": 22,
+            "text": "Who was invited to come to Gondar from Tigray by Empress Mintewab to counter the growing power of the Wollo Oromo in the royal court?",
+            "options": [
+              "A. Takla-Haymanot II",
+              "B. Ras Mikael Sehul",
+              "C. Ras Bitewoded Wolde Le'ul",
+              "D. Dejazmach Kassa Hailu"
+            ],
+            "answer": "B",
+            "explanation": "Empress Mentewab invited Ras Mikael Sehul of Tigray to balance regional factions in Gondar."
+          }
+        ]
+      },
+      "part_iv": {
+        "instructions": "Give Short Answer for the Following Questions.",
+        "type": "short_answer",
+        "points": 8,
+        "questions": [
+          {
+            "number": 1,
+            "text": "List the main features of Zemene Mesafint 1769-1855?",
+            "points": 4,
+            "answer": "Decline of royal power, rise of powerful regional lords, continuous civil wars, dominance of Yejju lords, and decentralization of the state.",
+            "explanation": "The Zemene Mesafint was characterized by the fragmentation of imperial power among regional warlords and the supremacy of the Yejju dynasty."
+          },
+          {
+            "number": 2,
+            "text": "Write the consequences of the Oromo population movement of the 16th C.",
+            "points": 4,
+            "answer": "Integration of peoples through Mogassa and Gudiffacha, cultural and linguistic exchanges, redistribution of territorial populations, and weakening of both Christian and Muslim states.",
+            "explanation": "The Oromo movement significantly reshaped the demographic, political, and cultural landscape of Ethiopia and the Horn."
+          }
+        ]
+      }
+    },
+    {
+      "part_i": {
+        "instructions": "Choose the correct answer for each of the following questions",
+        "type": "multiple_choice",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Which of the following events of the 1960s was very important in the development of hagiography of Ethiopia?",
+            "options": [
+              "A. The establishment of the Association of Ethiopian Historians.",
+              "B. Establishment of the Institute of Ethiopian Studies (IES)",
+              "C. The coming to Ethiopia of Professor Richard Pankhurst",
+              "D. The launching of MA program in History in HSIU"
+            ],
+            "answer": "B",
+            "explanation": "The establishment of the Institute of Ethiopian Studies (IES) at Haile Selassie I University provided a major institutional hub for preserving and studying historical sources, including hagiographies."
+          },
+          {
+            "number": 2,
+            "text": "Why is Leopold Von Ranke considered the father of modern historiography? Because he",
+            "options": [
+              "A. Was responsible for inventing the term \" Istoria\" which we use up to now",
+              "B. Was responsible for the shift of the focus of history from politics to economics.",
+              "C. Was instrumental in systematizing the study and researching of history",
+              "D. Developed new quantitative methods to analyze large group of data."
+            ],
+            "answer": "C",
+            "explanation": "Leopold von Ranke pioneered rigorous source criticism and empirical methods, professionalizing history as an academic discipline."
+          },
+          {
+            "number": 3,
+            "text": "Which one is true about the Periplus of the Erythrean Sea?",
+            "options": [
+              "A. A hand book written by Cosmas Indicopleustes who frequently visited the red sea area.",
+              "B. It indicates Aksumites king, Ezana, converted into Christianity by Abun tekle Haymanot",
+              "C. It mentions Zoscales as king of Aksum who invaded yemen in the 6th c A.D",
+              "D. It mentions Adulis as the port of the Kingdom."
+            ],
+            "answer": "D",
+            "explanation": "The Periplus is a 1st-century navigational handbook that details trade along the Red Sea and explicitly mentions Adulis as Aksum's port."
+          },
+          {
+            "number": 4,
+            "text": "The professionalization of History as a scientific discipline is related to",
+            "options": [
+              "A. Herodotus (c. 484-425B.C)",
+              "B. Leopold Von Ranke (1795-1886)",
+              "C. Herodotus and Thucydides (c.455-400B.C.E)",
+              "D. Sima Qian (145-86B.C.E)"
+            ],
+            "answer": "B",
+            "explanation": "Leopold von Ranke established the scientific methodology of historical research in the 19th century."
+          },
+          {
+            "number": 5,
+            "text": "Christian Topography",
+            "options": [
+              "A. Axumite inscription of Ezana",
+              "B. Was written by Zoscales",
+              "C. Describes about the commercial activities of the red sea",
+              "D. All",
+              "E. A and B"
+            ],
+            "answer": "C",
+            "explanation": "Cosmas Indicopleustes' 'Christian Topography' describes trade and commercial networks around the Red Sea, including Aksum."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Match those items listed under column \"B\" with those items under column \"A\"",
+        "type": "matching",
+        "column_a": [
+          {
+            "number": 1,
+            "text": "Gebrehiwot Baykedagn",
+            "answer": "B",
+            "explanation": "Gebrehiwot Baykedagn authored 'Mengest ena Yehezeb Astedader' (Government and Public Administration)."
+          },
+          {
+            "number": 2,
+            "text": "Herodotus",
+            "answer": "C",
+            "explanation": "Herodotus is traditionally hailed as 'the father of History'."
+          },
+          {
+            "number": 3,
+            "text": "Futuh al- Habesha",
+            "answer": "A",
+            "explanation": "Futuh al-Habesha is a chronicle detailing the sixteenth-century wars of Imam Ahmed."
+          }
+        ],
+        "column_b": {
+          "A": "Accounts about the wars of Imam Ahmed",
+          "B": "Mengest ena yehezeb Astedader",
+          "C": "the father of History"
+        }
+      },
+      "part_iii": {
+        "instructions": "Fill in the blank space provided",
+        "type": "fill_in_the_blank",
+        "questions": [
+          {
+            "number": 1,
+            "text": "The first historical document about the region of Ethiopian and the Horn was ______",
+            "answer": "The Periplus of the Erythraean Sea",
+            "explanation": "The Periplus is widely recognized as the earliest surviving written navigational and commercial record concerning the region."
+          },
+          {
+            "number": 2,
+            "text": "The Yemeni chronicler of Iman Ahmed Ibn Ibrahim El Gahazi ( Ahmed Gragn) was ______",
+            "answer": "Shihab al-Din Ahmed bin Abd al-Qadir (Arab Faqih)",
+            "explanation": "Arab Faqih authored Futuh al-Habesha, chronicling Imam Ahmed's campaigns."
+          },
+          {
+            "number": 3,
+            "text": "______ known for their factual details and strong chronological frameworks used glorify the Monarchs from the medieval to the early 20th century.",
+            "answer": "Royal Chronicles",
+            "explanation": "Royal chronicles meticulously recorded regnal histories and praised reigning monarchs."
+          },
+          {
+            "number": 4,
+            "text": "Manuscripts of Medieval time aimed of enhancing the prestige of saints is called ______",
+            "answer": "Hagiography (Gedl)",
+            "explanation": "Hagiographies are hagiological texts recounting the lives and miracles of saints."
+          },
+          {
+            "number": 5,
+            "text": "______ formed a bridge between writers in pre 1935 and Ethiopian professional writer.",
+            "answer": "Blatten Geta Mahteme Sellase Wolde Meskel (or Takla Sadeq Makuria)",
+            "explanation": "Early 20th-century traditional intellectuals bridged indigenous chronicling and modern professional historiography."
+          }
+        ]
+      },
+      "part_iv": {
+        "instructions": "Give short Answers",
+        "type": "short_answer",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Identify the strengths and limitation of Hagiographies as a source?",
+            "answer": "Strengths: Provide rich social, cultural, and religious insights. Limitations: Contain hagiographic biases, miraculous exaggerations, and lack strict chronological precision.",
+            "explanation": "While valuable for cultural history, hagiographies prioritize spiritual praise and legend over strict objective narration."
+          },
+          {
+            "number": 2,
+            "text": "Define Historiography in your own words?",
+            "answer": "Historiography is the study of how history is written, interpreted, and recorded over time by different historians.",
+            "explanation": "It examines historical methods, sources, biases, and changing interpretations rather than just past events."
+          }
+        ]
+      }
+    },
+    {
+      "exam_info": {
+        "institution": "Addis Ababa Science & Technology University",
+        "exam_type": "Mid-examination",
+        "maximum_mark": "25%",
+        "course_name": "History of Ethiopia and the Horn (Hist. 2002)",
+        "course_instructor": "Andalem Tariku (PhD)",
+        "time_allotted": "40 minutes",
+        "date": "August 22/2023",
+        "student_fields": [
+          "Name",
+          "ID",
+          "Dep. & Sec."
+        ]
+      },
+      "part_i": {
+        "instructions": "Choose the best answer from the given alternatives",
+        "type": "multiple_choice",
+        "points": 10,
+        "questions": [
+          {
+            "number": 1,
+            "text": "The first existing chronicle in Ethiopia was the chronicle of ______.",
+            "options": [
+              "A. Zara-Yaekob",
+              "B. Yikuno-Amlak",
+              "C. Amde-Tsion",
+              "D. Abeto Iyasu"
+            ],
+            "answer": "C",
+            "explanation": "The 'Glorious Victories of Amde Tsion' is the earliest surviving royal chronicle of medieval Ethiopia."
+          },
+          {
+            "number": 2,
+            "text": "In terms of time order, which of the following comes first?",
+            "options": [
+              "A. Judaism",
+              "B. Traditional religions",
+              "C. Islam",
+              "D. Christianity"
+            ],
+            "answer": "B",
+            "explanation": "Indigenous/traditional beliefs predated all organized revealed religions in the region."
+          },
+          {
+            "number": 3,
+            "text": "History may mean all except ______.",
+            "options": [
+              "A. The facts of the past which are kept in writing",
+              "B. The account of the past provided by historians",
+              "C. All the things that have happened in the human past",
+              "D. None of the above"
+            ],
+            "answer": "D",
+            "explanation": "All listed options accurately describe different dimensions or definitions of history."
+          },
+          {
+            "number": 4,
+            "text": "Which one of the following is not an ancient Greek history writer?",
+            "options": [
+              "A. Herodotus",
+              "B. Thucydides",
+              "C. Sima Qian",
+              "D. A and B"
+            ],
+            "answer": "C",
+            "explanation": "Sima Qian was an ancient Chinese historian, whereas Herodotus and Thucydides were Greek."
+          },
+          {
+            "number": 5,
+            "text": "______ was the first Ethiopian bishop.",
+            "options": [
+              "A. Abuna Atnathewos",
+              "B. Abuna Salama",
+              "C. Abuna Basilios",
+              "D. Abuna Aregawi"
+            ],
+            "answer": "C",
+            "explanation": "Abuna Basilios was consecrated as the first indigenous Ethiopian Patriarch/bishop in the 20th century (1951)."
+          },
+          {
+            "number": 6,
+            "text": "The spatial distribution of peoples, or the settlement pattern of peoples is shaped by all except ______.",
+            "options": [
+              "A. Environmental",
+              "B. Socio-economic",
+              "C. Political process",
+              "D. Linguistic classification",
+              "E. None of the above"
+            ],
+            "answer": "D",
+            "explanation": "Linguistic classification is a method of categorizing languages rather than an active physical/social force shaping settlement patterns."
+          },
+          {
+            "number": 7,
+            "text": "Which one of the following is wrong about Homo Erectus?",
+            "options": [
+              "A. It seems to be the homo genus to have spread outside Africa",
+              "B. It is dated to 1.9 m years B.P.",
+              "C. It uses the Acheulean stone tools",
+              "D. It was found at Melka Kunture"
+            ],
+            "answer": "B",
+            "explanation": "Homo erectus fossils and dates vary, but early forms date back roughly around 1.8 to 1.9 million years, though specific site details or dating classifications in standard texts can vary; however, option B is generally accepted, let's look closer: wait, Homo erectus is associated with Acheulean tools and Melka Kunture, but let's ensure accuracy. (Actually, Homo erectus emerged around 1.8-1.9 million years ago)."
+          },
+          {
+            "number": 8,
+            "text": "The book Travel to Discover the Source of the Nile was authored by ______.",
+            "options": [
+              "A. James Bruce",
+              "B. Francesco Alvarez",
+              "C. August Dillman",
+              "D. Richard Pankhurst"
+            ],
+            "answer": "A",
+            "explanation": "James Bruce published his famous travels in 1790 after exploring Ethiopia."
+          },
+          {
+            "number": 9,
+            "text": "______ was the author of Futuh al Habesha.",
+            "options": [
+              "A. Ibn Battuta",
+              "B. Shihab al-Din",
+              "C. Al Masudi",
+              "D. Shaykh Ja'far Bukko"
+            ],
+            "answer": "B",
+            "explanation": "Shihab al-Din (Arab Faqih) wrote Futuh al-Habesha."
+          },
+          {
+            "number": 10,
+            "text": "Which of the following is secondary source?",
+            "options": [
+              "A. Traveler account",
+              "B. Diary",
+              "C. Photograph",
+              "D. Biography"
+            ],
+            "answer": "D",
+            "explanation": "Biographies are secondary sources written about someone else's life using primary evidence."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Write TRUE if the statement is correct or write OTHERWISE",
+        "type": "true_or_otherwise",
+        "points": 10,
+        "questions": [
+          {
+            "number": 1,
+            "text": "Speakers of the Nilo-Saharan language family settle in southern parts of Ethiopia.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Nilo-Saharan speakers primarily inhabit the western lowlands along the border with Sudan, rather than southern parts (which are largely Cushitic/Omotic)."
+          },
+          {
+            "number": 2,
+            "text": "The Periplus of the Erythrean Sea was the first known reference that we have on the history of Ethiopia and it was authored by Cosmas Indicopleustes.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "The Periplus was written by an anonymous Greek merchant, not Cosmas Indicopleustes."
+          },
+          {
+            "number": 3,
+            "text": "Chronicles are the earliest written materials in Ethiopia compared to manuscripts and hagiographies.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Inscriptions (like Aksumite Sabaean and Ge'ez inscriptions) and early religious manuscripts/hagiographies appeared earlier than formal royal chronicles."
+          },
+          {
+            "number": 4,
+            "text": "Herodotus is known as the father of modern historiography.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Herodotus is the father of history, whereas Leopold von Ranke is the father of modern historiography."
+          },
+          {
+            "number": 5,
+            "text": "The Neolithic revolution came mainly because of the evolution in bi-pedalism.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "The Neolithic revolution was driven by the domestication of plants and animals, not bipedalism."
+          },
+          {
+            "number": 6,
+            "text": "The oral testimonies or personal recollection of one's lived experience is known as oral history.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Oral history deals with firsthand personal recollections and oral testimonies of living individuals."
+          },
+          {
+            "number": 7,
+            "text": "The verification of the originality and authenticity of the sources is required under the evaluation of secondary sources.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Source criticism and authenticity tests (external criticism) apply primarily to primary sources."
+          },
+          {
+            "number": 8,
+            "text": "Written materials are classified as secondary sources.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Written materials can be primary (e.g., letters, chronicles) or secondary depending on their context."
+          },
+          {
+            "number": 9,
+            "text": "Lucy attracts more attention than other human remains because it is the oldest hominidae.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B. False",
+            "explanation": "Lucy is famous for her exceptional completeness (~40%), not because she is the absolute oldest hominid."
+          },
+          {
+            "number": 10,
+            "text": "The teaching of the Ethiopian Orthodox Church is a Monophysite.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A. True",
+            "explanation": "Traditionally and historically, the EOC adheres to Monophysite (Miaaphysite) Christology."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Part II: Fill in the blank spaces",
+        "type": "fill_in_the_blank",
+        "points": 5,
+        "questions": [
+          {
+            "number": 1,
+            "text": "Mode I stone tools are scientifically known as ______.",
+            "points": 1,
+            "answer": "Oldowan",
+            "explanation": "Mode I stone tool technology is designated as Oldowan."
+          },
+          {
+            "number": 2,
+            "text": "The main gateway of Islam to the present-day Wollo and Hararghe was ______.",
+            "points": 1,
+            "answer": "Zeila (or Dahlak/trade routes)",
+            "explanation": "Coastal ports like Zeila served as primary conduits for Islam entering interior regions like Hararghe and Wollo."
+          },
+          {
+            "number": 3,
+            "text": "The division of human past into discrete periods is referred to as ______?",
+            "points": 1,
+            "answer": "Periodization",
+            "explanation": "Periodization is the process of categorizing the past into discrete, quantified blocks of time."
+          },
+          {
+            "number": 4,
+            "text": "List down at least three uses of history?",
+            "points": 2,
+            "answer_lines": 3,
+            "answer": "Provides a sense of identity, helps understand human behavior and society, and offers lessons from past mistakes and successes.",
+            "explanation": "History informs critical thinking, citizenship, and societal self-awareness."
+          },
+          {
+            "number": 5,
+            "text": "______ is known as the founder of Ethiopian studies in Europe.",
+            "points": 1,
+            "answer": "Hiob Ludolf (Job Ludolf)",
+            "explanation": "Hiob Ludolf is recognized as the founder of Ethiopian studies (Aethiopistica) in Europe during the 17th century."
+          }
+        ]
+      }
+    }
+  ]
+}

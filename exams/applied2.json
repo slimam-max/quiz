@@ -1,0 +1,685 @@
+{
+  "exam_info": {
+    "institution": "Addis Ababa Science and Technology University",
+    "college": "College of Natural and Applied Sciences",
+    "department": "Department of Mathematics",
+    "course": "Applied Mathematics II Mid Examination",
+    "time_allowed": "1:10 hr"
+  },
+  "question_papers": [
+    {
+      "part_iii": {
+        "instructions": "Work out the following questions. Show all necessary steps clearly and neatly.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Given a series $\\sum_{n=3}^{\\infty} \\frac{3}{n^2-3n+2}$:\na) does it satisfy the criteria for an integral test? Justify your answer.\nb) if your answer in (a) is yes, use integral test to determine its convergence.",
+            "answer": "a) Yes, it satisfies all criteria.\nb) The series converges.",
+            "explanation": "a) Let $f(x) = \\frac{3}{x^2-3x+2} = \\frac{3}{(x-1)(x-2)}$ for $x \\ge 3$. To apply the Integral Test, $f(x)$ must be positive, continuous, and decreasing on $[3, \\infty)$:\n1. **Positive:** For $x \\ge 3$, $x-1 > 0$ and $x-2 > 0$, so $f(x) > 0$.\n2. **Continuous:** The denominator is zero only at $x=1$ and $x=2$, which are outside $[3, \\infty)$. Thus, $f(x)$ is continuous on $[3, \\infty)$.\n3. **Decreasing:** $f'(x) = \\frac{-3(2x-3)}{(x^2-3x+2)^2}$. For $x \\ge 3$, $2x-3 \\ge 3 > 0$, so $f'(x) < 0$, meaning $f(x)$ is strictly decreasing on $[3, \\infty)$.\n\nb) Evaluate the improper integral using partial fractions $\\frac{3}{(x-1)(x-2)} = \\frac{3}{x-2} - \\frac{3}{x-1}$:\n$$\\int_3^{\\infty} \\frac{3}{x^2-3x+2} \\, dx = \\lim_{b \\to \\infty} \\int_3^b 3\\left(\\frac{1}{x-2} - \\frac{1}{x-1}\\right) dx = \\lim_{b \\to \\infty} 3\\left[\\ln\\left|\\frac{x-2}{x-1}\\right|\\right]_3^b$$\n$$= \\lim_{b \\to \\infty} 3\\left(\\ln\\left(\\frac{b-2}{b-1}\\right) - \\ln\\left(\\frac{1}{2}\\right)\\right) = 3(0 - (-\\ln 2)) = 3\\ln 2$$\nSince the improper integral converges to $3\\ln 2$, the series converges."
+          },
+          {
+            "number": 2,
+            "text": "Use the generalized ratio test to show that the radius of convergence of the power series $\\sum_{n=0}^{\\infty} a_n(x-c)^n$ is given by $R = \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right|$ where $a_n$ is the coefficient of the power series.",
+            "answer": "Proof shown in explanation.",
+            "explanation": "Let $u_n = a_n(x-c)^n$. By the Generalized Ratio Test, the series $\\sum_{n=0}^{\\infty} u_n$ converges absolutely if:\n$$\\lim_{n \\to \\infty} \\left| \\frac{u_{n+1}}{u_n} \\right| < 1$$\nSubstituting $u_n$ and $u_{n+1}$:\n$$\\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}(x-c)^{n+1}}{a_n(x-c)^n} \\right| = |x-c| \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right| < 1$$\nAssuming $L = \\lim_{n \\to \\infty} \\left| \\frac{a_{n+1}}{a_n} \\right|$ exists and $L \\neq 0$, we can divide by $L$:\n$$|x-c| < \\frac{1}{L} = \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right|$$\nSimilarly, the series diverges if $|x-c| > \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right|$. By the definition of the radius of convergence $R$, we conclude that $R = \\lim_{n \\to \\infty} \\left| \\frac{a_n}{a_{n+1}} \\right|$."
+          },
+          {
+            "number": 3,
+            "text": "If $f(x)$ is a non zero function and differentiable infinitely many times, then show by induction that the $n^{th}$ derivative of the power series representation of $f(x)$ is equal with its corresponding taylor series representation.",
+            "answer": "Proof by mathematical induction shown in explanation.",
+            "explanation": "Suppose $f(x) = \\sum_{k=0}^{\\infty} a_k(x-c)^k$ on $(c-R, c+R)$. We show by induction on $n$ that $f^{(n)}(c) = n! a_n$, which gives $a_n = \\frac{f^{(n)}(c)}{n!}$.\n\n**Base Case ($n=0$):**\nEvaluating at $x=c$, $f(c) = a_0 + a_1(0) + a_2(0)^2 + \\dots = a_0 = 0! a_0$. Thus $a_0 = \\frac{f^{(0)}(c)}{0!}$.\n\n**Inductive Hypothesis:**\nAssume for $n=m$ that term-by-term differentiation yields:\n$$f^{(m)}(x) = \\sum_{k=m}^{\\infty} k(k-1)\\cdots(k-m+1) a_k (x-c)^{k-m}$$\nEvaluating at $x=c$ gives $f^{(m)}(c) = m! a_m$, so $a_m = \\frac{f^{(m)}(c)}{m!}$.\n\n**Inductive Step ($n=m+1$):**\nDifferentiating $f^{(m)}(x)$ term-by-term (valid within the radius of convergence):\n$$f^{(m+1)}(x) = \\sum_{k=m+1}^{\\infty} k(k-1)\\cdots(k-m+1)(k-m) a_k (x-c)^{k-m-1}$$\nEvaluating at $x=c$, all terms with $k > m+1$ vanish, leaving only the $k=m+1$ term:\n$$f^{(m+1)}(c) = (m+1)! a_{m+1} \\implies a_{m+1} = \\frac{f^{(m+1)}(c)}{(m+1)!}$$\nBy mathematical induction, $a_n = \\frac{f^{(n)}(c)}{n!}$ for all $n \\ge 0$, which matches the Taylor series representation $\\sum_{n=0}^{\\infty} \\frac{f^{(n)}(c)}{n!}(x-c)^n$."
+          },
+          {
+            "number": 4,
+            "text": "Use application of power series and $\\int_{0}^{\\infty} t^n e^{-t} dt = n!$ for a positive integer $n$ to find the formula of $\\int_{0}^{\\infty} e^{-t} \\sin(tx) dt$ for $|x| < 1$.",
+            "answer": "$\\frac{x}{1+x^2}$",
+            "explanation": "The Maclaurin series for $\\sin(tx)$ is:\n$$\\sin(tx) = \\sum_{n=0}^{\\infty} \\frac{(-1)^n (tx)^{2n+1}}{(2n+1)!}$$\nSubstituting this into the integral and interchanging the sum and integral (valid for $|x| < 1$):\n$$\\int_{0}^{\\infty} e^{-t} \\sin(tx) \\, dt = \\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n+1}}{(2n+1)!} \\int_{0}^{\\infty} t^{2n+1} e^{-t} \\, dt$$\nUsing the given identity $\\int_{0}^{\\infty} t^{2n+1} e^{-t} \\, dt = (2n+1)!$:\n$$= \\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n+1}}{(2n+1)!} (2n+1)! = \\sum_{n=0}^{\\infty} (-1)^n x^{2n+1} = x \\sum_{n=0}^{\\infty} (-x^2)^n$$\nFor $|x| < 1$, $|-x^2| < 1$, so this geometric series converges to:\n$$\\frac{x}{1 - (-x^2)} = \\frac{x}{1+x^2}$$"
+          },
+          {
+            "number": 5,
+            "text": "Find the fourier cosine expansion of $f(x) = \\begin{cases} x(\\pi - x) & \\text{for } 0 < x < \\pi \\\\ -x(\\pi + x) & \\text{for } -\\pi < x < 0 \\end{cases}$ with period $p = \\frac{\\pi}{2}$ and prove that $\\sum_{n=1}^{\\infty} \\frac{1}{n^2} = \\frac{\\pi^2}{6}$.",
+            "answer": "$f(x) = \\frac{\\pi^2}{6} - \\sum_{k=1}^{\\infty} \\frac{\\cos(2kx)}{k^2}$",
+            "explanation": "Note that $f(-x) = f(x)$ on $(-\\pi, \\pi)$, so $f(x)$ is an even function with half-period $L = \\pi$ (period $2\\pi$). Thus, $b_n = 0$ for all $n$.\n\n1. **Compute $a_0$:**\n$$a_0 = \\frac{2}{\\pi} \\int_0^{\\pi} x(\\pi - x) \\, dx = \\frac{2}{\\pi} \\left[\\frac{\\pi x^2}{2} - \\frac{x^3}{3}\\right]_0^{\\pi} = \\frac{2}{\\pi} \\left(\\frac{\\pi^3}{2} - \\frac{\\pi^3}{3}\\right) = \\frac{\\pi^2}{3}$$\n\n2. **Compute $a_n$:**\n$$a_n = \\frac{2}{\\pi} \\int_0^{\\pi} (\\pi x - x^2)\\cos(nx) \\, dx$$\nIntegrating by parts twice:\n$$a_n = \\frac{2}{\\pi} \\left[ (\\pi x - x^2)\\frac{\\sin(nx)}{n} + (\\pi - 2x)\\frac{\\cos(nx)}{n^2} - 2\\frac{\\sin(nx)}{n^3} \\right]_0^{\\pi} = \\frac{2}{\\pi} \\left( -\\frac{\\pi (-1)^n}{n^2} - \\frac{\\pi}{n^2} \\right) = -\\frac{2(1 + (-1)^n)}{n^2}$$\nFor odd $n$, $a_n = 0$. For even $n = 2k$, $a_{2k} = -\\frac{4}{(2k)^2} = -\\frac{1}{k^2}$.\nThus, the Fourier cosine expansion is:\n$$f(x) = \\frac{\\pi^2}{6} - \\sum_{k=1}^{\\infty} \\frac{\\cos(2kx)}{k^2}$$\n\n3. **Prove $\\sum_{n=1}^{\\infty} \\frac{1}{n^2} = \\frac{\\pi^2}{6}$:**\nSince $f(x)$ is continuous at $x = 0$ and $f(0) = 0$, setting $x = 0$ gives:\n$$0 = \\frac{\\pi^2}{6} - \\sum_{k=1}^{\\infty} \\frac{\\cos(0)}{k^2} \\implies \\sum_{k=1}^{\\infty} \\frac{1}{k^2} = \\frac{\\pi^2}{6}$$"
+          }
+        ]
+      }
+    },
+    {
+      "part_ii": {
+        "instructions": "Fill in the blank spaces with the most simplified correct answer.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Let $f(x, y) = \\frac{x}{y}$. Then a) $\\frac{\\partial}{\\partial x}(x, y) =$ _____ b) $\\frac{\\partial}{\\partial y}(x, y) =$ _____",
+            "answer": "a) $\\frac{1}{y}$, b) $-\\frac{x}{y^2}$",
+            "explanation": "a) Treating $y$ as a constant, $\\frac{\\partial}{\\partial x}\\left(\\frac{x}{y}\\right) = \\frac{1}{y}$.\nb) Treating $x$ as a constant, $\\frac{\\partial}{\\partial y}(xy^{-1}) = -xy^{-2} = -\\frac{x}{y^2}$."
+          },
+          {
+            "number": 2,
+            "text": "The directional derivative of $f(x, y) = x^2 + y^2$ at the point $(2, 1)$ in the direction of the unit vector $\\left(\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}\\right)$ is _____.",
+            "answer": "$3\\sqrt{2}$",
+            "explanation": "The gradient is $\\nabla f(x,y) = (2x, 2y)$. At $(2, 1)$, $\\nabla f(2,1) = (4, 2)$. The directional derivative is $D_{\\mathbf{u}}f(2,1) = (4, 2) \\cdot \\left(\\frac{1}{\\sqrt{2}}, \\frac{1}{\\sqrt{2}}\\right) = \\frac{4+2}{\\sqrt{2}} = \\frac{6}{\\sqrt{2}} = 3\\sqrt{2}$."
+          },
+          {
+            "number": 3,
+            "text": "$\\int_{1}^{2} \\int_{0}^{1} xy \\, dy \\, dx =$ _____",
+            "answer": "$\\frac{3}{4}$",
+            "explanation": "First integrate with respect to $y$: $\\int_0^1 xy \\, dy = x\\left[\\frac{y^2}{2}\\right]_0^1 = \\frac{x}{2}$. Then integrate with respect to $x$: $\\int_1^2 \\frac{x}{2} \\, dx = \\left[\\frac{x^2}{4}\\right]_1^2 = \\frac{4}{4} - \\frac{1}{4} = \\frac{3}{4}$."
+          },
+          {
+            "number": 4,
+            "text": "The area of the region bounded by the curves $y = x^2$ and $x = y^2$ is _____.",
+            "answer": "$\\frac{1}{3}$",
+            "explanation": "The curves intersect at $(0,0)$ and $(1,1)$. For $0 \\le x \\le 1$, $\\sqrt{x} \\ge x^2$. The area is $\\int_0^1 (\\sqrt{x} - x^2) \\, dx = \\left[\\frac{2}{3}x^{3/2} - \\frac{x^3}{3}\\right]_0^1 = \\frac{2}{3} - \\frac{1}{3} = \\frac{1}{3}$."
+          },
+          {
+            "number": 5,
+            "text": "The cylindrical coordinate of the point $(1, 1, 1)$ is _____.",
+            "answer": "$\\left(\\sqrt{2}, \\frac{\\pi}{4}, 1\\right)$",
+            "explanation": "Using $r = \\sqrt{x^2+y^2} = \\sqrt{1^2+1^2} = \\sqrt{2}$, $\\theta = \\arctan\\left(\\frac{1}{1}\\right) = \\frac{\\pi}{4}$ (in the first quadrant), and $z = 1$, the cylindrical coordinates are $\\left(\\sqrt{2}, \\frac{\\pi}{4}, 1\\right)$."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Work out the following questions. Show all necessary steps clearly and neatly.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Evaluate the following limit $\\lim_{(x,y) \\to (0,0)} \\frac{x^2 y^2}{x^3 + y^3}$",
+            "answer": "The limit does not exist.",
+            "explanation": "1. Along the path $y = 0$ ($x \\neq 0$): $\\lim_{x \\to 0} \\frac{0}{x^3} = 0$.\n2. Along the path $y = -x + x^2$ (approaching $(0,0)$): the denominator becomes $x^3 + (-x+x^2)^3 = 3x^4 - 3x^5 + x^6$, and the numerator becomes $x^2(-x+x^2)^2 = x^4 - 2x^5 + x^6$. Taking the limit as $x \\to 0$:\n$$\\lim_{x \\to 0} \\frac{x^4 - 2x^5 + x^6}{3x^4 - 3x^5 + x^6} = \\frac{1}{3}$$\nSince $0 \\neq \\frac{1}{3}$, the limit does not exist."
+          },
+          {
+            "number": 2,
+            "text": "Find and classify all the critical points of the function $f(x,y) = x^2 + y^2 + xy + x + y + 1$",
+            "answer": "Critical point $\\left(-\\frac{1}{3}, -\\frac{1}{3}\\right)$ is a local minimum.",
+            "explanation": "Set the first partial derivatives to zero:\n$$f_x = 2x + y + 1 = 0$$\n$$f_y = 2y + x + 1 = 0$$\nSubtracting the two equations gives $x - y = 0 \\implies x = y$. Substituting $y = x$ into $2x + y + 1 = 0$ gives $3x + 1 = 0 \\implies x = -\\frac{1}{3}, y = -\\frac{1}{3}$.\n\nUsing the Second Derivative Test: $f_{xx} = 2$, $f_{yy} = 2$, $f_{xy} = 1$.\n$$D = f_{xx}f_{yy} - (f_{xy})^2 = (2)(2) - 1^2 = 3 > 0$$\nSince $D > 0$ and $f_{xx} = 2 > 0$, $\\left(-\\frac{1}{3}, -\\frac{1}{3}\\right)$ is a local minimum."
+          },
+          {
+            "number": 3,
+            "text": "Evaluate $\\int_{0}^{\\pi} \\int_{y}^{\\pi} \\sin(x^2) \\, dx \\, dy$. (Hint: change the order of integration)",
+            "answer": "$\\frac{1 - \\cos(\\pi^2)}{2}$",
+            "explanation": "The region of integration is $0 \\le y \\le \\pi$ and $y \\le x \\le \\pi$. Reversing the order of integration gives $0 \\le x \\le \\pi$ and $0 \\le y \\le x$:\n$$\\int_{0}^{\\pi} \\int_{0}^{x} \\sin(x^2) \\, dy \\, dx = \\int_{0}^{\\pi} x \\sin(x^2) \\, dx$$\nLet $u = x^2$, $du = 2x \\, dx$:\n$$= \\left[-\\frac{1}{2}\\cos(x^2)\\right]_0^{\\pi} = -\\frac{1}{2}\\cos(\\pi^2) + \\frac{1}{2}\\cos(0) = \\frac{1 - \\cos(\\pi^2)}{2}$$"
+          }
+        ]
+      }
+    },
+    {
+      "part_ii": {
+        "instructions": "Fill in the blank spaces with the most simplified correct answer.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Find the limit of the function $\\lim_{(x,y) \\to (0,0)} \\frac{x^2 - y^6}{xy^3}$",
+            "answer": "Does not exist",
+            "explanation": "Along $x = y^3$ ($y \\neq 0$), the expression is $\\frac{y^6 - y^6}{y^6} = 0$. Along $x = 2y^3$, the expression is $\\frac{4y^6 - y^6}{2y^6} = \\frac{3}{2}$. Since the limits along different paths disagree, the limit does not exist."
+          },
+          {
+            "number": 2,
+            "text": "Find the directional derivative for the function $f(x,y,z) = x^2y^3 - 4xz$ in the direction of $V = (-1, 2, 0)$",
+            "answer": "$\\frac{-2xy^3 + 4z + 6x^2y^2}{\\sqrt{5}}$",
+            "explanation": "The gradient is $\\nabla f = (2xy^3 - 4z, 3x^2y^2, -4x)$. The unit vector in the direction of $V$ is $\\mathbf{u} = \\frac{(-1, 2, 0)}{\\sqrt{(-1)^2 + 2^2 + 0^2}} = \\left(-\\frac{1}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}}, 0\\right)$. Thus, $D_{\\mathbf{u}}f = \\nabla f \\cdot \\mathbf{u} = \\frac{-2xy^3 + 4z + 6x^2y^2}{\\sqrt{5}}$."
+          },
+          {
+            "number": 3,
+            "text": "What is the partial derivative of the function $\\ln z = (x^3 + 2)\\ln y$",
+            "answer": "$\\frac{\\partial z}{\\partial x} = 3x^2 (\\ln y) y^{x^3+2}$, $\\frac{\\partial z}{\\partial y} = (x^3+2)y^{x^3+1}$",
+            "explanation": "Rewriting the function gives $z = y^{x^3+2}$. Differentiating implicitly from $\\ln z = (x^3+2)\\ln y$:\n- With respect to $x$: $\\frac{1}{z}\\frac{\\partial z}{\\partial x} = 3x^2 \\ln y \\implies \\frac{\\partial z}{\\partial x} = 3x^2 (\\ln y) y^{x^3+2}$.\n- With respect to $y$: $\\frac{1}{z}\\frac{\\partial z}{\\partial y} = \\frac{x^3+2}{y} \\implies \\frac{\\partial z}{\\partial y} = (x^3+2)y^{x^3+1}$."
+          },
+          {
+            "number": 4,
+            "text": "Find the equation of tangent plane to the surface $f(x,y,z) = 2x^2 - 3xy + 8y^2 + 2x - 4y + 4$ at point $(2,-1)$",
+            "answer": "$13x - 26y - z = 18$",
+            "explanation": "Treating the surface as $z = 2x^2 - 3xy + 8y^2 + 2x - 4y + 4$, at $(2,-1)$ we have $z = 2(4) - 3(2)(-1) + 8(1) + 2(2) - 4(-1) + 4 = 34$. The partial derivatives are $z_x = 4x - 3y + 2$ ($z_x(2,-1) = 13$) and $z_y = -3x + 16y - 4$ ($z_y(2,-1) = -26$). The tangent plane is $z - 34 = 13(x-2) - 26(y+1)$, which simplifies to $13x - 26y - z = 18$."
+          },
+          {
+            "number": 5,
+            "text": "Evaluate the integral $\\iint (3x^2 + y^2) dA$ where $D = \\{(x,y) / -2 \\le y \\le 3, y^2 - 3 \\le x \\le y + 3\\}$",
+            "answer": "$\\frac{2375}{7}$",
+            "explanation": "Integrate with respect to $x$ first:\n$$\\int_{-2}^3 \\int_{y^2-3}^{y+3} (3x^2 + y^2) \\, dx \\, dy = \\int_{-2}^3 \\left[x^3 + xy^2\\right]_{y^2-3}^{y+3} dy$$\n$$= \\int_{-2}^3 (-y^6 + 8y^4 + 2y^3 - 12y^2 + 27y + 54) \\, dy$$\n$$= \\left[-\\frac{y^7}{7} + \\frac{8y^5}{5} + \\frac{y^4}{2} - 4y^3 + \\frac{27y^2}{2} + 54y\\right]_{-2}^3 = \\frac{2375}{7}$$"
+          },
+          {
+            "number": 6,
+            "text": "Find the volume of solid region that lies under the parabola $z = 1 - x^2 - y^2$ and above the unit region on the $xy$ plane.",
+            "answer": "$\\frac{\\pi}{2}$",
+            "explanation": "Assuming the unit disk $x^2 + y^2 \\le 1$ on the $xy$-plane, using polar coordinates:\n$$V = \\int_0^{2\\pi} \\int_0^1 (1 - r^2) r \\, dr \\, d\\theta = 2\\pi \\left[\\frac{r^2}{2} - \\frac{r^4}{4}\\right]_0^1 = 2\\pi \\left(\\frac{1}{4}\\right) = \\frac{\\pi}{2}$$"
+          },
+          {
+            "number": 7,
+            "text": "The domain of $f(x,y) = \\sqrt{\\ln(x^2 - xy + 5)}$ is",
+            "answer": "$\\{(x,y) \\in \\mathbb{R}^2 : x^2 - xy + 4 \\ge 0\\}$",
+            "explanation": "The square root requires $\\ln(x^2 - xy + 5) \\ge 0$, which means $x^2 - xy + 5 \\ge e^0 = 1$, or $x^2 - xy + 4 \\ge 0$."
+          },
+          {
+            "number": 8,
+            "text": "The value of m for which $f(x,y) = \\begin{cases} \\frac{2^x \\sin(2y) - 2\\sin y \\cos y}{xy}, & xy \\neq 0 \\\\ 2m^2, & xy = 0 \\end{cases}$ is continuous at $(0,0)$ is",
+            "answer": "$\\pm\\sqrt{\\ln 2}$",
+            "explanation": "Using $2\\sin y \\cos y = \\sin(2y)$, the numerator factors as $\\sin(2y)(2^x - 1)$. Taking the limit as $(x,y) \\to (0,0)$:\n$$\\lim_{(x,y) \\to (0,0)} \\frac{2^x - 1}{x} \\cdot \\frac{\\sin(2y)}{y} = (\\ln 2)(2) = 2\\ln 2$$\nFor continuity at $(0,0)$, we set $2m^2 = 2\\ln 2 \\implies m^2 = \\ln 2 \\implies m = \\pm\\sqrt{\\ln 2}$."
+          },
+          {
+            "number": 9,
+            "text": "Let $f(x,y) = xe^y$. Then\na) The rate of change of $f$ at $P(2, 0)$ in the direction of the vector from P to $Q(\\frac{1}{2}, 2)$ is\nb) In what direction does $f$ has the maximum rate of change?\nc) This maximum rate of change of $f$ is\nd) In what direction does $f$ has the minimum rate of change?\ne) This minimum rate of change of $f$ is",
+            "answer": "a) $1$, b) $(1, 2)$, c) $\\sqrt{5}$, d) $(-1, -2)$, e) $-\\sqrt{5}$",
+            "explanation": "$\\nabla f(x,y) = (e^y, xe^y)$, so $\\nabla f(2,0) = (1, 2)$.\na) $\\overrightarrow{PQ} = \\left(-\\frac{3}{2}, 2\\right)$ has magnitude $\\frac{5}{2}$, so $\\mathbf{u} = \\left(-\\frac{3}{5}, \\frac{4}{5}\\right)$. $D_{\\mathbf{u}}f(2,0) = (1,2) \\cdot \\left(-\\frac{3}{5}, \\frac{4}{5}\\right) = 1$.\nb) Maximum rate of change occurs in the direction of $\\nabla f(2,0) = (1, 2)$.\nc) Maximum rate is $\\|\\nabla f(2,0)\\| = \\sqrt{1^2 + 2^2} = \\sqrt{5}$.\nd) Minimum rate of change occurs in the direction of $-\\nabla f(2,0) = (-1, -2)$.\ne) Minimum rate is $-\\|\\nabla f(2,0)\\| = -\\sqrt{5}$."
+          },
+          {
+            "number": 10,
+            "text": "$\\int_{0}^{2} \\int_{0}^{3} \\sin \\pi x^3 dx dy =$",
+            "answer": "$2\\int_{0}^{3} \\sin(\\pi x^3) \\, dx$",
+            "explanation": "Since the limits are constants and the integrand depends only on $x$, $\\int_0^2 dy = 2$, leaving $2\\int_0^3 \\sin(\\pi x^3) \\, dx$ (which is a non-elementary integral)."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Work out the following questions. Show all necessary steps clearly and neatly.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "By using second derivative test find the local extrema of the function $g(x,y) = \\frac{1}{3}x^3 + y^2 + 2xy - 6x - 3y + 4$",
+            "answer": "Local minimum at $\\left(3, -\\frac{3}{2}\\right)$; saddle point at $\\left(-1, \\frac{5}{2}\\right)$.",
+            "explanation": "Set first partial derivatives to zero:\n$g_x = x^2 + 2y - 6 = 0$ and $g_y = 2y + 2x - 3 = 0 \\implies 2y = 3 - 2x$.\nSubstituting into $g_x = 0$: $x^2 - 2x - 3 = 0 \\implies (x-3)(x+1) = 0 \\implies x = 3$ or $x = -1$.\nCritical points: $\\left(3, -\\frac{3}{2}\\right)$ and $\\left(-1, \\frac{5}{2}\\right)$.\n\nSecond derivatives: $g_{xx} = 2x$, $g_{yy} = 2$, $g_{xy} = 2$, so $D = 4x - 4$.\n- At $\\left(3, -\\frac{3}{2}\\right)$: $D = 8 > 0$ and $g_{xx} = 6 > 0 \\implies$ local minimum.\n- At $\\left(-1, \\frac{5}{2}\\right)$: $D = -8 < 0 \\implies$ saddle point."
+          },
+          {
+            "number": 2,
+            "text": "Find the maximum and minimum of $f(x,y) = 5x - 3y$ subject to the constraint $x^2 + y^2 = 136$",
+            "answer": "Maximum is $68$ at $(10, -6)$; Minimum is $-68$ at $(-10, 6)$.",
+            "explanation": "Using Lagrange multipliers $\\nabla f = \\lambda \\nabla g$: $(5, -3) = \\lambda(2x, 2y)$, so $x = \\frac{5}{2\\lambda}$ and $y = -\\frac{3}{2\\lambda}$.\nSubstituting into $x^2 + y^2 = 136$: $\\frac{25 + 9}{4\\lambda^2} = 136 \\implies \\frac{34}{4\\lambda^2} = 136 \\implies \\lambda = \\pm\\frac{1}{4}$.\nFor $\\lambda = \\frac{1}{4}$: $(x, y) = (10, -6)$, giving $f(10, -6) = 68$ (maximum).\nFor $\\lambda = -\\frac{1}{4}$: $(x, y) = (-10, 6)$, giving $f(-10, 6) = -68$ (minimum)."
+          },
+          {
+            "number": 3,
+            "text": "Use the method of Lagrange's multiplier to find the extreme values of $f(x,y) = xy$ subject to the constraint function $g(x,y) = 4x^2 + y^2 = 8$.",
+            "answer": "Maximum is $2$ at $(1, 2)$ and $(-1, -2)$; Minimum is $-2$ at $(1, -2)$ and $(-1, 2)$.",
+            "explanation": "Setting $\\nabla f = \\lambda \\nabla g$: $(y, x) = \\lambda(8x, 2y) \\implies y = 8\\lambda x$ and $x = 2\\lambda y$.\nSubstituting gives $y = 16\\lambda^2 y$. Since $y = 0$ gives $x = 0$ (not on the ellipse), $\\lambda = \\pm\\frac{1}{4}$, which gives $y = \\pm 2x$.\nSubstituting into $4x^2 + y^2 = 8$: $4x^2 + 4x^2 = 8 \\implies x = \\pm 1, y = \\pm 2$.\nEvaluating $f(x,y) = xy$: maximum is $2$ at $(1, 2)$ and $(-1, -2)$; minimum is $-2$ at $(1, -2)$ and $(-1, 2)$."
+          },
+          {
+            "number": 4,
+            "text": "Find the area of the region that lies in the xy-plane bounded by $y = x^2$ and $y = 8 - x^2$.",
+            "answer": "$\\frac{64}{3}$",
+            "explanation": "The curves intersect when $x^2 = 8 - x^2 \\implies x = \\pm 2$. The area is:\n$$A = \\int_{-2}^2 ((8 - x^2) - x^2) \\, dx = 2\\int_0^2 (8 - 2x^2) \\, dx = 2\\left[8x - \\frac{2}{3}x^3\\right]_0^2 = 2\\left(16 - \\frac{16}{3}\\right) = \\frac{64}{3}$$"
+          },
+          {
+            "number": 5,
+            "text": "Evaluate $\\iiint_D (x^2 + y^2) dV$ where D is the solid region that lies between the spheres $x^2 + y^2 + z^2 = 1$ and $x^2 + y^2 + z^2 = 9$.",
+            "answer": "$\\frac{1936\\pi}{15}$",
+            "explanation": "Using spherical coordinates, $1 \\le \\rho \\le 3$, $0 \\le \\phi \\le \\pi$, $0 \\le \\theta \\le 2\\pi$, and $x^2 + y^2 = \\rho^2\\sin^2\\phi$:\n$$\\int_0^{2\\pi} d\\theta \\int_0^{\\pi} \\sin^3\\phi \\, d\\phi \\int_1^3 \\rho^4 \\, d\\rho = 2\\pi \\cdot \\frac{4}{3} \\cdot \\left[\\frac{\\rho^5}{5}\\right]_1^3 = \\frac{8\\pi}{3} \\cdot \\frac{243 - 1}{5} = \\frac{1936\\pi}{15}$$"
+          }
+        ]
+      }
+    },
+    {
+      "part_i": {
+        "instructions": "Write True if the statement is correct and False otherwise.",
+        "questions": [
+          {
+            "number": 7,
+            "text": "$u = x^2 - y^2$ is a solution of the Laplace equation $u_{xx} + u_{yy} = 0$.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A",
+            "explanation": "$u_{xx} = 2$ and $u_{yy} = -2$, so $u_{xx} + u_{yy} = 2 + (-2) = 0$. Thus, the statement is True."
+          },
+          {
+            "number": 8,
+            "text": "The radius of convergence remains the same when a power series is differentiated or integrated.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A",
+            "explanation": "Term-by-term differentiation or integration of a power series preserves its radius of convergence (though convergence at the endpoints may change)."
+          },
+          {
+            "number": 9,
+            "text": "The sequence $\\left\\{\\frac{\\ln n}{\\ln 2n}\\right\\}$ is divergent.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B",
+            "explanation": "$\\lim_{n \\to \\infty} \\frac{\\ln n}{\\ln 2n} = \\lim_{n \\to \\infty} \\frac{\\ln n}{\\ln 2 + \\ln n} = 1$, so the sequence is convergent."
+          },
+          {
+            "number": 10,
+            "text": "If $\\lim_{n \\to \\infty} a_n = 0$ then $\\sum a_n$ is convergent.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B",
+            "explanation": "$\\lim_{n \\to \\infty} a_n = 0$ is a necessary condition for convergence, not a sufficient one (e.g., the harmonic series $\\sum \\frac{1}{n}$ has $\\lim \\frac{1}{n} = 0$ but diverges)."
+          },
+          {
+            "number": 11,
+            "text": "$\\sum_{n=10}^{\\infty} \\frac{1}{n}$ is convergent series.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B",
+            "explanation": "This is a tail of the harmonic series ($p$-series with $p = 1 \\le 1$), which diverges."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Write your most simplified answer only in the shaded space provided.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Let $f(x,y) = x^2e^{3x}$ then\na. $f(2,0) =$ _____\nb. Domain of $f$ is _____\nc. Range of $f$ is _____",
+            "answer": "a. $4e^6$, b. $\\mathbb{R}^2$, c. $[0, \\infty)$",
+            "explanation": "a. $f(2,0) = 2^2 e^{3(2)} = 4e^6$.\nb. $f(x,y)$ is defined for all $(x,y) \\in \\mathbb{R}^2$.\nc. Since $x^2 \\ge 0$ and $e^{3x} > 0$, $f(x,y) \\ge 0$, taking all values in $[0, \\infty)$."
+          },
+          {
+            "number": 2,
+            "text": "$\\lim_{(x,y) \\to (0,0)} \\frac{e^{-x^2-y^2}-1}{x^2+y^2}$ is _____",
+            "answer": "$-1$",
+            "explanation": "Let $u = -(x^2+y^2)$. As $(x,y) \\to (0,0)$, $u \\to 0$, so $\\lim_{u \\to 0} \\frac{e^u - 1}{-u} = -1$."
+          },
+          {
+            "number": 3,
+            "text": "The directional derivative of the $f(x,y,z) = xe^y + ye^z + ze^x$ at the point $(0,0,0)$ in the direction of $(5,1,-2)$ is given by _____",
+            "answer": "$\\frac{4}{\\sqrt{30}}$",
+            "explanation": "$\\nabla f = (e^y + ze^x, xe^y + e^z, ye^z + e^x)$, so $\\nabla f(0,0,0) = (1, 1, 1)$. The unit vector is $\\mathbf{u} = \\frac{(5, 1, -2)}{\\sqrt{30}}$. Thus, $D_{\\mathbf{u}}f(0,0,0) = \\frac{5 + 1 - 2}{\\sqrt{30}} = \\frac{4}{\\sqrt{30}}$."
+          },
+          {
+            "number": 4,
+            "text": "$\\iint_R 3dA$ , Where $R = \\{(x,y): -2 \\le x \\le 2, 1 \\le y \\le 6\\}$ is _____",
+            "answer": "$60$",
+            "explanation": "The area of the rectangle $R$ is $(2 - (-2))(6 - 1) = 4 \\times 5 = 20$. Thus, $\\iint_R 3 \\, dA = 3 \\times 20 = 60$."
+          },
+          {
+            "number": 5,
+            "text": "The equation of the tangent plane to the elliptic paraboloid $z = 2x^2 + y^2$ at the point $(1,1,3)$ is _____",
+            "answer": "$4x + 2y - z = 3$",
+            "explanation": "$z_x = 4x \\implies z_x(1,1) = 4$, and $z_y = 2y \\implies z_y(1,1) = 2$. The tangent plane is $z - 3 = 4(x - 1) + 2(y - 1)$, which simplifies to $4x + 2y - z = 3$."
+          },
+          {
+            "number": 6,
+            "text": "$\\int_{0}^{1} \\int_{0}^{2} \\int_{0}^{x^2} 6xz \\, dy \\, dx \\, dz$ _____",
+            "answer": "$12$",
+            "explanation": "$\\int_0^1 z \\, dz \\int_0^2 6x(x^2) \\, dx = \\left[\\frac{z^2}{2}\\right]_0^1 \\left[\\frac{6x^4}{4}\\right]_0^2 = \\frac{1}{2} \\cdot 24 = 12$."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Work out the questions below with the necessary steps clearly",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Calculate the iterated integral $\\int_{0}^{2} \\int_{0}^{\\pi} r \\sin^2\\theta \\, d\\theta \\, dr$ (4 pts)",
+            "answer": "$\\pi$",
+            "explanation": "Using $\\sin^2\\theta = \\frac{1 - \\cos(2\\theta)}{2}$:\n$$\\int_0^2 r \\, dr \\int_0^{\\pi} \\frac{1 - \\cos(2\\theta)}{2} \\, d\\theta = \\left[\\frac{r^2}{2}\\right]_0^2 \\left[\\frac{\\theta}{2} - \\frac{\\sin(2\\theta)}{4}\\right]_0^{\\pi} = 2 \\cdot \\frac{\\pi}{2} = \\pi$$"
+          },
+          {
+            "number": 2,
+            "text": "Evaluate $\\iiint_E \\sqrt{x^2+y^2} \\, dV$, where E is the region that lies inside the cylinder $x^2+y^2 = 16$ and between the planes $z = -5$ and $z = 4$. (6 points)",
+            "answer": "$384\\pi$",
+            "explanation": "In cylindrical coordinates, $0 \\le r \\le 4$, $0 \\le \\theta \\le 2\\pi$, $-5 \\le z \\le 4$, and $\\sqrt{x^2+y^2} = r$:\n$$\\int_0^{2\\pi} d\\theta \\int_{-5}^4 dz \\int_0^4 r \\cdot r \\, dr = 2\\pi \\cdot 9 \\cdot \\left[\\frac{r^3}{3}\\right]_0^4 = 18\\pi \\cdot \\frac{64}{3} = 384\\pi$$"
+          },
+          {
+            "number": 3,
+            "text": "Let $f(t) = \\int \\frac{t}{1-t^8} dt$.\na. Find the power series representation of $f(t)$.\nb. What is the radius of convergence?\nc. What is the interval of convergence? (7 points)",
+            "answer": "a. $C + \\sum_{n=0}^{\\infty} \\frac{t^{8n+2}}{8n+2}$\nb. $R = 1$\nc. $(-1, 1)$",
+            "explanation": "a. Using $\\frac{1}{1-u} = \\sum_{n=0}^{\\infty} u^n$ for $|u| < 1$ with $u = t^8$:\n$$\\frac{t}{1-t^8} = t \\sum_{n=0}^{\\infty} t^{8n} = \\sum_{n=0}^{\\infty} t^{8n+1}$$\nIntegrating term-by-term gives $f(t) = C + \\sum_{n=0}^{\\infty} \\frac{t^{8n+2}}{8n+2}$.\nb. Since the geometric series converges for $|t^8| < 1 \\iff |t| < 1$, the radius of convergence is $R = 1$.\nc. At $t = \\pm 1$, the series becomes $\\sum_{n=0}^{\\infty} \\frac{1}{8n+2}$, which diverges by comparison with the harmonic series. Thus, the interval of convergence is $(-1, 1)$."
+          },
+          {
+            "number": 4,
+            "text": "Find the Maclaurin series for $f(x) = \\cos x$. (4 points)",
+            "answer": "$\\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n}}{(2n)!}$",
+            "explanation": "Computing derivatives at $x = 0$: $f(0) = 1$, $f'(0) = 0$, $f''(0) = -1$, $f'''(0) = 0$, $f^{(4)}(0) = 1$, etc. Substituting into $\\sum_{k=0}^{\\infty} \\frac{f^{(k)}(0)}{k!}x^k$ gives:\n$$\\cos x = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\dots = \\sum_{n=0}^{\\infty} \\frac{(-1)^n x^{2n}}{(2n)!}$$"
+          },
+          {
+            "number": 6,
+            "text": "Find the absolute maximum and minimum values of $f(x,y) = x^4 + y^4 - 4xy + 2$ on the set $D = \\{(x,y): 0 \\le x \\le 3, 0 \\le y \\le 2\\}$. (6 pts)",
+            "answer": "Absolute maximum is $83$ at $(3,0)$; Absolute minimum is $0$ at $(1,1)$.",
+            "explanation": "1. **Interior critical points:** $f_x = 4x^3 - 4y = 0 \\implies y = x^3$ and $f_y = 4y^3 - 4x = 0 \\implies x = y^3$. Thus $x^9 = x$, giving $(0,0)$ ($f=2$) and $(1,1)$ ($f=0$).\n2. **Boundary:**\n- $x = 0, 0 \\le y \\le 2$: $f(0,y) = y^4 + 2$, max at $(0,2)$ is $18$, min at $(0,0)$ is $2$.\n- $y = 0, 0 \\le x \\le 3$: $f(x,0) = x^4 + 2$, max at $(3,0)$ is $83$.\n- $x = 3, 0 \\le y \\le 2$: $f(3,y) = y^4 - 12y + 83$, critical point at $y = 3^{1/3}$ gives $83 - 9(3^{1/3}) \\approx 70.02$; at $(3,2)$, $f = 75$.\n- $y = 2, 0 \\le x \\le 3$: $f(x,2) = x^4 - 8x + 18$, critical point at $x = 2^{1/3}$ gives $18 - 6(2^{1/3}) \\approx 10.44$.\nComparing all values, the absolute maximum is $83$ at $(3,0)$ and the absolute minimum is $0$ at $(1,1)$."
+          },
+          {
+            "number": 6,
+            "text": "Find the Fourier series for $f(x) = \\begin{cases} x, & \\text{if } -\\frac{\\pi}{2} < x < \\frac{\\pi}{2} \\\\ 0, & \\text{if } \\frac{\\pi}{2} < x < \\frac{3\\pi}{2} \\end{cases}$\nDeduce that $\\sum_{n=1}^{\\infty} \\frac{1}{(2n-1)^2} = \\frac{\\pi^2}{8}$ (6 points.)",
+            "answer": "$f(x) = \\sum_{n=1}^{\\infty} \\left(\\frac{2\\sin(n\\pi/2)}{\\pi n^2} - \\frac{\\cos(n\\pi/2)}{n}\\right)\\sin(nx)$",
+            "explanation": "Since $f(x)$ is odd on $(-\\pi/2, \\pi/2)$ and $0$ elsewhere on $(-\\pi/2, 3\\pi/2)$, $a_0 = 0$ and $a_n = 0$ for all $n$.\n$$b_n = \\frac{1}{\\pi} \\int_{-\\pi/2}^{\\pi/2} x\\sin(nx) \\, dx = \\frac{2}{\\pi} \\int_0^{\\pi/2} x\\sin(nx) \\, dx = \\frac{2}{\\pi} \\left[-\\frac{x\\cos(nx)}{n} + \\frac{\\sin(nx)}{n^2}\\right]_0^{\\pi/2} = \\frac{2\\sin(n\\pi/2)}{\\pi n^2} - \\frac{\\cos(n\\pi/2)}{n}$$\nThus, $f(x) = \\sum_{n=1}^{\\infty} \\left(\\frac{2\\sin(n\\pi/2)}{\\pi n^2} - \\frac{\\cos(n\\pi/2)}{n}\\right)\\sin(nx)$.\n\nTo deduce the sum, evaluate at $x = \\frac{\\pi}{2}$. At this jump discontinuity, the series converges to $\\frac{f(\\pi/2^-) + f(\\pi/2^+)}{2} = \\frac{\\pi/2 + 0}{2} = \\frac{\\pi}{4}$. For even $n$, $\\sin(n\\pi/2) = 0$; for odd $n = 2k-1$, $\\cos((2k-1)\\pi/2) = 0$ and $\\sin^2((2k-1)\\pi/2) = 1$. Thus:\n$$\\frac{\\pi}{4} = \\sum_{k=1}^{\\infty} \\frac{2}{\\pi(2k-1)^2} \\implies \\sum_{k=1}^{\\infty} \\frac{1}{(2k-1)^2} = \\frac{\\pi^2}{8}$$"
+          }
+        ]
+      }
+    },
+    {
+      "part_i": {
+        "instructions": "Choose the correct answer.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "The graph of a function of two variables is a curve in space.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "B",
+            "explanation": "The graph of a function of two variables is generally a surface in three-dimensional space, not a curve."
+          },
+          {
+            "number": 2,
+            "text": "If a function of several variables is continuous at a point, then its limit exists at that point.",
+            "options": [
+              "A. True",
+              "B. False"
+            ],
+            "answer": "A",
+            "explanation": "Continuity at a point implies that the limit exists and equals the function value at that point."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Fill in the blank spaces with the most simplified correct answer (1.5 points each blank).",
+        "questions": [
+          {
+            "number": 1,
+            "text": "\\(\\lim_{(x,y)\\to(0,0)}\\frac{e^{-(x^2+y^2)}-1}{x^2+y^2}=\\) ________",
+            "answer": [
+              "\\(-1\\)"
+            ],
+            "explanation": "Let \\(r^2=x^2+y^2\\). Using \\(\\lim_{u\\to0}\\frac{e^u-1}{u}=1\\), the limit is \\(-1\\)."
+          },
+          {
+            "number": 2,
+            "text": "Given \\(f(x,y)=x^2y+y^3x\\). The gradient of \\(f\\) at \\((1,-1)\\) is ________.",
+            "answer": [
+              "\\(\\nabla f(1,-1)=(-3,4)\\)"
+            ],
+            "explanation": "\\(f_x=2xy+y^3\\) and \\(f_y=x^2+3xy^2\\). At \\((1,-1)\\), \\(f_x=-3\\) and \\(f_y=4\\). Therefore, \\(\\nabla f(1,-1)=(-3,4)\\)."
+          },
+          {
+            "number": 3,
+            "text": "The directional derivative of \\(f(x,y)=x^2y+y^3x\\) at \\((1,-1)\\) in the direction of \\((1,1)\\) is ________.",
+            "answer": [
+              "\\(\\frac{1}{\\sqrt{2}}\\)"
+            ],
+            "explanation": "The gradient at \\((1,-1)\\) is \\((-3,4)\\). The unit direction vector is \\(\\left(\\frac{1}{\\sqrt{2}},\\frac{1}{\\sqrt{2}}\\right)\\). Their dot product is \\(\\frac{1}{\\sqrt{2}}\\)."
+          },
+          {
+            "number": 4,
+            "text": "The equation of the tangent plane to \\(x^2+2y^2-3z=3\\) at the point \\((2,1)\\) is ________.",
+            "answer": [
+              "\\(4x+4y-3z=9\\)"
+            ],
+            "explanation": "First find \\(z\\) at \\((2,1)\\): \\(2^2+2(1)^2-3z=3 \\Rightarrow 6-3z=3 \\Rightarrow z=1\\). Using the gradient of \\(F(x,y,z)=x^2+2y^2-3z-3\\), \\(\\nabla F=(2x,\\,4y,\\,-3)=(4,4,-3)\\) at \\((2,1,1)\\). The tangent plane is \\(4(x-2)+4(y-1)-3(z-1)=0\\). Simplifying gives \\(4x+4y-3z=9\\)."
+          },
+          {
+            "number": 5,
+            "text": "If \\(R\\) is the region in the first quadrant bounded by \\(x^2+y^2=1\\) and the coordinate axes, then \\(\\iint_R e^{-(x^2+y^2)}\\,dA=\\) ________.",
+            "answer": [
+              "\\(\\frac{\\pi(1-e^{-1})}{4}\\)"
+            ],
+            "explanation": "Using polar coordinates, the integral is \\(\\int_0^{\\pi/2}\\int_0^1 e^{-r^2}r\\,dr\\,d\\theta=\\frac{\\pi(1-e^{-1})}{4}\\)."
+          },
+          {
+            "number": 6,
+            "text": "The area of the paraboloid \\(z=x^2+y^2\\) below the plane \\(z=4\\) is ________.",
+            "answer": [
+              "\\(\\frac{\\pi}{6}(17\\sqrt{17}-1)\\)"
+            ],
+            "explanation": "Using the surface area formula, \\(A=\\iint\\sqrt{1+4x^2+4y^2}\\,dA\\). In polar coordinates, integrate over \\(0\\leq r\\leq2\\) and \\(0\\leq\\theta\\leq2\\pi\\) to obtain \\(\\frac{\\pi(17\\sqrt{17}-1)}{6}\\)."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Work out the following questions. Show all necessary steps clearly and neatly (4 points each question).",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Given the function \\(f(x,y)=x^3+2xy-6x-4y^2\\).",
+            "sub_questions": [
+              {
+                "label": "a",
+                "text": "Find the critical points of \\(f\\).",
+                "answer": "The critical points are \\(\\left(\\frac{4}{3},\\frac{1}{3}\\right)\\) and \\(\\left(-\\frac{3}{2},-\\frac{3}{8}\\right)\\).",
+                "explanation": "\\(f_x=3x^2+2y-6\\) and \\(f_y=2x-8y\\). Setting \\(f_y=0\\) gives \\(y=\\frac{x}{4}\\). Substituting into \\(f_x=0\\): \\(3x^2+\\frac{x}{2}-6=0 \\Rightarrow 6x^2+x-12=0 \\Rightarrow (3x-4)(2x+3)=0\\), so \\(x=\\frac{4}{3}\\) or \\(x=-\\frac{3}{2}\\). Then \\(y=\\frac{x}{4}\\) gives \\(y=\\frac{1}{3}\\) and \\(y=-\\frac{3}{8}\\) respectively."
+              },
+              {
+                "label": "b",
+                "text": "Determine the local extrema of \\(f\\) at the critical points.",
+                "answer": "\\(\\left(\\frac{4}{3},\\frac{1}{3}\\right)\\) is a saddle point; \\(\\left(-\\frac{3}{2},-\\frac{3}{8}\\right)\\) is a local maximum with value \\(f=\\frac{99}{16}\\). There is no local minimum.",
+                "explanation": "Second derivatives: \\(f_{xx}=6x\\), \\(f_{yy}=-8\\), \\(f_{xy}=2\\), so \\(D=f_{xx}f_{yy}-f_{xy}^2=-48x-4\\). At \\(\\left(\\frac{4}{3},\\frac{1}{3}\\right)\\): \\(D=-64-4=-68<0\\), so it is a saddle point. At \\(\\left(-\\frac{3}{2},-\\frac{3}{8}\\right)\\): \\(D=72-4=68>0\\) and \\(f_{xx}=-9<0\\), so it is a local maximum, with \\(f\\left(-\\frac{3}{2},-\\frac{3}{8}\\right)=-\\frac{27}{8}+\\frac{9}{8}+9-\\frac{9}{16}=\\frac{99}{16}\\)."
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "text": "Evaluate \\(\\iint_R(x^2+y^2)\\,dA\\), where \\(R\\) is the region bounded by the circles \\(x^2+y^2=1\\) and \\(x^2+y^2=4\\).",
+            "answer": "\\(\\frac{15\\pi}{2}\\)",
+            "explanation": "Using polar coordinates, \\(1\\leq r\\leq2\\) and \\(0\\leq\\theta\\leq2\\pi\\). The integral is \\(\\int_0^{2\\pi}\\int_1^2 r^3\\,dr\\,d\\theta=\\frac{15\\pi}{2}\\)."
+          }
+        ]
+      }
+    },
+    {
+      "part_i": {
+        "instructions": "Choose the correct answer (True or False).",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Every bounded and monotonic sequence is convergent.",
+            "answer": "A",
+            "explanation": "True. This is the Monotone Convergence Theorem. An increasing sequence that is bounded above converges to its supremum, and a decreasing sequence that is bounded below converges to its infimum.",
+            "options": [
+              "A. True",
+              "B. False"
+            ]
+          },
+          {
+            "number": 2,
+            "text": "The series $\\sum_{n=0}^{\\infty}\\frac{n}{2n+1}$ is divergent.",
+            "answer": "A",
+            "explanation": "True. $\\lim_{n \\to \\infty} \\frac{n}{2n+1} = \\frac{1}{2} \\neq 0$. By the Divergence (n-th term) Test, if the terms do not tend to $0$ the series diverges.",
+            "options": [
+              "A. True",
+              "B. False"
+            ]
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Short answer (Write the most simplified answers on the space provided). 1.5 points each blank.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "The first two terms of the sequence $\\left\\{\\frac{(-1)^n}{n^2}\\right\\}_{n=1}^{\\infty}$ are _____ and _____.",
+            "answer": "$-1$ and $\\frac{1}{4}$",
+            "explanation": "Substitute $n=1$: $\\frac{(-1)^1}{1^2} = -1$. Substitute $n=2$: $\\frac{(-1)^2}{2^2} = \\frac{1}{4}$."
+          },
+          {
+            "number": 2,
+            "text": "The sum of the Geometric series $\\sum_{n=0}^{\\infty}\\frac{3^{n+1}}{4^n}$ is _____.",
+            "answer": "$12$",
+            "explanation": "Rewrite the general term: $\\frac{3^{n+1}}{4^n} = 3\\left(\\frac{3}{4}\\right)^n$.\nThis is a geometric series with first term $a = 3$ and ratio $r = \\frac{3}{4}$. Since $|r| < 1$ it converges to $\\frac{a}{1-r} = \\frac{3}{1 - \\frac{3}{4}} = \\frac{3}{1/4} = 12$."
+          },
+          {
+            "number": 3,
+            "text": "The n-th partial sum of the series $\\sum_{n=1}^{\\infty}\\frac{1}{n(n+1)}$ is $s_n =$ _____.",
+            "answer": "$s_n = \\frac{n}{n+1}$",
+            "explanation": "Use partial fractions: $\\frac{1}{k(k+1)} = \\frac{1}{k} - \\frac{1}{k+1}$.\nThen $s_n = \\left(1 - \\frac{1}{2}\\right) + \\left(\\frac{1}{2} - \\frac{1}{3}\\right) + \\dots + \\left(\\frac{1}{n} - \\frac{1}{n+1}\\right)$. All middle terms cancel (telescoping), leaving $s_n = 1 - \\frac{1}{n+1} = \\frac{n}{n+1}$."
+          },
+          {
+            "number": 4,
+            "text": "The power series representation of $f(x)=\\frac{x}{1+x^2}$ is _____.",
+            "answer": "$\\sum_{n=0}^{\\infty} (-1)^n x^{2n+1}$ for $|x| < 1$",
+            "explanation": "Write $\\frac{1}{1+x^2} = \\frac{1}{1-(-x^2)} = \\sum_{n=0}^{\\infty} (-x^2)^n = \\sum_{n=0}^{\\infty} (-1)^n x^{2n}$, valid when $|-x^2| < 1$, i.e. $|x| < 1$.\nMultiplying by $x$ gives $\\frac{x}{1+x^2} = \\sum_{n=0}^{\\infty} (-1)^n x^{2n+1} = x - x^3 + x^5 - \\dots$"
+          },
+          {
+            "number": 5,
+            "text": "The 4th order Taylor polynomial of the function of $f(x) = \\ln x$ about $x =$ [cut off in photo] _____",
+            "note": "The end of this line is cut off in the photo.",
+            "answer": "$P_4(x) = (x-1) - \\frac{(x-1)^2}{2} + \\frac{(x-1)^3}{3} - \\frac{(x-1)^4}{4}$ (taking the center as $x = 1$)",
+            "explanation": "NOTE: the end of this question is cut off in the photo. The center is assumed to be $x = 1$, the usual choice because $\\ln x$ is not defined at $0$ and $\\ln 1 = 0$. For another center $a$, use the same method with $f^{(k)}(a)$.\n$f(x) = \\ln x,\\ f'(x) = \\frac{1}{x},\\ f''(x) = -\\frac{1}{x^2},\\ f'''(x) = \\frac{2}{x^3},\\ f^{(4)}(x) = -\\frac{6}{x^4}$.\nAt $x = 1$: $f = 0,\\ f' = 1,\\ f'' = -1,\\ f''' = 2,\\ f^{(4)} = -6$.\n$P_4(x) = \\sum_{k=0}^{4} \\frac{f^{(k)}(1)}{k!}(x-1)^k = (x-1) - \\frac{1}{2}(x-1)^2 + \\frac{2}{6}(x-1)^3 - \\frac{6}{24}(x-1)^4$, which simplifies to the answer."
+          },
+          {
+            "number": 6,
+            "text": "Given the function $f(x, y) = xy$. Then\na) The maximum value of $f$ subject to the constraint $g(x, y) = x^2 + y^2 =$ [cut off in photo] _____\nb) The minimum value of $f$ subject to the constraint $g(x, y) = x^2 + y^2 =$ [cut off in photo] _____",
+            "note": "The right edge of both sub-questions is cut off in the photo.",
+            "answer": "For the constraint $x^2 + y^2 = c$ ($c > 0$): a) maximum $= \\frac{c}{2}$, b) minimum $= -\\frac{c}{2}$. For example, if $x^2 + y^2 = 1$: maximum $\\frac{1}{2}$, minimum $-\\frac{1}{2}$.",
+            "explanation": "NOTE: the value of the constraint is cut off in the photo, so the answer is given for a general constant $c$. Substitute the paper's value for $c$.\nLagrange multipliers: $\\nabla f = \\lambda \\nabla g$ gives $(y, x) = \\lambda(2x, 2y)$, so $y = 2\\lambda x$ and $x = 2\\lambda y$.\nSubstituting one into the other: $y = 4\\lambda^2 y$. If $y = 0$ then $x = 0$, which is not on the circle (as $c > 0$), so $4\\lambda^2 = 1$, $\\lambda = \\pm\\frac{1}{2}$, and $y = \\pm x$.\nCase $y = x$: $2x^2 = c$, so $f = xy = x^2 = \\frac{c}{2}$ (maximum).\nCase $y = -x$: $f = -x^2 = -\\frac{c}{2}$ (minimum)."
+          },
+          {
+            "number": 7,
+            "text": "Let $f(x, y) = x^2 y^3$. Then\na) $f_{xy}(x, y) =$ _____\nb) $f_{yy}(x, y) =$ _____",
+            "answer": "a) $f_{xy} = 6xy^2$, b) $f_{yy} = 6x^2y$",
+            "explanation": "$f_x = 2xy^3$, so $f_{xy} = \\frac{\\partial}{\\partial y}(2xy^3) = 6xy^2$.\n$f_y = 3x^2y^2$, so $f_{yy} = \\frac{\\partial}{\\partial y}(3x^2y^2) = 6x^2y$."
+          },
+          {
+            "number": 8,
+            "text": "Let $f(x, y, z) = xy\\sin(z)$. Then\na) The maximum rate of change of $f$ at the point $(2, 1, 0)$ is _____\nb) The maximum rate of change of $f$ at the point $(2, 1, 0)$ occurs in [cut off in photo] of _____",
+            "note": "Right edge of the sub-questions is cut off in the photo.",
+            "answer": "a) $2$, b) the direction of the gradient $\\nabla f(2,1,0) = (0,0,2)$, i.e. the unit vector $(0,0,1)$",
+            "explanation": "NOTE: part (b) is cut off in the photo; it is read as asking for the direction in which the maximum rate occurs.\n$\\nabla f = (y\\sin z,\\ x\\sin z,\\ xy\\cos z)$. At $(2,1,0)$: $\\nabla f = (1\\cdot 0,\\ 2\\cdot 0,\\ 2\\cdot 1\\cdot 1) = (0, 0, 2)$.\na) The maximum rate of change is $\\|\\nabla f\\| = 2$.\nb) It occurs in the direction of $\\nabla f$, which is $(0,0,2)$, or the unit vector $(0,0,1)$ (the positive $z$-direction)."
+          },
+          {
+            "number": 9,
+            "text": "Evaluate\na) If $D$ is the region enclosed by $x^2 + y^2 = 1$, then $\\iint_D xy\\,dA =$ _____\nb) $\\int_0^1\\int_0^1\\int_0^1 xyz^2\\,dx\\,dy\\,dz =$ _____",
+            "answer": "a) $0$, b) $\\frac{1}{12}$",
+            "explanation": "a) Use polar coordinates on the unit disk: $\\iint_D xy\\,dA = \\int_0^{2\\pi}\\int_0^1 (r\\cos\\theta)(r\\sin\\theta)\\,r\\,dr\\,d\\theta = \\left(\\int_0^1 r^3 dr\\right)\\left(\\int_0^{2\\pi} \\sin\\theta\\cos\\theta\\,d\\theta\\right) = \\frac{1}{4}\\cdot 0 = 0$. (It is also $0$ by symmetry, since $xy$ is odd in $x$ and the disk is symmetric.)\nb) The integrand separates: $\\left(\\int_0^1 x\\,dx\\right)\\left(\\int_0^1 y\\,dy\\right)\\left(\\int_0^1 z^2\\,dz\\right) = \\frac{1}{2}\\cdot\\frac{1}{2}\\cdot\\frac{1}{3} = \\frac{1}{12}$."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Work out (Show all the necessary steps). Total 27.5 points.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Determine whether the series $\\sum_{n=1}^{\\infty}\\left(\\sqrt{n^2+1}-\\sqrt{n^2-1}\\right)$ converges or diverges.",
+            "answer": "The series diverges.",
+            "explanation": "Rationalize the term: $a_n = \\sqrt{n^2+1} - \\sqrt{n^2-1} = \\frac{(n^2+1)-(n^2-1)}{\\sqrt{n^2+1}+\\sqrt{n^2-1}} = \\frac{2}{\\sqrt{n^2+1}+\\sqrt{n^2-1}}$.\nCompare with $b_n = \\frac{1}{n}$ using the Limit Comparison Test: $\\lim_{n\\to\\infty} \\frac{a_n}{b_n} = \\lim_{n\\to\\infty} \\frac{2n}{\\sqrt{n^2+1}+\\sqrt{n^2-1}} = \\lim_{n\\to\\infty} \\frac{2}{\\sqrt{1+1/n^2}+\\sqrt{1-1/n^2}} = \\frac{2}{2} = 1$.\nThe limit is finite and positive, and $\\sum \\frac{1}{n}$ (harmonic series) diverges, so $\\sum a_n$ diverges."
+          },
+          {
+            "number": 2,
+            "text": "Find the radius of convergence and interval of convergence of the series $\\sum_{n=0}^{\\infty}\\frac{2^n(x-3)^n}{\\sqrt{n+3}}$.",
+            "note": "Series is blurry in the photo; denominator read as $\\sqrt{n+3}$.",
+            "answer": "Radius of convergence $R = \\frac{1}{2}$; interval of convergence $\\left[\\frac{5}{2}, \\frac{7}{2}\\right)$",
+            "explanation": "NOTE: the series is blurry in the photo; it is read as $\\sum \\frac{2^n (x-3)^n}{\\sqrt{n+3}}$.\nLet $a_n = \\frac{2^n}{\\sqrt{n+3}}$. Then $R = \\lim_{n\\to\\infty}\\left|\\frac{a_n}{a_{n+1}}\\right| = \\lim_{n\\to\\infty} \\frac{2^n}{2^{n+1}}\\cdot\\frac{\\sqrt{n+4}}{\\sqrt{n+3}} = \\frac{1}{2}$.\nSo the series converges for $|x-3| < \\frac{1}{2}$, i.e. $\\frac{5}{2} < x < \\frac{7}{2}$. Check the endpoints:\n- $x = \\frac{7}{2}$: $(x-3)^n = (1/2)^n$, so the series becomes $\\sum \\frac{1}{\\sqrt{n+3}}$, a $p$-series with $p = \\frac{1}{2} \\le 1$, which diverges.\n- $x = \\frac{5}{2}$: the series becomes $\\sum \\frac{(-1)^n}{\\sqrt{n+3}}$. The terms decrease to $0$, so it converges by the Alternating Series Test.\nTherefore the interval of convergence is $\\left[\\frac{5}{2}, \\frac{7}{2}\\right)$."
+          },
+          {
+            "number": 3,
+            "text": "Find the local maximum and minimum values and saddle point(s) of the function $f(x, y) = x^3 - 12xy + 8y^3$",
+            "answer": "Saddle point at $(0,0)$; local minimum at $(2,1)$ with value $f(2,1) = -8$. There is no local maximum.",
+            "explanation": "$f_x = 3x^2 - 12y = 0 \\Rightarrow y = \\frac{x^2}{4}$ and $f_y = -12x + 24y^2 = 0 \\Rightarrow x = 2y^2$.\nSubstitute $y = \\frac{x^2}{4}$ into $x = 2y^2$: $x = 2\\cdot\\frac{x^4}{16} = \\frac{x^4}{8}$, so $x(x^3 - 8) = 0$, giving $x = 0$ or $x = 2$. The critical points are $(0,0)$ and $(2,1)$.\nSecond derivatives: $f_{xx} = 6x,\\ f_{yy} = 48y,\\ f_{xy} = -12$, so $D = f_{xx}f_{yy} - f_{xy}^2 = 288xy - 144$.\n- At $(0,0)$: $D = -144 < 0$, so it is a saddle point.\n- At $(2,1)$: $D = 576 - 144 = 432 > 0$ and $f_{xx} = 12 > 0$, so it is a local minimum, with $f(2,1) = 8 - 24 + 8 = -8$."
+          },
+          {
+            "number": 4,
+            "text": "Evaluate $\\iint_D 2xy\\,dA$, where $D$ is the region bounded by the graphs of $y = x^2$ and $y - x - 2 = 0$. (5.5 points)",
+            "answer": "$\\frac{45}{4}$",
+            "explanation": "Intersection of $y = x^2$ and $y = x + 2$: $x^2 = x + 2 \\Rightarrow (x-2)(x+1) = 0$, so $x = -1$ and $x = 2$. On $[-1, 2]$ the line is above the parabola.\n$\\iint_D 2xy\\,dA = \\int_{-1}^{2}\\int_{x^2}^{x+2} 2xy\\,dy\\,dx = \\int_{-1}^{2} x\\left[(x+2)^2 - x^4\\right]dx = \\int_{-1}^{2}\\left(x^3 + 4x^2 + 4x - x^5\\right)dx$.\nAntiderivative: $\\frac{x^4}{4} + \\frac{4x^3}{3} + 2x^2 - \\frac{x^6}{6}$.\nAt $x = 2$: $4 + \\frac{32}{3} + 8 - \\frac{32}{3} = 12$. At $x = -1$: $\\frac{1}{4} - \\frac{4}{3} + 2 - \\frac{1}{6} = \\frac{3}{4}$.\nResult: $12 - \\frac{3}{4} = \\frac{45}{4}$."
+          },
+          {
+            "number": 5,
+            "text": "Find the Fourier series expansion for $f(x) = \\begin{cases}3,&-\\pi<x\\le 0\\\\5,&0<x<\\pi\\end{cases}$ and $f(x+2\\pi)=f(x)$, and show that the sum of the series $\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{2n+1}=\\frac{\\pi}{4}$. (5 points)",
+            "answer": "$f(x) = 4 + \\frac{4}{\\pi}\\sum_{n=1}^{\\infty} \\frac{\\sin((2n-1)x)}{2n-1}$",
+            "explanation": "The period is $2\\pi$, so $L = \\pi$.\n$a_0 = \\frac{1}{\\pi}\\left[\\int_{-\\pi}^{0} 3\\,dx + \\int_0^{\\pi} 5\\,dx\\right] = \\frac{1}{\\pi}(3\\pi + 5\\pi) = 8$, so the constant term is $\\frac{a_0}{2} = 4$.\n$a_n = \\frac{1}{\\pi}\\left[3\\int_{-\\pi}^{0}\\cos nx\\,dx + 5\\int_0^{\\pi}\\cos nx\\,dx\\right] = 0$ (both integrals are $0$ because $\\sin n\\pi = 0$).\n$b_n = \\frac{1}{\\pi}\\left[3\\int_{-\\pi}^{0}\\sin nx\\,dx + 5\\int_0^{\\pi}\\sin nx\\,dx\\right] = \\frac{1}{\\pi}\\left[\\frac{3((-1)^n - 1)}{n} + \\frac{5(1 - (-1)^n)}{n}\\right] = \\frac{2(1 - (-1)^n)}{n\\pi}$.\nSo $b_n = 0$ for even $n$ and $b_n = \\frac{4}{n\\pi}$ for odd $n$. Writing $n = 2k-1$ gives the answer.\nTo show $\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{2n+1} = \\frac{\\pi}{4}$: $f$ is continuous at $x = \\frac{\\pi}{2}$ with $f\\left(\\frac{\\pi}{2}\\right) = 5$. Since $\\sin\\left((2k-1)\\frac{\\pi}{2}\\right) = (-1)^{k+1}$, we get $5 = 4 + \\frac{4}{\\pi}\\sum_{k=1}^{\\infty}\\frac{(-1)^{k+1}}{2k-1}$, so $\\sum_{k=1}^{\\infty}\\frac{(-1)^{k+1}}{2k-1} = \\frac{\\pi}{4}$. Re-indexing with $n = k - 1$ gives $\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{2n+1} = \\frac{\\pi}{4}$."
+          }
+        ]
+      }
+    },
+    {
+      "part_ii": {
+        "instructions": "Fill the blank spaces by the most simplified answers ONLY on the provided blank spaces. Each question has two points.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "The domain of $f(x, y) = \\frac{x^2 + y^2}{(x^2 - y^2)^2}$ is _____",
+            "answer": "$\\{(x,y) \\in \\mathbb{R}^2 : y \\neq x \\text{ and } y \\neq -x\\}$",
+            "explanation": "The function is defined when the denominator is nonzero: $(x^2 - y^2)^2 \\neq 0 \\iff x^2 \\neq y^2 \\iff y \\neq \\pm x$. So the domain is all of $\\mathbb{R}^2$ except the two lines $y = x$ and $y = -x$."
+          },
+          {
+            "number": 2,
+            "text": "$\\lim_{(x,y)\\to(0,0)}\\frac{x^2-y^2}{x^2+y^2} =$ _____",
+            "answer": "The limit does not exist.",
+            "explanation": "Along the $x$-axis ($y = 0$): $\\frac{x^2}{x^2} = 1$, so the limit is $1$. Along the $y$-axis ($x = 0$): $\\frac{-y^2}{y^2} = -1$, so the limit is $-1$. The two paths give different values, so the limit does not exist."
+          },
+          {
+            "number": 3,
+            "text": "Let $z = x^2 e^y$, $x = \\cos t$, and $y = 2t$. Then $\\frac{dz}{dt}(0) =$ _____",
+            "answer": "$2$",
+            "explanation": "Chain rule: $\\frac{dz}{dt} = \\frac{\\partial z}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial z}{\\partial y}\\frac{dy}{dt} = (2xe^y)(-\\sin t) + (x^2e^y)(2)$.\nAt $t = 0$: $x = \\cos 0 = 1$, $y = 0$, $\\sin 0 = 0$. So $\\frac{dz}{dt}(0) = (2)(1)(1)(0) + (1)(1)(2) = 2$."
+          },
+          {
+            "number": 4,
+            "text": "Let $R$ be the region between the graphs of $y = x$ and $y = x^3$, then $\\iint_R (x-1)\\,dA =$ _____",
+            "answer": "$-\\frac{1}{2}$",
+            "explanation": "The curves meet where $x = x^3$, i.e. $x = -1, 0, 1$, so $R$ consists of two regions (lobes).\nOn $[0,1]$: $x \\ge x^3$, so $\\int_0^1\\int_{x^3}^{x}(x-1)\\,dy\\,dx = \\int_0^1 (x-1)(x - x^3)\\,dx = \\int_0^1 (x^2 - x^4 - x + x^3)\\,dx = \\frac{1}{3} - \\frac{1}{5} - \\frac{1}{2} + \\frac{1}{4} = -\\frac{7}{60}$.\nOn $[-1,0]$: $x^3 \\ge x$, so $\\int_{-1}^{0}\\int_{x}^{x^3}(x-1)\\,dy\\,dx = \\int_{-1}^{0}(x-1)(x^3 - x)\\,dx = \\int_{-1}^{0}(x^4 - x^3 - x^2 + x)\\,dx = -\\frac{23}{60}$.\nTotal: $-\\frac{7}{60} - \\frac{23}{60} = -\\frac{30}{60} = -\\frac{1}{2}$.\n(If only the lobe in the first quadrant were intended, the answer would be $-\\frac{7}{60}$.)"
+          },
+          {
+            "number": 5,
+            "text": "$\\lim_{n\\to\\infty}\\sqrt{n^2+2n}-n =$ _____",
+            "answer": "$1$",
+            "explanation": "Multiply and divide by the conjugate: $\\sqrt{n^2+2n} - n = \\frac{(n^2+2n) - n^2}{\\sqrt{n^2+2n} + n} = \\frac{2n}{\\sqrt{n^2+2n}+n} = \\frac{2}{\\sqrt{1 + 2/n} + 1} \\to \\frac{2}{1+1} = 1$."
+          },
+          {
+            "number": 6,
+            "text": "$\\sum_{k=1}^{\\infty}\\frac{\\sqrt{k+1}-\\sqrt{k}}{\\sqrt{k(k+1)}} =$ _____",
+            "answer": "$1$",
+            "explanation": "Split the term: $\\frac{\\sqrt{k+1}-\\sqrt{k}}{\\sqrt{k(k+1)}} = \\frac{\\sqrt{k+1}}{\\sqrt{k}\\sqrt{k+1}} - \\frac{\\sqrt{k}}{\\sqrt{k}\\sqrt{k+1}} = \\frac{1}{\\sqrt{k}} - \\frac{1}{\\sqrt{k+1}}$.\nThe series telescopes: $s_N = 1 - \\frac{1}{\\sqrt{N+1}} \\to 1$ as $N \\to \\infty$."
+          },
+          {
+            "number": 7,
+            "text": "For $\\sum_{n=1}^{\\infty}\\frac{1}{3^n n^2}(x-4)^n$, then\na) the radius of convergence is _____\nb) the interval of convergence is _____",
+            "answer": "a) $R = 3$, b) $[1, 7]$",
+            "explanation": "Let $a_n = \\frac{1}{3^n n^2}$. Then $R = \\lim_{n\\to\\infty}\\left|\\frac{a_n}{a_{n+1}}\\right| = \\lim_{n\\to\\infty}\\frac{3^{n+1}(n+1)^2}{3^n n^2} = 3$.\nSo the series converges for $|x - 4| < 3$, i.e. $1 < x < 7$. Endpoints:\n- $x = 7$: the series becomes $\\sum \\frac{1}{n^2}$, a convergent $p$-series ($p = 2$).\n- $x = 1$: the series becomes $\\sum \\frac{(-1)^n}{n^2}$, which converges absolutely.\nTherefore the interval of convergence is $[1, 7]$."
+          },
+          {
+            "number": 8,
+            "text": "$\\sum_{n=0}^{\\infty}\\frac{2^{-n}}{n!} =$ _____ (Hint: Use the Maclaurin series expansion of $f(x) = e^x$)",
+            "answer": "$e^{1/2} = \\sqrt{e}$",
+            "explanation": "The Maclaurin series is $e^x = \\sum_{n=0}^{\\infty}\\frac{x^n}{n!}$. Since $\\frac{2^{-n}}{n!} = \\frac{(1/2)^n}{n!}$, the given sum is the series at $x = \\frac{1}{2}$, so it equals $e^{1/2} = \\sqrt{e}$."
+          },
+          {
+            "number": 9,
+            "text": "In the Fourier series expansion of the periodic function $f(x) = x^4$ on $-\\pi \\le x \\le \\pi$, the coefficient $b_n =$ _____",
+            "answer": "$b_n = 0$",
+            "explanation": "$f(x) = x^4$ is an even function ($f(-x) = f(x)$). The sine coefficients are $b_n = \\frac{1}{\\pi}\\int_{-\\pi}^{\\pi} x^4\\sin(nx)\\,dx$, and the integrand is odd, so the integral over the symmetric interval is $0$. Hence $b_n = 0$ for all $n$."
+          },
+          {
+            "number": 10,
+            "text": "The Fourier series of $f(x) = x$ on $-2 < x < 2$ is given by $\\sum_{n=1}^{\\infty}\\frac{4(-1)^{n+1}}{n\\pi}\\sin\\left(\\frac{n\\pi x}{2}\\right)$, then $\\sum_{n=1}^{\\infty}\\frac{(-1)^{n+1}}{2n-1} =$ _____",
+            "answer": "$\\frac{\\pi}{4}$",
+            "explanation": "Evaluate the given series at $x = 1$, where $f(x) = x$ is continuous, so the series equals $f(1) = 1$.\n$\\sin\\left(\\frac{n\\pi}{2}\\right) = 0$ for even $n$, and for odd $n = 2k-1$: $\\sin\\left(\\frac{(2k-1)\\pi}{2}\\right) = (-1)^{k+1}$, while $(-1)^{n+1} = 1$.\nSo $1 = \\sum_{k=1}^{\\infty}\\frac{4}{(2k-1)\\pi}(-1)^{k+1} = \\frac{4}{\\pi}\\sum_{k=1}^{\\infty}\\frac{(-1)^{k+1}}{2k-1}$, which gives $\\sum_{k=1}^{\\infty}\\frac{(-1)^{k+1}}{2k-1} = \\frac{\\pi}{4}$."
+          }
+        ]
+      },
+      "part_iii": {
+        "instructions": "Work out the following questions showing all the necessary steps clearly on the given space (Each question has 6 points).",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Let $f(x, y) = x^2 - 2xy + \\frac{1}{3}y^3 - 3y$. Using the second partial derivative test, determine at which points $f$ has relative extreme values and at which points $f$ has saddle points.",
+            "answer": "Saddle point at $(-1,-1)$; local minimum at $(3,3)$ with value $f(3,3) = -9$. There is no local maximum.",
+            "explanation": "$f_x = 2x - 2y = 0 \\Rightarrow x = y$ and $f_y = -2x + y^2 - 3 = 0$.\nSubstitute $x = y$: $y^2 - 2y - 3 = 0 \\Rightarrow (y-3)(y+1) = 0$, so $y = 3$ or $y = -1$. The critical points are $(3,3)$ and $(-1,-1)$.\nSecond derivatives: $f_{xx} = 2,\\ f_{yy} = 2y,\\ f_{xy} = -2$, so $D = f_{xx}f_{yy} - f_{xy}^2 = 4y - 4$.\n- At $(3,3)$: $D = 8 > 0$ and $f_{xx} = 2 > 0$, so it is a relative (local) minimum, with $f(3,3) = 9 - 18 + 9 - 9 = -9$.\n- At $(-1,-1)$: $D = -8 < 0$, so it is a saddle point."
+          },
+          {
+            "number": 2,
+            "text": "Find the volume $V$ of the solid bounded above by the sphere $x^2 + y^2 + (z-2)^2 = 4$ and below by the upper nappe of the cone $z^2 = x^2 + y^2$",
+            "answer": "$V = 8\\pi$",
+            "explanation": "The sphere is centered at $(0,0,2)$ with radius $2$ and passes through the origin. In spherical coordinates the sphere is $\\rho = 4\\cos\\phi$ (from $\\rho^2 = 4\\rho\\cos\\phi$) and the upper nappe of the cone $z = \\sqrt{x^2+y^2}$ is $\\phi = \\frac{\\pi}{4}$. The solid lies inside the sphere and above the cone: $0 \\le \\theta \\le 2\\pi,\\ 0 \\le \\phi \\le \\frac{\\pi}{4},\\ 0 \\le \\rho \\le 4\\cos\\phi$.\n$V = \\int_0^{2\\pi}\\int_0^{\\pi/4}\\int_0^{4\\cos\\phi}\\rho^2\\sin\\phi\\,d\\rho\\,d\\phi\\,d\\theta = 2\\pi\\int_0^{\\pi/4}\\frac{64\\cos^3\\phi}{3}\\sin\\phi\\,d\\phi = 2\\pi\\cdot\\frac{64}{3}\\left[-\\frac{\\cos^4\\phi}{4}\\right]_0^{\\pi/4}$.\n$= 2\\pi\\cdot\\frac{16}{3}\\left(1 - \\frac{1}{4}\\right) = 2\\pi\\cdot 4 = 8\\pi$."
+          },
+          {
+            "number": 3,
+            "text": "Apply appropriate test to show whether the following series are convergent or divergent.\na) $\\sum_{n=1}^{\\infty}\\frac{(2n-1)!}{(3n)!}$ (3 points)\nb) $\\sum_{n=1}^{\\infty}\\left(\\frac{3n+1}{4-2n}\\right)^{2n}$ (3 points)",
+            "answer": "a) Convergent (Ratio Test); b) Divergent (Root Test).",
+            "explanation": "a) Ratio Test with $a_n = \\frac{(2n-1)!}{(3n)!}$:\n$\\frac{a_{n+1}}{a_n} = \\frac{(2n+1)!}{(3n+3)!}\\cdot\\frac{(3n)!}{(2n-1)!} = \\frac{(2n+1)(2n)}{(3n+3)(3n+2)(3n+1)}$.\nThe numerator has degree $2$ and the denominator degree $3$, so the ratio $\\to 0 < 1$. By the Ratio Test the series converges.\nb) Root Test with $a_n = \\left(\\frac{3n+1}{4-2n}\\right)^{2n}$:\n$\\sqrt[n]{|a_n|} = \\left(\\frac{3n+1}{4-2n}\\right)^2 \\to \\left(\\frac{3}{-2}\\right)^2 = \\frac{9}{4} > 1$. By the Root Test the series diverges.\n(Remark: the term with $n = 2$ has denominator $4 - 2n = 0$, so it is undefined; this does not affect the test, which depends only on the behaviour for large $n$. Also, the terms do not tend to $0$, which independently shows divergence.)"
+          },
+          {
+            "number": 4,
+            "text": "For the function $f(x) = \\frac{2-4x}{3x^2-4x+1}$,\na) find its power series and interval of convergence (4 points)\nb) use the obtained result in a) above to find $\\sum_{n=0}^{\\infty}(1+3^n)\\left(\\frac{1}{6}\\right)^n$ (2 points)",
+            "answer": "a) $f(x) = \\sum_{n=0}^{\\infty}(3^n + 1)x^n$, interval of convergence $\\left(-\\frac{1}{3}, \\frac{1}{3}\\right)$; b) $\\frac{16}{5}$",
+            "explanation": "a) Factor: $3x^2 - 4x + 1 = (3x-1)(x-1)$. Partial fractions: $\\frac{2-4x}{(3x-1)(x-1)} = \\frac{A}{3x-1} + \\frac{B}{x-1}$ gives $2 - 4x = A(x-1) + B(3x-1)$. Setting $x = 1$: $-2 = 2B \\Rightarrow B = -1$. Setting $x = \\frac{1}{3}$: $\\frac{2}{3} = -\\frac{2}{3}A \\Rightarrow A = -1$.\nSo $f(x) = -\\frac{1}{3x-1} - \\frac{1}{x-1} = \\frac{1}{1-3x} + \\frac{1}{1-x}$.\nUsing the geometric series: $\\frac{1}{1-3x} = \\sum (3x)^n$ for $|x| < \\frac{1}{3}$ and $\\frac{1}{1-x} = \\sum x^n$ for $|x| < 1$. Adding: $f(x) = \\sum_{n=0}^{\\infty}(3^n + 1)x^n$, valid for $|x| < \\frac{1}{3}$.\nAt $x = \\pm\\frac{1}{3}$ the terms $(3^n+1)\\left(\\pm\\frac{1}{3}\\right)^n$ do not tend to $0$, so the series diverges at both endpoints. Interval: $\\left(-\\frac{1}{3}, \\frac{1}{3}\\right)$.\nb) $\\sum_{n=0}^{\\infty}(1+3^n)\\left(\\frac{1}{6}\\right)^n$ is the series in (a) at $x = \\frac{1}{6}$, which lies inside the interval. So the sum is $f\\left(\\frac{1}{6}\\right) = \\frac{2 - \\frac{4}{6}}{3\\cdot\\frac{1}{36} - \\frac{4}{6} + 1} = \\frac{4/3}{5/12} = \\frac{16}{5}$.\n(Check: $\\frac{1}{1-\\frac{1}{2}} + \\frac{1}{1-\\frac{1}{6}} = 2 + \\frac{6}{5} = \\frac{16}{5}$.)"
+          },
+          {
+            "number": 5,
+            "text": "Find the Fourier series of the periodic function $f(x) = \\begin{cases}2,&-2<x<0\\\\x,&0<x<2\\end{cases}$, $f(x+4)=f(x)$ and use the result find $\\sum_{n=0}^{\\infty}\\frac{1}{(2n+1)^2}$.",
+            "answer": "$f(x) = \\frac{3}{2} + \\sum_{n=1}^{\\infty}\\left[\\frac{2((-1)^n - 1)}{n^2\\pi^2}\\cos\\frac{n\\pi x}{2} - \\frac{2}{n\\pi}\\sin\\frac{n\\pi x}{2}\\right]$, and $\\sum_{n=0}^{\\infty}\\frac{1}{(2n+1)^2} = \\frac{\\pi^2}{8}$",
+            "explanation": "The period is $4$, so $L = 2$.\n$a_0 = \\frac{1}{2}\\left[\\int_{-2}^{0}2\\,dx + \\int_0^2 x\\,dx\\right] = \\frac{1}{2}(4 + 2) = 3$, so the constant term is $\\frac{a_0}{2} = \\frac{3}{2}$.\n$a_n = \\frac{1}{2}\\left[\\int_{-2}^{0}2\\cos\\frac{n\\pi x}{2}dx + \\int_0^2 x\\cos\\frac{n\\pi x}{2}dx\\right]$. The first integral is $0$. For the second, integrate by parts with $k = \\frac{n\\pi}{2}$: $\\left[\\frac{x\\sin kx}{k} + \\frac{\\cos kx}{k^2}\\right]_0^2 = \\frac{(-1)^n - 1}{k^2} = \\frac{4((-1)^n - 1)}{n^2\\pi^2}$. So $a_n = \\frac{2((-1)^n - 1)}{n^2\\pi^2}$ (equal to $-\\frac{4}{n^2\\pi^2}$ for odd $n$ and $0$ for even $n$).\n$b_n = \\frac{1}{2}\\left[\\int_{-2}^{0}2\\sin kx\\,dx + \\int_0^2 x\\sin kx\\,dx\\right] = \\frac{1}{2}\\left[\\frac{2((-1)^n - 1)}{k} - \\frac{2(-1)^n}{k}\\right] = -\\frac{1}{k} = -\\frac{2}{n\\pi}$.\nSo $f(x) = \\frac{3}{2} - \\frac{4}{\\pi^2}\\sum_{k=0}^{\\infty}\\frac{\\cos\\frac{(2k+1)\\pi x}{2}}{(2k+1)^2} - \\frac{2}{\\pi}\\sum_{n=1}^{\\infty}\\frac{1}{n}\\sin\\frac{n\\pi x}{2}$.\nDeduction: at $x = 0$ the function has a jump from $2$ (left) to $0$ (right), so the series converges to the average $\\frac{2+0}{2} = 1$. All sine terms are $0$ and $\\cos 0 = 1$, so $1 = \\frac{3}{2} - \\frac{4}{\\pi^2}\\sum_{k=0}^{\\infty}\\frac{1}{(2k+1)^2}$. Hence $\\sum_{k=0}^{\\infty}\\frac{1}{(2k+1)^2} = \\frac{\\pi^2}{4}\\cdot\\frac{1}{2} = \\frac{\\pi^2}{8}$."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,546 @@
+{
+  "exam_info": {
+    "institution": "Addis Ababa University",
+    "college": "College of Business and Economics",
+    "department": "Department of Economics",
+    "course": "International Relations / Global Trends",
+    "time_allowed": "2:00 hr"
+  },
+  "question_papers": [
+    {
+      "part_i": {
+        "instructions": "True/False (1 Point Each). Answer \"TRUE\" for correct statements and \"FALSE\" for the incorrect ones. / Multiple-Choice (1 Point Each). Choose the best answer for the following questions.",
+        "questions": [
+          {
+            "number": 1,
+            "text": "One of the remarkable implications of Adwa Victory is Ethiopia's good international reputation.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "The victory at Adwa is widely recognized as a significant event that enhanced Ethiopia's international standing and reputation."
+          },
+          {
+            "number": 2,
+            "text": "National interest is a cornerstone of the foreign policy of a state.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Foreign policy is primarily designed to protect and promote a state's national interests."
+          },
+          {
+            "number": 3,
+            "text": "International relations only concern relations between sovereign states.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "International relations also involve non-state actors such as international organizations, NGOs, and multinational corporations."
+          },
+          {
+            "number": 4,
+            "text": "Polarity reflects the number of powerful states competing for power and their hierarchical relationships.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Polarity describes the distribution of power in the international system, typically unipolar, bipolar, or multipolar."
+          },
+          {
+            "number": 5,
+            "text": "Constructivists highlight the importance of values and shared interests between individuals who interact on the global stage.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Constructivism emphasizes the role of ideas, norms, and values in shaping state behavior and international outcomes."
+          },
+          {
+            "number": 6,
+            "text": "As money is for economics, power is the currency of international politics.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Power is a central concept in international politics, often compared to the role of money in economics."
+          },
+          {
+            "number": 7,
+            "text": "Emperor Yohannes IV is known to have pursued the policy of patient diplomacy.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Emperor Yohannes IV was known for his diplomatic efforts and patience in dealing with foreign powers."
+          },
+          {
+            "number": 8,
+            "text": "In international relations anarchy purely means disorder or the absence of peace.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "In IR theory, anarchy refers to the absence of a central authority, not necessarily disorder or chaos."
+          },
+          {
+            "number": 9,
+            "text": "Critical theories provide a voice for individuals who have frequently been marginalized particularly women and those from the Global South.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Critical theories aim to reveal and address inequalities and marginalization in international relations."
+          },
+          {
+            "number": 10,
+            "text": "For liberals, peaceful and harmonious relations between nations are not only achievable, they are also desirable.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Liberalism holds that peace and cooperation are both possible and desirable in international relations."
+          },
+          {
+            "number": 11,
+            "text": "Mengistu's Ethiopia had diplomatic relations with capitalist countries.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Despite its socialist orientation, Ethiopia under Mengistu maintained diplomatic relations with some capitalist countries."
+          },
+          {
+            "number": 12,
+            "text": "Marxism focuses on the structure of dependency and exploitation caused by the international division of labor.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Marxist and neo-Marxist theories emphasize dependency and exploitation in the global capitalist system."
+          },
+          {
+            "number": 13,
+            "text": "The 'Clash of Civilizations' thesis predicting future conflict scenario among world was offered by an American political scientist who is called:",
+            "options": [
+              "A. Samuel Huntington",
+              "B. Francis Fukuyama",
+              "C. Joseph Stiglitz",
+              "D. Jeffrey Sachs"
+            ],
+            "answer": "A",
+            "explanation": "Samuel Huntington proposed the 'Clash of Civilizations' theory."
+          },
+          {
+            "number": 14,
+            "text": "Which one of the following issues holds incorrect about sovereignty?",
+            "options": [
+              "A. A state's dependence on external actors for the execution of its foreign policy",
+              "B. A state's independence or freedom in its domestic affairs",
+              "C. A state's ultimate authority within its territorial limit",
+              "D. A state's involvement in international relations"
+            ],
+            "answer": "A",
+            "explanation": "Sovereignty implies independence, not dependence on external actors."
+          },
+          {
+            "number": 15,
+            "text": "A level of analysis in IR which conceives the global system as a structure within which states cooperate and compete each other over issues of national interest is termed as:",
+            "options": [
+              "A. State level of analysis",
+              "B. System level of analysis",
+              "C. Individual level of analysis",
+              "D. Group level of analysis"
+            ],
+            "answer": "B",
+            "explanation": "The system level of analysis focuses on the structure of the international system."
+          },
+          {
+            "number": 16,
+            "text": "Which one of the following states does not possess nuclear weapons?",
+            "options": [
+              "A. Russia",
+              "B. U.S.A",
+              "C. North Korea",
+              "D. Ethiopia"
+            ],
+            "answer": "D",
+            "explanation": "Ethiopia is not a nuclear-weapon state."
+          },
+          {
+            "number": 17,
+            "text": "Identify a feature that does not characterize realism as a school of thought.",
+            "options": [
+              "A. Conflict between states is inevitable.",
+              "B. Multiple states exist with multiple and competing interests.",
+              "C. Human nature is inherently good.",
+              "D. Interactions between states are governed by the pursuit of power."
+            ],
+            "answer": "C",
+            "explanation": "Realism typically views human nature as flawed, not inherently good."
+          },
+          {
+            "number": 18,
+            "text": "International Relations as a discipline deals with all but one of the following matters. Which one is it?",
+            "options": [
+              "A. International conflict",
+              "B. Climate change and global warming",
+              "C. International crime",
+              "D. None of the above"
+            ],
+            "answer": "D",
+            "explanation": "IR deals with all the listed issues, so 'None of the above' is the correct choice."
+          },
+          {
+            "number": 19,
+            "text": "During the imperial era the foreign policy of Ethiopia embraced:",
+            "options": [
+              "A. The concept of sovereign equality between states.",
+              "B. Introduced the principle of sovereign equality between states.",
+              "C. Clearly gave rise to the problem of anarchy in the international system.",
+              "D. All of the above"
+            ],
+            "answer": "A",
+            "explanation": "Imperial Ethiopia's foreign policy was primarily focused on maintaining sovereignty and territorial integrity."
+          },
+          {
+            "number": 20,
+            "text": "Which one of the following thinkers developed the idea of liberalism in the 18th century?",
+            "options": [
+              "A. E.H. Carr",
+              "B. Hans Morgenthau",
+              "C. Kenneth Waltz",
+              "D. Immanuel Kant"
+            ],
+            "answer": "D",
+            "explanation": "Immanuel Kant is a key figure in the development of liberal thought."
+          },
+          {
+            "number": 21,
+            "text": "The criteria used in classifying foreign policy objectives include:",
+            "options": [
+              "A. The value placed on the objective",
+              "B. The time element placed on the achievement of the objective",
+              "C. The kind of demands the objective imposes on other states in the international system",
+              "D. All of the above"
+            ],
+            "answer": "D",
+            "explanation": "All listed criteria are used to classify foreign policy objectives."
+          },
+          {
+            "number": 22,
+            "text": "Which one of the following bodies is not directly engaged in foreign policy and diplomatic activities?",
+            "options": [
+              "A. Ministry of education",
+              "B. Ministry of foreign affairs",
+              "C. Ambassadors and envoys",
+              "D. Embassies and legations"
+            ],
+            "answer": "A",
+            "explanation": "The Ministry of Education is not typically directly engaged in foreign policy."
+          },
+          {
+            "number": 23,
+            "text": "What factors account for international migration and refuge crises?",
+            "options": [
+              "A. Rapid population growth in the world",
+              "B. The revolution in communications and transportation",
+              "C. Proliferation of new states",
+              "D. All of the above"
+            ],
+            "answer": "D",
+            "explanation": "All these factors contribute to migration and refugee crises."
+          },
+          {
+            "number": 24,
+            "text": "A process whereby global commodities and commercial and marketing practices associated with the fast-food industry have come to dominate economic sectors is termed as:",
+            "options": [
+              "A. Globalization",
+              "B. McDonaldization",
+              "C. Americanization",
+              "D. Westernization"
+            ],
+            "answer": "B",
+            "explanation": "McDonaldization refers to the spread of fast-food business principles globally."
+          },
+          {
+            "number": 25,
+            "text": "In sharp contrast to the domestic legal system, in the international system power and relations are ................ and ................, respectively.",
+            "options": [
+              "A. Hierarchic and vertical",
+              "B. Anarchic and horizontal",
+              "C. Vertical and hierarchic",
+              "D. Horizontal and anarchic"
+            ],
+            "answer": "B",
+            "explanation": "The international system is characterized by anarchy and horizontal relations."
+          },
+          {
+            "number": 26,
+            "text": "Which one of the following issues signifies the most peaceful instrument of foreign policy?",
+            "options": [
+              "A. Military pressure",
+              "B. Tariff and quota",
+              "C. Diplomacy",
+              "D. Warfare"
+            ],
+            "answer": "C",
+            "explanation": "Diplomacy is the primary peaceful instrument of foreign policy."
+          },
+          {
+            "number": 27,
+            "text": "Identify the one which cannot be a determinant factor in foreign policy decision making.",
+            "options": [
+              "A. State sovereignty",
+              "B. Private interests of leaders",
+              "C. History",
+              "D. State ideology"
+            ],
+            "answer": "B",
+            "explanation": "Private interests of leaders should not be a determinant factor in foreign policy decision making."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "Short Answer (8 Points in Total).",
+        "questions": [
+          {
+            "number": 29,
+            "text": "Mention at least five of the contemporary global issues (5 points).",
+            "answer": "Climate change, terrorism, nuclear proliferation, cyber security, migration and refugee crises, global inequality, pandemics.",
+            "explanation": "These are widely recognized contemporary global issues in international relations."
+          },
+          {
+            "number": 30,
+            "text": "List and describe at least three of the reasons that account for the proliferation of nuclear weapons (3 points).",
+            "answer": "1. Security dilemma: states seek nuclear weapons to ensure their security. 2. Prestige and status: nuclear weapons are seen as symbols of power. 3. Domestic politics: leaders may pursue nuclear weapons for domestic political gain.",
+            "explanation": "These are key reasons discussed in IR literature for nuclear proliferation."
+          }
+        ]
+      }
+    },
+    {
+      "part_i": {
+        "instructions": "I. Write true if the statement is correct or false if the statement is incorrect (1pt. each). / II. Match Column 'B' with their proper options of Column 'A' (1 pt. each). / III. Choose the best answer from the given alternatives (1pt. each).",
+        "questions": [
+          {
+            "number": 1,
+            "text": "Unlike realists, idealists are optimistic about the nature of the international politics.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "Idealism is characterized by an optimistic view of human nature and the possibility of international cooperation and peace."
+          },
+          {
+            "number": 2,
+            "text": "Now a days, it is correct to use the term 'nation', 'state' and 'country' interchangeably to call a sovereign entity.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "While often used interchangeably in casual conversation, in political science and international relations, 'nation', 'state', and 'country' have distinct technical meanings."
+          },
+          {
+            "number": 3,
+            "text": "The modern international relation is highly characterized by state to state relations.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "Modern international relations involve a wide range of non-state actors, including international organizations, NGOs, and multinational corporations, alongside state-to-state relations."
+          },
+          {
+            "number": 4,
+            "text": "In the twenty first century, it is possible for states to escape international interactions.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "False",
+            "explanation": "Due to globalization and interdependence, it is practically impossible for states to completely escape international interactions."
+          },
+          {
+            "number": 5,
+            "text": "Westphalia treaty is one of the turning points for the progress of international relations.",
+            "options": [
+              "True",
+              "False"
+            ],
+            "answer": "True",
+            "explanation": "The Peace of Westphalia (1648) established the concept of state sovereignty and is considered a foundational moment in the development of the modern international system."
+          },
+          {
+            "number": 6,
+            "text": "Match the following theory: Idealism",
+            "options": [
+              "A. Anarchy is what states make of it",
+              "B. Class determines international relations",
+              "C. Human beings are good in nature",
+              "D. Human beings are selfish in nature",
+              "E. It aims to undo the legacies of European imperialism"
+            ],
+            "answer": "C",
+            "explanation": "Idealism is often associated with the belief that human nature is inherently good and that reason can lead to progress and peace."
+          },
+          {
+            "number": 7,
+            "text": "Match the following theory: Realism",
+            "options": [
+              "A. Anarchy is what states make of it",
+              "B. Class determines international relations",
+              "C. Human beings are good in nature",
+              "D. Human beings are selfish in nature",
+              "E. It aims to undo the legacies of European imperialism"
+            ],
+            "answer": "D",
+            "explanation": "Realism often posits that human nature is flawed and selfish, leading to conflict in international relations."
+          },
+          {
+            "number": 8,
+            "text": "Match the following theory: Constructivism",
+            "options": [
+              "A. Anarchy is what states make of it",
+              "B. Class determines international relations",
+              "C. Human beings are good in nature",
+              "D. Human beings are selfish in nature",
+              "E. It aims to undo the legacies of European imperialism"
+            ],
+            "answer": "A",
+            "explanation": "Constructivism emphasizes that international structures and anarchy are socially constructed by states through their interactions."
+          },
+          {
+            "number": 9,
+            "text": "Match the following theory: Post-colonialism",
+            "options": [
+              "A. Anarchy is what states make of it",
+              "B. Class determines international relations",
+              "C. Human beings are good in nature",
+              "D. Human beings are selfish in nature",
+              "E. It aims to undo the legacies of European imperialism"
+            ],
+            "answer": "E",
+            "explanation": "Post-colonialism focuses on the impact and legacies of colonialism and imperialism on international relations."
+          },
+          {
+            "number": 10,
+            "text": "Match the following theory: Marxism",
+            "options": [
+              "A. Anarchy is what states make of it",
+              "B. Class determines international relations",
+              "C. Human beings are good in nature",
+              "D. Human beings are selfish in nature",
+              "E. It aims to undo the legacies of European imperialism"
+            ],
+            "answer": "B",
+            "explanation": "Marxism analyzes international relations through the lens of class struggle and economic exploitation."
+          },
+          {
+            "number": 11,
+            "text": "According to realism, which one of the followings is the main way of states relation for mutual benefits?",
+            "options": [
+              "A. States develop interdependence experiences in win-win approach.",
+              "B. States should give priority for collective interests.",
+              "C. Actors of international relations should experiences good way of communication.",
+              "D. States should develop the habit of balancing their power."
+            ],
+            "answer": "D",
+            "explanation": "Realists emphasize power balancing as the primary mechanism for maintaining stability and protecting national interests in an anarchic system."
+          },
+          {
+            "number": 12,
+            "text": "Which theory is advocating the issues of southern region comprising Africans, Asians and Latin Americans?",
+            "options": [
+              "A. Realism",
+              "B. Critical",
+              "C. Imperialism",
+              "D. Idealism"
+            ],
+            "answer": "B",
+            "explanation": "Critical theories, including post-colonialism and dependency theory, often advocate for the interests of the Global South."
+          },
+          {
+            "number": 13,
+            "text": "Which level of analysis tries to look the behaviors and motivations of the individual in order to understand the causes and consequences of a particular phenomenon in the international system?",
+            "options": [
+              "A. System level of analysis",
+              "B. State level of analysis",
+              "C. Group level of analysis",
+              "D. Individual level of analysis"
+            ],
+            "answer": "D",
+            "explanation": "The individual level of analysis focuses on the role of leaders, decision-makers, and their personal characteristics in shaping international events."
+          },
+          {
+            "number": 14,
+            "text": "An international system that is being characterized by the presence of two dominant states is ____________.",
+            "options": [
+              "A. Unipolar system",
+              "B. Tripolar system",
+              "C. Bipolar system",
+              "D. Multipolar system"
+            ],
+            "answer": "C",
+            "explanation": "A bipolar system is defined by the dominance of two major powers in the international system."
+          },
+          {
+            "number": 15,
+            "text": "Which international relation theorist can be taken as 'Utopian'?",
+            "options": [
+              "A. Marxism",
+              "B. Realism",
+              "C. Constructivism",
+              "D. Idealism"
+            ],
+            "answer": "D",
+            "explanation": "Idealism is often referred to as utopianism due to its optimistic belief in the possibility of a peaceful and just international order."
+          },
+          {
+            "number": 16,
+            "text": "All of the following statements are valid, except?",
+            "options": [
+              "A. The cold war period is an example of bipolar structure.",
+              "B. Multi-polarity is the most common in history",
+              "C. The period around WWI is a typical example of unipolar structure.",
+              "D. Zero-sum game vulnerability is a problem of bipolar structure."
+            ],
+            "answer": "C",
+            "explanation": "The period around WWI was characterized by multipolarity, not unipolarity, with several major European powers competing for influence."
+          }
+        ]
+      },
+      "part_ii": {
+        "instructions": "IV. Write Short answers (write in the provided space).",
+        "questions": [
+          {
+            "number": 17,
+            "text": "Mention at least two examples of non-state actors of international relations?",
+            "answer": "i. Multinational corporations (e.g., Apple, Shell) ii. International non-governmental organizations (e.g., Amnesty International, Red Cross)",
+            "explanation": "Non-state actors are entities other than sovereign states that play a significant role in international relations."
+          },
+          {
+            "number": 18,
+            "text": "Write at least two functions of international law?",
+            "answer": "i. Maintaining international peace and security ii. Regulating relations between states",
+            "explanation": "International law provides a framework for state behavior and mechanisms for resolving disputes."
+          }
+        ]
+      }
+    }
+  ]
+}
