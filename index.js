@@ -685,4 +685,4 @@ if (window.MathJax && MathJax.startup && MathJax.startup.promise) {
 
     });
 
-} // Closing the else block git commit -m "Prepare Quizz+ for deployment"
+} // Closing the else block git commit -m "Prepare Quizz+ for deployment"  git push
