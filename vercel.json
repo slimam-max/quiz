@@ -1,0 +1,21 @@
+
+{
+  "rewrites": [
+    {
+      "source": "/exams/economics",
+      "destination": "/question.html?exam=exams/economics.json"
+    } , 
+    {
+      "source": "/exams/applied",
+      "destination": "/question.html?exam=exams/applied2.json"
+    } , 
+    {
+      "source": "/exams/cpp",
+      "destination": "/question.html?exam=exams/cpp.json"
+    }, 
+    {
+      "source": "/exams/global",
+      "destination": "/question.html?exam=exams/global.json"
+    }
+  ]
+}
